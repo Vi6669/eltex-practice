@@ -1,0 +1,1968 @@
+Script started on 2026-07-09 02:53:39+07:00 [TERM="xterm" TTY="/dev/pts/40" COLUMNS="80" LINES="24"]
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC1Pscripts"practice2_${MYUSER}_part2.loK7msshsshoroot@172.16.9.211
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-55-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:	   https://landscape.canonical.com
+ * Support:	   https://ubuntu.com/pro
+
+ System information as of Wed Jul  8 07:54:14 PM UTC 2026
+
+  System load:	0.0		   Processes:		   110
+  Usage of /:	45.5% of 14.66GB   Users logged in:	   0
+  Memory usage: 6%		   IPv4 address for ens18: 172.16.9.211
+  Swap usage:	0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+260 updates can be applied immediately.
+195 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+1 additional security update can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+Виктория Царенкова
+
+Wed Jul	 8 07:17:14 PM UTC 2026
+Last login: Wed Jul  8 17:56:53 2026 from 172.16.8.4
+?2004h0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# 7mSTART_TIME=$(journalctl -b -o short-iso | grep -v "^27m7m-27m7m-" | head -n 1 | awk '{print $1START_TIME=$(journalctl -b -o short-iso | grep -v "^--" | head -n 1 | awk '{print $1}')
+?2004h0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# 7mechechoT$START_TIME
+2026-07-08T00:49:51+00:00
+0;root@eltex-practice2-v37:2~root@eltex-practice2-v37:~#vEND_TIME=$(dateE-d("$START_TIMEA+T20Iseconds"s+"%Y-%m-%d%%H:%M:%S")7m7m-%d %H:%M:%S")27mA
+0;root@eltex-practice2-v37:2~root@eltex-practice2-v37:~#vecho#$START_TIME(Kate -d "$START_TIME + 20 seconds" +"%Y-%m-%d %H:%M:%S") A
+KACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC1P1111P1@1P1@E1@N1@D
+2026-07-08 00:50:11
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCjournalctlt-bl--untilc"$END_TIME"# 7mjournalctl -b --until "$END_TIME"27m
+Jul008 00:49:51 localhost kernel: 0;1;39m0;1;31m0;1;39mLinux version 6.8.0-55-generic (buildd@lcy02-m7m>27m
+Jul 08 00:49:51 localhost kernel: Command line: BOOT_IMAGE=/vmlinuz-6.8.0-55-gem7m>27m
+Jul 08 00:49:51 localhost kernel: KERNEL supported cpus:m
+Jul 08 00:49:51 localhost kernel:   Intel GenuineIntelm
+Jul 08 00:49:51 localhost kernel:   AMD AuthenticAMDm
+Jul 08 00:49:51 localhost kernel:   Hygon HygonGenuinem
+Jul 08 00:49:51 localhost kernel:   Centaur CentaurHaulsm
+Jul 08 00:49:51 localhost kernel:   zhaoxin   Shanghai	m
+Jul 08 00:49:51 localhost kernel: BIOS-provided physical RAM map:m
+Jul 08 00:49:51 localhost kernel: BIOS-e820: [mem 0x0000000000000000-0x00000000m7m>27m
+Jul 08 00:49:51 localhost kernel: BIOS-e820: [mem 0x000000000009fc00-0x00000000m7m>27m
+Jul 08 00:49:51 localhost kernel: BIOS-e820: [mem 0x00000000000f0000-0x00000000m7m>27m
+Jul 08 00:49:51 localhost kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000m7m>27m
+Jul 08 00:49:51 localhost kernel: BIOS-e820: [mem 0x00000000bffda000-0x00000000m7m>27m
+Jul 08 00:49:51 localhost kernel: BIOS-e820: [mem 0x00000000feffc000-0x00000000m7m>27m
+Jul 08 00:49:51 localhost kernel: BIOS-e820: [mem 0x00000000fffc0000-0x00000000m7m>27m
+Jul 08 00:49:51 localhost kernel: BIOS-e820: [mem 0x0000000100000000-0x00000001m7m>27m
+Jul 08 00:49:51 localhost kernel: BIOS-e820: [mem 0x000000fd00000000-0x000000ffm7m>27m
+Jul 08 00:49:51 localhost kernel: NX (Execute Disable) protection: activem
+Jul 08 00:49:51 localhost kernel: APIC: Static calls initializedm
+Jul 08 00:49:51 localhost kernel: SMBIOS 2.8 present.m
+Jul 08 00:49:51 localhost kernel: DMI: QEMU Standard PC (i440FX + PIIX, 1996), m7m>27m
+Jul 08 00:49:51 localhost kernel: Hypervisor detected: KVMm
+KJuln08 00:49:51 localhost kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00m
+KJuln08 00:49:51 localhost kernel: kvm-clock: using sched offset of 622155097546m7m>27m
+KJuln08 00:49:51 localhost kernel: clocksource: kvm-clock: mask: 0xfffffffffffffm7m>27m
+KJuln08 00:49:51 localhost kernel: tsc: Detected 3399.998 MHz processorm
+KJuln08 00:49:51 localhost kernel: 0;38;5;245m0;1;31m0;38;5;245me820: update [mem 0x00000000-0x00000fff] usabm7m>27m
+KJuln08 00:49:51 localhost kernel: 0;38;5;245m0;1;31m0;38;5;245me820: remove [mem 0x000a0000-0x000fffff] usabm7m>27m
+KJuln08 00:49:51 localhost kernel: AGP: No AGP bridge foundm
+KJuln08 00:49:51 localhost kernel: last_pfn = 0x140000 max_arch_pfn = 0x400000000m
+KJuln08 00:49:51 localhost kernel: MTRR map: 4 entries (3 fixed + 1 variable; mam7m>27m
+KJuln08 00:49:51Klocalhost kernel: x86/PAT: Configuration [0-7]: WB  WC	 UC- UC m7m>27m
+KJuln08 00:49:51Klocalhost kernel: last_pfn = 0xbffda max_arch_pfn = 0x400000000m
+KJuln08 00:49:51Klocalhost kernel: found SMP MP-table at [mem 0x000f5490-0x000f5m7m>27m
+KJuln08 00:49:51Klocalhost kernel: RAMDISK: [mem 0x2fccd000-0x33e5dfff]m
+KJuln08 00:49:51Klocalhost kernel: ACPI: Early table checksum verification disabm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: RSDP 0x00000000000F5290 000014 (v00 BOCm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: RSDT 0x00000000BFFE3B52 000034 (v01 BOCm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: FACP 0x00000000BFFE396C 000074 (v01 BOCm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: DSDT 0x00000000BFFDF040 00492C (v01 BOCm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: FACS 0x00000000BFFDF000 000040m
+KJuln08 00:49:51Klocalhost kernel: ACPI: APIC 0x00000000BFFE39E0 000080 (v03 BOCm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: SSDT 0x00000000BFFE3A60 0000CA (v01 BOCm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: WAET 0x00000000BFFE3B2A 000028 (v01 BOCm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: Reserving FACP table memory at [mem 0xbm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: Reserving DSDT table memory at [mem 0xbm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: Reserving FACS table memory at [mem 0xbm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: Reserving APIC table memory at [mem 0xbm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: Reserving SSDT table memory at [mem 0xbm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: Reserving WAET table memory at [mem 0xbm7m>27m
+KJuln08 00:49:51Klocalhost kernel: No NUMA configuration foundm
+KJuln08 00:49:51Klocalhost kernel: Faking a node at [mem 0x0000000000000000-0x00m7m>27m
+KJuln08 00:49:51Klocalhost kernel: NODE_DATA(0) allocated [mem 0x13ffd2000-0x13fm7m>27m
+KJuln08 00:49:51Klocalhost kernel: Zone ranges:m
+KJuln08 00:49:51Klocalhost kernel:   DMA      [mem 0x0000000000001000-0x00000000m7m>27m
+KJuln08 00:49:51Klocalhost kernel:   DMA32    [mem 0x0000000001000000-0x00000000m7m>27m
+KJuln08 00:49:51Klocalhost kernel:   Normal   [mem 0x0000000100000000-0x00000001m7m>27m
+KJuln08 00:49:51Klocalhost kernel:   Device   emptym
+KJuln08 00:49:51Klocalhost kernel: Movable zone start for each nodem
+KJuln08 00:49:51Klocalhost kernel: Early memory node rangesm
+KJuln08 00:49:51Klocalhost kernel:   node   0: [mem 0x0000000000001000-0x0000000m7m>27m
+KJuln08 00:49:51Klocalhost kernel:   node   0: [mem 0x0000000000100000-0x0000000m7m>27m
+KJuln08 00:49:51Klocalhost kernel:   node   0: [mem 0x0000000100000000-0x0000000m7m>27m
+KJuln08 00:49:51Klocalhost kernel: Initmem setup node 0 [mem 0x0000000000001000-m7m>27m
+KJuln08 00:49:51Klocalhost kernel: On node 0, zone DMA: 1 pages in unavailable rm7m>27m
+KJuln08 00:49:51Klocalhost kernel: On node 0, zone DMA: 97 pages in unavailable m7m>27m
+KJuln08 00:49:51Klocalhost kernel: On node 0, zone Normal: 38 pages in unavailabm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: PM-Timer IO Port: 0x608m
+KJuln08 00:49:51Klocalhost kernel: ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0m7m>27m
+KJuln08 00:49:51Klocalhost kernel: IOAPIC[0]: apic_id 0, version 17, address 0xfm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irqm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irqm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irqm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irm7m>27m
+KJuln08 00:49:51Klocalhost kernel: ACPI: Using ACPI (MADT) for SMP configurationm7m>27m
+KJuln08 00:49:51Klocalhost kernel: smpboot: Allowing 2 CPUs, 0 hotplug CPUsm
+KJuln08 00:49:51Klocalhost kernel: kvm-guest: APIC: eoi() replaced with kvm_guesm7m>27m
+KJuln08 00:49:51Klocalhost kernel: PM: hibernation: Registered nosave memory: [mm7m>27m
+KJuln08 00:49:51Klocalhost kernel: PM: hibernation: Registered nosave memory: [mm7m>27m
+KJuln08 00:49:51Klocalhost kernel: PM: hibernation: Registered nosave memory: [mm7m>27m
+KJuln08 00:49:51Klocalhost kernel: PM: hibernation: Registered nosave memory: [mm7m>27m
+KJuln08 00:49:51Klocalhost kernel: PM: hibernation: Registered nosave memory: [mm7m>27m
+KJuln08 00:49:51Klocalhost kernel: PM: hibernation: Registered nosave memory: [mm7m>27m
+KJuln08 00:49:51Klocalhost kernel: PM: hibernation: Registered nosave memory: [mm7m>27m
+KJuln08 00:49:51Klocalhost kernel: PM: hibernation: Registered nosave memory: [mm7m>27m
+KJuln08 00:49:51Klocalhost kernel: PM: hibernation: Registered nosave memory: [mm7m>27m
+KJuln08 00:49:51Klocalhost kernel: [mem 0xc0000000-0xfeffbfff] available for PCIm7m>27m
+KJuln08 00:49:51Klocalhost kernel: Booting paravirtualized kernel on KVMm
+KJuln08 00:49:51Klocalhost kernel: clocksource: refined-jiffies: mask: 0xfffffffm7m>27m
+KJuln08 00:49:51Klocalhost kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:2 m7m>27m
+KJuln08 00:49:51Klocalhost kernel: percpu: Embedded 86 pages/cpu s229376 r8192 dm7m>27m
+KJuln08 00:49:51Klocalhost kernel: 0;38;5;245m0;1;31m0;38;5;245mpcpu-alloc: s229376 r8192 d114688 u1048576 alm7m>27m
+KJuln08 00:49:51Klocalhost kernel: 0;38;5;245m0;1;31m0;38;5;245mpcpu-alloc: [0] 0 1 0mm
+KJuln08 00:49:51Klocalhost kernel: kvm-guest: PV spinlocks enabledm
+KJuln08 00:49:51Klocalhost kernel: PV qspinlock hash table entries: 256 (order: m7m>27m
+KJuln08 00:49:51Klocalhost kernel: 0;1;39m0;1;31m0;1;39mKernel command line: BOOT_IMAGE=/vmlinuz-6.8.m7m>27m
+KJuln08 00:49:51Klocalhost kernel: 0;1;39m0;1;31m0;1;39mUnknown kernel command line parameters "BOOT_m7m>27m
+KJuln08 00:49:51Klocalhost kernel: Dentry cache hash table entries: 524288 (ordem7m>27m
+KJuln08 00:49:51mlocalhost kernel: Inode-cache hash table entries: 262144 (orderm7m>27m
+KJuln08 00:49:51mlocalhost kernel: Fallback order for Node 0: 0 m
+KJuln08 00:49:51mlocalhost kernel: Built 1 zonelists, mobility grouping on.  Totm7m>27m
+KJuln08 00:49:51mlocalhost kernel: Policy zone: Normalm
+KJuln08 00:49:51mlocalhost kernel: mem auto-init: stack:all(zero), heap alloc:onm7m>27m
+KJuln08 00:49:51mlocalhost kernel: AGP: Checking aperture...m
+KJuln08 00:49:51mlocalhost kernel: AGP: No AGP bridge foundm
+KJuln08 00:49:51mlocalhost kernel: software IO TLB: area num 2.m
+KJuln08 00:49:51mlocalhost kernel: Memory: 3933488K/4193760K available (22528K km7m>27m
+KJuln08 00:49:51mlocalhost kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPm7m>27m
+KJuln08 00:49:51mlocalhost kernel: ftrace: allocating 58006 entries in 227 pagesm
+KJuln08 00:49:51mlocalhost kernel: ftrace: allocated 227 pages with 5 groupsm
+KJuln08 00:49:51mlocalhost kernel: Dynamic Preempt: voluntarym
+KJuln08 00:49:51mlocalhost kernel: rcu: Preemptible hierarchical RCU implementatm7m>27m
+KJuln08 00:49:51mlocalhost kernel: rcu:		RCU restricting CPUs from NR_CPUm7m>27m
+KJuln08 00:49:51mlocalhost kernel:	   Trampoline variant of Tasks RCU enablm7m>27m
+KJuln08 00:49:51mlocalhost kernel:	   Rude variant of Tasks RCU enabled.m
+KJuln08 00:49:51mlocalhost kernel:	   Tracing variant of Tasks RCU enabled.m
+KJuln08 00:49:51mlocalhost kernel: rcu: RCU calculated value of scheduler-enlistm7m>27m
+KJuln08 00:49:51mlocalhost kernel: rcu: Adjusting geometry for rcu_fanout_leaf=1m7m>27m
+KJuln08 00:49:51mlocalhost kernel: NR_IRQS: 524544, nr_irqs: 440, preallocated im7m>27m
+KJuln08 00:49:51mlocalhost kernel: rcu: srcu_init: Setting srcu_struct sizes basm7m>27m
+KJuln08 00:49:517localhost kernel: Console: colour dummy device 80x25m
+KJuln08 00:49:517localhost kernel: printk: legacy console [tty0] enabledm
+KJuln08 00:49:517localhost kernel: ACPI: Core revision 20230628m
+KJuln08 00:49:517localhost kernel: APIC: Switch to symmetric I/O mode setupm
+KJuln08 00:49:517localhost kernel: x2apic enabledm
+KJuln08 00:49:517localhost kernel: APIC: Switched APIC routing to: physical x2apm7m>27m
+KJuln08 00:49:517localhost kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 m7m>27m
+KJuln08 00:49:517localhost kernel: tsc: Marking TSC unstable due to TSCs unsynchm7m>27m
+KJuln08 00:49:517localhost kernel: Calibrating delay loop (skipped) preset valuem7m>27m
+KJuln08 00:49:517localhost kernel: process: using AMD E400 aware idle routinem
+KJuln08 00:49:517localhost kernel: Last level iTLB entries: 4KB 512, 2MB 255, 4Mm7m>27m
+KJuln08 00:49:517localhost kernel: Last level dTLB entries: 4KB 512, 2MB 255, 4Mm7m>27m
+KJuln08 00:49:517localhost kernel: Spectre V1 : Mitigation: usercopy/swapgs barrm7m>27m
+KJuln08 00:49:517localhost kernel: Spectre V2 : Mitigation: Retpolinesm
+KJuln08 00:49:517localhost kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigatim7m>27m
+KJuln08 00:49:517localhost kernel: Spectre V2 : Spectre v2 / SpectreRSB : Fillinm7m>27m
+KJuln08 00:49:517localhost kernel: x86/fpu: x87 FPU will use FXSAVEm
+KJuln08 00:49:517localhost kernel: Freeing SMP alternatives memory: 48Km
+KJuln08 00:49:517localhost kernel: pid_max: default: 32768 minimum: 301m
+KJuln08 00:49:517localhost kernel: LSM: initializing lsm=lockdown,capability,lanm7m>27m
+KJuln08 00:49:517localhost kernel: landlock: Up and running.m
+KJuln08 00:49:517localhost kernel: Yama: becoming mindful.m
+KJuln08 00:49:517localhost kernel: AppArmor: AppArmor initializedm
+KJuln08 00:49:517localhost kernel: Mount-cache hash table entries: 8192 (order: m7m>27m
+KJuln08 00:49:517localhost kernel: Mountpoint-cache hash table entries: 8192 (orm7m>27m
+KJuln08 00:49:517localhost kernel: smpboot: CPU0: AMD QEMU Virtual CPU version 2m7m>27m
+KJuln08 00:49:517localhost kernel: RCU Tasks: Setting shift to 1 and lim to 1 rcm7m>27m
+KJuln08 00:49:517localhost kernel: RCU Tasks Rude: Setting shift to 1 and lim tom7m>27m
+KJuln08 00:49:517localhost kernel: RCU Tasks Trace: Setting shift to 1 and lim tm7m>27m
+KJuln08 00:49:517localhost kernel: Performance Events: PMU not available due to m7m>27m
+KJuln08 00:49:517localhost kernel: signal: max sigframe size: 1440m
+KJuln08 00:49:517localhost kernel: rcu: Hierarchical SRCU implementation.m
+KJuln08 00:49:517localhost kernel: rcu:		Max phase no-delay instances is m7m>27m
+KJuln08 00:49:517localhost kernel: NMI watchdog: Perf NMI watchdog permanently dm7m>27m
+KJuln08 00:49:517localhost kernel: smp: Bringing up secondary CPUs ...m
+KJuln08 00:49:517localhost kernel: smpboot: x86: Booting SMP configuration:m
+KJuln08 00:49:517localhost kernel: .... node  #0, CPUs:	     #1m
+KJuln08 00:49:517localhost kernel: smp: Brought up 1 node, 2 CPUsm
+KJuln08 00:49:517localhost kernel: smpboot: Max logical packages: 1m
+KJuln08 00:49:517localhost kernel: smpboot: Total of 2 processors activated (135m7m>27m
+KJuln08 00:49:517localhost kernel: devtmpfs: initializedm
+KJuln08 00:49:517localhost kernel: x86/mm: Memory block size: 128MBm
+KJuln08 00:49:517localhost kernel: clocksource: jiffies: mask: 0xffffffff max_cym7m>27m
+KJuln08 00:49:517localhost kernel: futex hash table entries: 512 (order: 3, 3276m7m>27m
+KJuln08 00:49:517localhost kernel: pinctrl core: initialized pinctrl subsystemm
+KJuln08 00:49:517localhost kernel: PM: RTC time: 00:49:36, date: 2026-07-08m
+KJuln08 00:49:517localhost kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol m7m>27m
+KJuln08 00:49:517localhost kernel: DMA: preallocated 512 KiB GFP_KERNEL pool form7m>27m
+KJuln08 00:49:517localhost kernel: DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA m7m>27m
+KJuln08 00:49:517localhost kernel: DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA7m>27m
+KJuln08 00:49:517localhost kernel: audit: initializing netlink subsys (disabled)m
+KJuln08 00:49:517localhost kernel: thermal_sys: Registered thermal governor 'faim7m>27m
+KJuln08 00:49:517localhost kernel: thermal_sys: Registered thermal governor 'banm7m>27m
+KJuln08 00:49:517localhost kernel: thermal_sys: Registered thermal governor 'stem7m>27m
+KJuln08 00:49:517localhost kernel: thermal_sys: Registered thermal governor 'usem7m>27m
+KJuln08 00:49:517localhost kernel: thermal_sys: Registered thermal governor 'powm7m>27m
+KJuln08 00:49:517localhost kernel: EISA bus registeredm
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39maudit: type=2000 audit(1783471776.581:1): stam7m>27m
+KJuln08 00:49:517localhost kernel: cpuidle: using governor ladderm
+KJuln08 00:49:517localhost kernel: cpuidle: using governor menum
+KJuln08 00:49:517localhost kernel: acpiphp: ACPI Hot Plug PCI Controller Driver m7m>27m
+KJuln08 00:49:517localhost kernel: PCI: Using configuration type 1 for base accem7m>27m
+KJuln08 00:49:517localhost kernel: kprobes: kprobe jump-optimization is enabled.m7m>27m
+KJuln08 00:49:517localhost kernel: HugeTLB: registered 2.00 MiB page size, pre-am7m>27m
+KJuln08 00:49:517localhost kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.m7m>27m
+KJuln08 00:49:517localhost kernel: fbcon: Taking over consolem
+KJuln08 00:49:517localhost kernel: ACPI: Added _OSI(Module Device)m
+KJuln08 00:49:517localhost kernel: ACPI: Added _OSI(Processor Device)m
+KJuln08 00:49:517localhost kernel: ACPI: Added _OSI(3.0 _SCP Extensions)m
+KJuln08 00:49:517localhost kernel: ACPI: Added _OSI(Processor Aggregator Device)m
+KJuln08 00:49:517localhost kernel: ACPI: 2 ACPI AML tables successfully acquiredm7m>27m
+KJuln08 00:49:517localhost kernel: ACPI: _OSC evaluation for CPUs failed, tryingm7m>27m
+KJuln08 00:49:517localhost kernel: ACPI: Interpreter enabledm
+KJuln08 00:49:517localhost kernel: ACPI: PM: (supports S0 S5)m
+KJuln08 00:49:517localhost kernel: ACPI: Using IOAPIC for interrupt routingm
+KJuln08 00:49:517localhost kernel: PCI: Using host bridge windows from ACPI; if m7m>27m
+KJuln08 00:49:517localhost kernel: PCI: Using E820 reservations for host bridge m7m>27m
+KJuln08 00:49:517localhost kernel: ACPI: Enabled 3 GPEs in block 00 to 0Fm
+KJuln08 00:49:517localhost kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bum7m>27m
+KJuln08 00:49:517localhost kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM Clocm7m>27m
+KJuln08 00:49:517localhost kernel: acpi PNP0A03:00: _OSC: not requesting OS contm7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;38;5;185m0;1;39m0;1;38;5;185macpi PNP0A03:00: fail to add MMCONFIG informam7m>27m
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [8] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [18] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [6] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [7] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [9] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [10] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [11] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [12] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [13] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [14] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [15] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [16] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [17] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [19] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [20] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [21] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [22] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [23] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [24] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [25] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [26] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [27] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [28] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [29] registeredm
+KJuln08 00:49:517localhost kernel: PCI host bridge to bus 0000:00m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:00: root bus resource [io  0x000m7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:00: root bus resource [io  0x0d0m7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:00: root bus resource [mem 0x000m7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:00: root bus resource [mem 0xc00m7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:00: root bus resource [mem 0xc00m7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:00: root bus resource [bus 00-ff]m
+KJuln08 00:49:517localhost kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:01.1: [8086:7010] type 00 class 0m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:01.1: BAR 4 [io	0xf0e0-0xf0ef]m
+KJuln08 00:49:517localhost kernel: pci 0000:00:01.1: BAR 0 [io	0x01f0-0x01f7]: m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:01.1: BAR 1 [io	0x03f6]: legacy m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:01.1: BAR 2 [io	0x0170-0x0177]: m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:01.1: BAR 3 [io	0x0376]: legacy m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:01.2: [8086:7020] type 00 class 0m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:01.2: BAR 4 [io	0xf0c0-0xf0df]m
+KJuln08 00:49:517localhost kernel: pci 0000:00:01.3: [8086:7113] type 00 class 0m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:01.3: quirk: [io	 0x0600-0x063f] m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:01.3: quirk: [io	 0x0700-0x070f] m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:02.0: [1234:1111] type 00 class 0m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:02.0: BAR 0 [mem 0xfd000000-0xfdfm7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:02.0: BAR 2 [mem 0xfea50000-0xfeam7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:02.0: ROM [mem 0xfea40000-0xfea4fm7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:02.0: Video device with shadowed m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:03.0: [1af4:1002] type 00 class 0m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:03.0: BAR 0 [io	0xf000-0xf03f]m
+KJuln08 00:49:517localhost kernel: pci 0000:00:03.0: BAR 1 [mem 0xfea51000-0xfeam7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:03.0: BAR 4 [mem 0xc0a0000000-0xcm7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:05.0: [1b36:0001] type 01 class 0m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:05.0: BAR 0 [mem 0xc000000000-0xcm7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:05.0: PCI bridge to [bus 01]m
+KJuln08 00:49:517localhost kernel: pci 0000:00:05.0:   bridge window [io  0xe000m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:05.0:   bridge window [mem 0xfe80m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:05.0:   bridge window [mem 0xc080m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:08.0: [1af4:1003] type 00 class 0m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:08.0: BAR 0 [io	0xf040-0xf07f]m
+KJuln08 00:49:517localhost kernel: pci 0000:00:08.0: BAR 1 [mem 0xfea52000-0xfeam7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:08.0: BAR 4 [mem 0xc0a0004000-0xcm7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:12.0: [1af4:1000] type 00 class 0m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:12.0: BAR 0 [io	0xf080-0xf0bf]m
+KJuln08 00:49:517localhost kernel: pci 0000:00:12.0: BAR 1 [mem 0xfea53000-0xfeam7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:12.0: BAR 4 [mem 0xc0a0008000-0xcm7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:12.0: ROM [mem 0xfea00000-0xfea3fm7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1e.0: [1b36:0001] type 01 class 0m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1e.0: BAR 0 [mem 0xc000001000-0xcm7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1e.0: PCI bridge to [bus 02]m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1e.0:   bridge window [io  0xd000m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1e.0:   bridge window [mem 0xfe60m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1e.0:   bridge window [mem 0xc060m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1f.0: [1b36:0001] type 01 class 0m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1f.0: BAR 0 [mem 0xc000002000-0xcm7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1f.0: PCI bridge to [bus 03]m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1f.0:   bridge window [io  0xc000m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1f.0:   bridge window [mem 0xfe40m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1f.0:   bridge window [mem 0xc040m7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:01: extended config space not acm7m>27m
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [1-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [0] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [3-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [4-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [5] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [6-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [7-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [8-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [9-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [10-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [11-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [12-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [13-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [14-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [15-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [16-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [17-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [18-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [19-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [20-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [21-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [22-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [23-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [24-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [25-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [26-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [27-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [28-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [29-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [30] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [31] registeredm
+KJuln08 00:49:517localhost kernel: pci 0000:01:01.0: [1af4:1004] type 00 class 0m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:01:01.0: BAR 0 [io	0xe000-0xe03f]m
+KJuln08 00:49:517localhost kernel: pci 0000:01:01.0: BAR 1 [mem 0xfe800000-0xfe8m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:01:01.0: BAR 4 [mem 0xc080000000-0xcm7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:05.0: PCI bridge to [bus 01]m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:02: extended config space not acm7m>27m
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [0-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [1-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [2-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [3-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [4-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [5-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [6-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [7-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [8-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [9-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [10-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [11-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [12-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [13-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [14-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [15-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [16-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [17-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [18-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [19-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [20-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [21-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [22-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [23-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [24-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [25-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [26-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [27-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [28-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [29-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [30-2] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [31-2] registeredm
+KJuln08 00:49:517localhost kernel: pci 0000:00:1e.0: PCI bridge to [bus 02]m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:03: extended config space not acm7m>27m
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [0-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [1-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [2-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [3-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [4-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [5-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [6-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [7-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [8-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [9-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [10-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [11-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [12-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [13-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [14-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [15-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [16-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [17-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [18-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [19-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [20-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [21-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [22-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [23-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [24-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [25-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [26-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [27-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [28-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [29-4] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [30-3] registeredm
+KJuln08 00:49:517localhost kernel: acpiphp: Slot [31-3] registeredm
+KJuln08 00:49:517localhost kernel: pci 0000:00:1f.0: PCI bridge to [bus 03]m
+KJuln08 00:49:517localhost kernel: ACPI: PCI: Interrupt link LNKA configured form7m>27m
+KJuln08 00:49:517localhost kernel: ACPI: PCI: Interrupt link LNKB configured form7m>27m
+KJuln08 00:49:517localhost kernel: ACPI: PCI: Interrupt link LNKC configured form7m>27m
+KJuln08 00:49:517localhost kernel: ACPI: PCI: Interrupt link LNKD configured form7m>27m
+KJuln08 00:49:517localhost kernel: ACPI: PCI: Interrupt link LNKS configured form7m>27m
+KJuln08 00:49:517localhost kernel: iommu: Default domain type: Translatedm
+KJuln08 00:49:517localhost kernel: iommu: DMA domain TLB invalidation policy: lam7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mSCSI subsystem initialized0mm
+KJuln08 00:49:517localhost kernel: 0;38;5;245m0;1;31m0;38;5;245mlibata version 3.00 loaded.0mm
+KJuln08 00:49:517localhost kernel: ACPI: bus type USB registeredm
+KJuln08 00:49:517localhost kernel: usbcore: registered new interface driver usbfsm
+KJuln08 00:49:517localhost kernel: usbcore: registered new interface driver hubm
+KJuln08 00:49:517localhost kernel: usbcore: registered new device driver usbm
+KJuln08 00:49:517localhost kernel: pps_core: LinuxPPS API ver. 1 registeredm
+KJuln08 00:49:517localhost kernel: pps_core: Software ver. 5.3.6 - Copyright 200m7m>27m
+KJuln08 00:49:517localhost kernel: PTP clock support registeredm
+KJuln08 00:49:517localhost kernel: EDAC MC: Ver: 3.0.0m
+KJuln08 00:49:517localhost kernel: NetLabel: Initializingm
+KJuln08 00:49:517localhost kernel: NetLabel:  domain hash size = 128m
+KJuln08 00:49:517localhost kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIm7m>27m
+KJuln08 00:49:517localhost kernel: NetLabel:  unlabeled traffic allowed by defaum7m>27m
+KJuln08 00:49:517localhost kernel: mctp: management component transport protocolm7m>27m
+KJuln08 00:49:517localhost kernel: NET: Registered PF_MCTP protocol familym
+KJuln08 00:49:517localhost kernel: PCI: Using ACPI for IRQ routingm
+KJuln08 00:49:517localhost kernel: 0;38;5;245m0;1;31m0;38;5;245mPCI: pci_cache_line_size set to 64 bytes0mm
+KJuln08 00:49:517localhost kernel: 0;38;5;245m0;1;31m0;38;5;245me820: reserve RAM buffer [mem 0x0009fc00-0x00m7m>27m
+KJuln08 00:49:517localhost kernel: 0;38;5;245m0;1;31m0;38;5;245me820: reserve RAM buffer [mem 0xbffda000-0xbfm7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:02.0: vgaarb: setting as boot VGAm7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:02.0: vgaarb: bridge control possm7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:02.0: vgaarb: VGA device added: dm7m>27m
+KJuln08 00:49:517localhost kernel: vgaarb: loadedm
+KJuln08 00:49:517localhost kernel: clocksource: Switched to clocksource kvm-clockm
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mVFS: Disk quotas dquot_6.6.00mm
+KJuln08 00:49:517localhost kernel: VFS: Dquot-cache hash table entries: 512 (ordm7m>27m
+KJuln08 00:49:517localhost kernel: AppArmor: AppArmor Filesystem Enabledm
+KJuln08 00:49:517localhost kernel: pnp: PnP ACPI initm
+KJuln08 00:49:517localhost kernel: 0;38;5;245m0;1;31m0;38;5;245mpnp 00:02: [dma 2]0mm
+KJuln08 00:49:517localhost kernel: pnp: PnP ACPI: found 4 devicesm
+KJuln08 00:49:517localhost kernel: clocksource: acpi_pm: mask: 0xffffff max_cyclm7m>27m
+KJuln08 00:49:517localhost kernel: NET: Registered PF_INET protocol familym
+KJuln08 00:49:517localhost kernel: IP idents hash table entries: 65536 (order: 7m7m>27m
+KJuln08 00:49:517localhost kernel: tcp_listen_portaddr_hash hash table entries: m7m>27m
+KJuln08 00:49:517localhost kernel: Table-perturb hash table entries: 65536 (ordem7m>27m
+KJuln08 00:49:517localhost kernel: TCP established hash table entries: 32768 (orm7m>27m
+KJuln08 00:49:517localhost kernel: TCP bind hash table entries: 32768 (order: 8,m7m>27m
+KJuln08 00:49:517localhost kernel: TCP: Hash tables configured (established 3276m7m>27m
+KJuln08 00:49:517localhost kernel: MPTCP token hash table entries: 4096 (order: m7m>27m
+KJuln08 00:49:517localhost kernel: UDP hash table entries: 2048 (order: 4, 65536m7m>27m
+KJuln08 00:49:517localhost kernel: UDP-Lite hash table entries: 2048 (order: 4, m7m>27m
+KJuln08 00:49:517localhost kernel: NET: Registered PF_UNIX/PF_LOCAL protocol famm7m>27m
+KJuln08 00:49:517localhost kernel: NET: Registered PF_XDP protocol familym
+KJuln08 00:49:517localhost kernel: pci 0000:00:05.0: PCI bridge to [bus 01]m
+KJuln08 00:49:517localhost kernel: pci 0000:00:05.0:   bridge window [io  0xe000m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:05.0:   bridge window [mem 0xfe80m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:05.0:   bridge window [mem 0xc080m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1e.0: PCI bridge to [bus 02]m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1e.0:   bridge window [io  0xd000m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1e.0:   bridge window [mem 0xfe60m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1e.0:   bridge window [mem 0xc060m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1f.0: PCI bridge to [bus 03]m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1f.0:   bridge window [io  0xc000m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1f.0:   bridge window [mem 0xfe40m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:1f.0:   bridge window [mem 0xc040m7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cfm7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xfffm7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0m7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:00: resource 7 [mem 0xc0000000-0m7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:00: resource 8 [mem 0xc000000000m7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:01: resource 0 [io  0xe000-0xeffm7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:01: resource 1 [mem 0xfe800000-0m7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:01: resource 2 [mem 0xc080000000m7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:02: resource 0 [io  0xd000-0xdffm7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:02: resource 1 [mem 0xfe600000-0m7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:02: resource 2 [mem 0xc060000000m7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:03: resource 0 [io  0xc000-0xcffm7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:03: resource 1 [mem 0xfe400000-0m7m>27m
+KJuln08 00:49:517localhost kernel: pci_bus 0000:03: resource 2 [mem 0xc040000000m7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:01.0: PIIX3: Enabling Passive Relm7m>27m
+KJuln08 00:49:517localhost kernel: pci 0000:00:00.0: Limiting direct PCI/PCI tram7m>27m
+KJuln08 00:49:517localhost kernel: ACPI: \_SB_.LNKD: Enabled at IRQ 11m
+KJuln08 00:49:517localhost kernel: PCI: CLS 0 bytes, default 64m
+KJuln08 00:49:517localhost kernel: PCI-DMA: Using software bounce buffering for m7m>27m
+KJuln08 00:49:517localhost kernel: software IO TLB: mapped [mem 0x00000000bbfda0m7m>27m
+KJuln08 00:49:517localhost kernel: Trying to unpack rootfs image as initramfs...m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mInitialise system trusted keyrings0mm
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mKey type blacklist registered0mm
+KJuln08 00:49:517localhost kernel: workingset: timestamp_bits=36 max_order=20 bum7m>27m
+KJuln08 00:49:517localhost kernel: zbud: loadedm
+KJuln08 00:49:517localhost kernel: squashfs: version 4.0 (2009/01/31) Phillip Lom7m>27m
+KJuln08 00:49:517localhost kernel: fuse: init (API version 7.39)m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mintegrity: Platform Keyring initialized0mm
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mintegrity: Machine keyring initialized0mm
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mKey type asymmetric registered0mm
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mAsymmetric key parser 'x509' registered0mm
+KJuln08 00:49:517localhost kernel: Block layer SCSI generic (bsg) driver versionm7m>27m
+KJuln08 00:49:517localhost kernel: io scheduler mq-deadline registeredm
+KJuln08 00:49:517localhost kernel: shpchp 0000:00:05.0: Requesting control of SHm7m>27m
+KJuln08 00:49:517localhost kernel: shpchp 0000:00:05.0: Requesting control of SHm7m>27m
+KJuln08 00:49:517localhost kernel: shpchp 0000:00:05.0: Cannot get control of SHm7m>27m
+KJuln08 00:49:517localhost kernel: shpchp 0000:00:1e.0: Requesting control of SHm7m>27m
+KJuln08 00:49:517localhost kernel: shpchp 0000:00:1e.0: Requesting control of SHm7m>27m
+KJuln08 00:49:517localhost kernel: shpchp 0000:00:1e.0: Cannot get control of SHm7m>27m
+KJuln08 00:49:517localhost kernel: shpchp 0000:00:1f.0: Requesting control of SHm7m>27m
+KJuln08 00:49:517localhost kernel: shpchp 0000:00:1f.0: Requesting control of SHm7m>27m
+KJuln08 00:49:517localhost kernel: shpchp 0000:00:1f.0: Cannot get control of SHm7m>27m
+KJuln08 00:49:517localhost kernel: shpchp: Standard Hot Plug PCI Controller Drivm7m>27m
+KJuln08 00:49:517localhost kernel: input: Power Button as /devices/LNXSYSTM:00/Lm7m>27m
+KJuln08 00:49:517localhost kernel: ACPI: button: Power Button [PWRF]m
+KJuln08 00:49:517localhost kernel: ACPI: \_SB_.LNKC: Enabled at IRQ 10m
+KJuln08 00:49:517localhost kernel: ACPI: \_SB_.LNKB: Enabled at IRQ 10m
+KJuln08 00:49:517localhost kernel: ACPI: \_SB_.LNKA: Enabled at IRQ 11m
+KJuln08 00:49:517localhost kernel: Free page reporting enabledm
+KJuln08 00:49:517localhost kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharm7m>27m
+KJuln08 00:49:517localhost kernel: Linux agpgart interface v0.10
+KJuln08 00:49:517localhost kernel: loop: module loadedm
+KJuln08 00:49:517localhost kernel: virtio_scsi virtio3: 2/0/0 default/read/poll m7m>27m
+KJuln08 00:49:517localhost kernel: scsi host0: Virtio SCSI HBAm
+KJuln08 00:49:517localhost kernel: 0;38;5;245m0;1;31m0;38;5;245mata_piix 0000:00:01.1: version 2.130mm
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mscsi 0:0:0:0: Direct-Access	QEMU	 QEMUm7m>27m
+KJuln08 00:49:517localhost kernel: scsi host1: ata_piixm
+KJuln08 00:49:517localhost kernel: scsi host2: ata_piixm
+KJuln08 00:49:517localhost kernel: ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdm7m>27m
+KJuln08 00:49:517localhost kernel: ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdm7m>27m
+KJuln08 00:49:517localhost kernel: ACPI: bus type drm_connector registeredm
+KJuln08 00:49:517localhost kernel: tun: Universal TUN/TAP device driver, 1.6m
+KJuln08 00:49:517localhost kernel: PPP generic driver version 2.4.2m
+KJuln08 00:49:517localhost kernel: uhci_hcd 0000:00:01.2: UHCI Host Controllerm
+KJuln08 00:49:517localhost kernel: uhci_hcd 0000:00:01.2: new USB bus registeredm7m>27m
+KJuln08 00:49:517localhost kernel: uhci_hcd 0000:00:01.2: detected 2 portsm
+KJuln08 00:49:517localhost kernel: uhci_hcd 0000:00:01.2: irq 11, io port 0x0000m7m>27m
+KJuln08 00:49:517localhost kernel: usb usb1: New USB device found, idVendor=1d6bm7m>27m
+KJuln08 00:49:517localhost kernel: usb usb1: New USB device strings: Mfr=3, Prodm7m>27m
+KJuln08 00:49:517localhost kernel: usb usb1: Product: UHCI Host Controllerm
+KJuln08 00:49:517localhost kernel: usb usb1: Manufacturer: Linux 6.8.0-55-generim7m>27m
+KJuln08 00:49:517localhost kernel: usb usb1: SerialNumber: 0000:00:01.2m
+KJuln08 00:49:517localhost kernel: hub 1-0:1.0: USB hub foundm
+KJuln08 00:49:517localhost kernel: hub 1-0:1.0: 2 ports detectedm
+KJuln08 00:49:517localhost kernel: i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0m7m>27m
+KJuln08 00:49:517localhost kernel: serio: i8042 KBD port at 0x60,0x64 irq 1m
+KJuln08 00:49:517localhost kernel: serio: i8042 AUX port at 0x60,0x64 irq 12m
+KJuln08 00:49:517localhost kernel: mousedev: PS/2 mouse device common for all mim7m>27m
+KJuln08 00:49:517localhost kernel: rtc_cmos 00:03: RTC can wake from S4m
+KJuln08 00:49:517localhost kernel: input: AT Translated Set 2 keyboard as /devicm7m>27m
+KJuln08 00:49:517localhost kernel: rtc_cmos 00:03: registered as rtc0m
+KJuln08 00:49:517localhost kernel: rtc_cmos 00:03: setting system clock to 2026-m7m>27m
+KJuln08 00:49:517localhost kernel: rtc_cmos 00:03: alarms up to one day, y3k, 24m7m>27m
+KJuln08 00:49:517localhost kernel: i2c_dev: i2c /dev entries driverm
+KJuln08 00:49:517localhost kernel: 0;1;38;5;185m0;1;39m0;1;38;5;185mdevice-mapper: core: CONFIG_IMA_DISABLE_HTABLm7m>27m
+KJuln08 00:49:517localhost kernel: device-mapper: uevent: version 1.0.
+KJuln08 00:49:517localhost kernel: device-mapper: ioctl: 4.48.0-ioctl (2023-03-0m7m>27m
+KJuln08 00:49:517localhost kernel: platform eisa.0: Probing EISA bus 0m
+KJuln08 00:49:517localhost kernel: 0;1;38;5;185m0;1;39m0;1;38;5;185mplatform eisa.0: EISA: Cannot allocate resourm7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;38;5;185m0;1;39m0;1;38;5;185mplatform eisa.0: Cannot allocate resource form7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;38;5;185m0;1;39m0;1;38;5;185mplatform eisa.0: Cannot allocate resource form7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;38;5;185m0;1;39m0;1;38;5;185mplatform eisa.0: Cannot allocate resource form7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;38;5;185m0;1;39m0;1;38;5;185mplatform eisa.0: Cannot allocate resource form7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;38;5;185m0;1;39m0;1;38;5;185mplatform eisa.0: Cannot allocate resource form7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;38;5;185m0;1;39m0;1;38;5;185mplatform eisa.0: Cannot allocate resource form7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;38;5;185m0;1;39m0;1;38;5;185mplatform eisa.0: Cannot allocate resource form7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;38;5;185m0;1;39m0;1;38;5;185mplatform eisa.0: Cannot allocate resource form7m>27m
+KJuln08 00:49:517localhost kernel: platform eisa.0: EISA: Detected 0 cardsm
+KJuln08 00:49:517localhost kernel: 0;1;38;5;185m0;1;39m0;1;38;5;185mamd_pstate: the _CPC object is not present inm7m>27m
+KJuln08 00:49:517localhost kernel: ledtrig-cpu: registered to indicate activity m7m>27m
+KJuln08 00:49:517localhost kernel: [drm] Initialized simpledrm 1.0.0 20200625 fom7m>27m
+KJuln08 00:49:517localhost kernel: Console: switching to colour frame buffer devm7m>27m
+KJuln08 00:49:517localhost kernel: simple-framebuffer simple-framebuffer.0: [drmm7m>27m
+KJuln08 00:49:517localhost kernel: drop_monitor: Initializing network drop monitm7m>27m
+KJuln08 00:49:517localhost kernel: NET: Registered PF_INET6 protocol familym
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mscsi 0:0:0:0: Attached scsi generic sg0 type 00mm
+KJuln08 00:49:517localhost kernel: 0;1;38;5;185m0;1;39m0;1;38;5;185msd 0:0:0:0: Power-on or device reset occurred0mm
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39msd 0:0:0:0: [sda] 67108864 512-byte logical bm7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39msd 0:0:0:0: [sda] Write Protect is off0mm
+KJuln08 00:49:517localhost kernel: 0;38;5;245m0;1;31m0;38;5;245msd 0:0:0:0: [sda] Mode Sense: 63 00 10 080mm
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39msd 0:0:0:0: [sda] Write cache: enabled, read m7m>27m
+KJuln08 00:49:517localhost kernel:  sda: sda1 sda2 sda
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39msd 0:0:0:0: [sda] Attached SCSI disk0mm
+KJuln08 00:49:517localhost kernel: Freeing initrd memory: 67140Km
+KJuln08 00:49:517localhost kernel: Segment Routing with IPv6m
+KJuln08 00:49:517localhost kernel: In-situ OAM (IOAM) with IPv6m
+KJuln08 00:49:517localhost kernel: NET: Registered PF_PACKET protocol familym
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mKey type dns_resolver registered0mm
+KJuln08 00:49:517localhost kernel: IPI shorthand broadcast: enabledm
+KJuln08 00:49:517localhost kernel: sched_clock: Marking stable (1733007012, 8249m7m>27m
+KJuln08 00:49:517localhost kernel: registered taskstats version 1m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mLoading compiled-in X.509 certificates0mm
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mLoaded X.509 cert 'Build time autogenerated km7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mLoaded X.509 cert 'Canonical Ltd. Live Patch m7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mLoaded X.509 cert 'Canonical Ltd. Kernel Modum7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mblacklist: Loading compiled-in revocation X.5m7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mLoaded X.509 cert 'Canonical Ltd. Secure Bootm7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mLoaded X.509 cert 'Canonical Ltd. Secure Bootm7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mLoaded X.509 cert 'Canonical Ltd. Secure Bootm7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mLoaded X.509 cert 'Canonical Ltd. Secure Bootm7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mLoaded X.509 cert 'Canonical Ltd. Secure Bootm7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mLoaded X.509 cert 'Canonical Ltd. Secure Bootm7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mLoaded X.509 cert 'Canonical Ltd. Secure Bootm7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mLoaded X.509 cert 'Canonical Ltd. Secure Bootm7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mKey type .fscrypt registered0mm
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mKey type fscrypt-provisioning registered0mm
+KJuln08 00:49:517localhost kernel: cryptd: max_cpu_qlen set to 1000m
+KJuln08 00:49:517localhost kernel: ata2: found unknown device (class 0)m
+KJuln08 00:49:517localhost kernel: ata2.00: ATAPI: QEMU DVD-ROM, 2.5+, max UDMA/m7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mscsi 2:0:0:0: CD-ROM		QEMU	 QEMUm7m>27m
+KJuln08 00:49:517localhost kernel: sr 2:0:0:0: [sr0] scsi3-mmc drive: 4x/4x cd/rm7m>27m
+KJuln08 00:49:517localhost kernel: cdrom: Uniform CD-ROM driver Revision: 3.20m
+KJuln08 00:49:517localhost kernel: 0;38;5;245m0;1;31m0;38;5;245msr 2:0:0:0: Attached scsi CD-ROM sr00mm
+KJuln08 00:49:517localhost kernel: usb 1-1: new full-speed USB device number 2 um7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39msr 2:0:0:0: Attached scsi generic sg1 type 50mm
+KJuln08 00:49:517localhost kernel: SSE version of gcm_enc/dec engaged.m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mKey type encrypted registered0mm
+KJuln08 00:49:517localhost kernel: AppArmor: AppArmor sha256 policy hashing enabm7m>27m
+KJuln08 00:49:517localhost kernel: ima: No TPM chip found, activating TPM-bypass!m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mLoading compiled-in module X.509 certificates0mm
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mLoaded X.509 cert 'Build time autogenerated km7m>27m
+KJuln08 00:49:517localhost kernel: ima: Allocated hash algorithm: sha256m
+KJuln08 00:49:517localhost kernel: ima: No architecture policies foundm
+KJuln08 00:49:517localhost kernel: evm: Initialising EVM extended attributes:m
+KJuln08 00:49:517localhost kernel: evm: security.selinuxm
+KJuln08 00:49:517localhost kernel: evm: security.SMACK64m
+KJuln08 00:49:517localhost kernel: evm: security.SMACK64EXECm
+KJuln08 00:49:517localhost kernel: evm: security.SMACK64TRANSMUTEm
+KJuln08 00:49:517localhost kernel: evm: security.SMACK64MMAPm
+KJuln08 00:49:517localhost kernel: evm: security.apparmorm
+KJuln08 00:49:517localhost kernel: evm: security.imam
+KJuln08 00:49:517localhost kernel: evm: security.capabilitym
+KJuln08 00:49:517localhost kernel: evm: HMAC attrs: 0x1m
+KJuln08 00:49:517localhost kernel: PM:	 Magic number: 2:391:809m
+KJuln08 00:49:517localhost kernel: powernow_k8: Power state transitions not suppm7m>27m
+KJuln08 00:49:517localhost kernel: powernow_k8: Power state transitions not suppm7m>27m
+KJuln08 00:49:517localhost kernel: RAS: Correctable Errors collector initialized.m
+KJuln08 00:49:517localhost kernel: clk: Disabling unused clocksm
+KJuln08 00:49:517localhost kernel: Freeing unused decrypted memory: 2028Km
+KJuln08 00:49:517localhost kernel: Freeing unused kernel image (initmem) memory:m7m>27m
+KJuln08 00:49:517localhost kernel: Write protecting the kernel read-only data: 7m>27m
+KJuln08 00:49:517localhost kernel: Freeing unused kernel image (rodata/data gap)m7m>27m
+KJuln08 00:49:517localhost kernel: x86/mm: Checked W+X mappings: passed, no W+X m7m>27m
+KJuln08 00:49:517localhost kernel: Run /init as init processm
+KJuln08 00:49:517localhost kernel: 0;38;5;245m0;1;31m0;38;5;245m  with arguments:0mm
+KJuln08 00:49:517localhost kernel: 0;38;5;245m0;1;31m0;38;5;245m    /init0mm
+KJuln08 00:49:517localhost kernel: 0;38;5;245m0;1;31m0;38;5;245m  with environment:0mm
+KJuln08 00:49:517localhost kernel: 0;38;5;245m0;1;31m0;38;5;245m    HOME=/0mm
+KJuln08 00:49:517localhost kernel: 0;38;5;245m0;1;31m0;38;5;245m    TERM=linux0mm
+KJuln08 00:49:517localhost kernel: 0;38;5;245m0;1;31m0;38;5;245m    BOOT_IMAGE=/vmlinuz-6.8.0-55-generic0mm
+KJuln08 00:49:517localhost kernel: usb 1-1: New USB device found, idVendor=0627,m7m>27m
+KJuln08 00:49:517localhost kernel: usb 1-1: New USB device strings: Mfr=1, Produm7m>27m
+KJuln08 00:49:517localhost kernel: usb 1-1: Product: QEMU USB Tabletm
+KJuln08 00:49:517localhost kernel: usb 1-1: Manufacturer: QEMUm
+KJuln08 00:49:517localhost kernel: usb 1-1: SerialNumber: 28754-0000:00:01.2-1m
+KJuln08 00:49:517localhost kernel: FDC 0 is a S82078Bm
+KJuln08 00:49:517localhost kernel: virtio_net virtio2 ens18: renamed from eth0m
+KJuln08 00:49:517localhost kernel: Console: switching to colour dummy device 80xm7m>27m
+KJuln08 00:49:517localhost kernel: hid: raw HID events driver (C) Jiri Kosinam
+KJuln08 00:49:517localhost kernel: bochs-drm 0000:00:02.0: vgaarb: deactivate vgm7m>27m
+KJuln08 00:49:517localhost kernel: [drm] Found bochs VGA, ID 0xb0c5.m
+KJuln08 00:49:517localhost kernel: [drm] Framebuffer size 16384 kB @ 0xfd000000,m7m>27m
+KJuln08 00:49:517localhost kernel: [drm] Found EDID data blob.m
+KJuln08 00:49:517localhost kernel: usbcore: registered new interface driver usbhm7m>27m
+KJuln08 00:49:517localhost kernel: usbhid: USB HID core driverm
+KJuln08 00:49:517localhost kernel: [drm] Initialized bochs-drm 1.0.0 20130925 fom7m>27m
+KJuln08 00:49:517localhost kernel: input: VirtualPS/2 VMware VMMouse as /devicesm7m>27m
+KJuln08 00:49:517localhost kernel: input: VirtualPS/2 VMware VMMouse as /devicesm7m>27m
+KJuln08 00:49:517localhost kernel: fbcon: bochs-drmdrmfb (fb0) is primary devicem
+KJuln08 00:49:517localhost kernel: input: QEMU QEMU USB Tablet as /devices/pci00m7m>27m
+KJuln08 00:49:517localhost kernel: hid-generic 0003:0627:0001.0001: input,hidrawm7m>27m
+KJuln08 00:49:517localhost kernel: Console: switching to colour frame buffer devm7m>27m
+KJuln08 00:49:517localhost kernel: bochs-drm 0000:00:02.0: [drm] fb0: bochs-drmdm7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;39m0;1;31m0;1;39mrandom: crng init done0mm
+KJuln08 00:49:517localhost kernel: raid6: sse2x4   gen() 17809 MB/sm
+KJuln08 00:49:517localhost kernel: raid6: sse2x2   gen()  5670 MB/sm
+KJuln08 00:49:517localhost kernel: raid6: sse2x1   gen()  1302 MB/sm
+KJuln08 00:49:517localhost kernel: raid6: using algorithm sse2x4 gen() 17809 MB/sm
+KJuln08 00:49:517localhost kernel: raid6: .... xor() 3317 MB/s, rmw enabledm
+KJuln08 00:49:517localhost kernel: raid6: using ssse3x2 recovery algorithmm
+KJuln08 00:49:517localhost kernel: xor: measuring software checksum speedm
+KJuln08 00:49:517localhost kernel:    prefetch64-sse  : 29791 MB/secm
+KJuln08 00:49:517localhost kernel:    generic_sse     : 27740 MB/secm
+KJuln08 00:49:517localhost kernel: xor: using function: prefetch64-sse (29791 MBm7m>27m
+KJuln08 00:49:517localhost kernel: async_tx: api initialized (async)m
+KJuln08 00:49:517localhost kernel: Btrfs loaded, zoned=yes, fsverity=yesm
+KJuln08 00:49:517localhost kernel: EXT4-fs (dm-0): mounted filesystem 78dfc1ab-0m7m>27m
+KJuln08 00:49:517localhost kernel: 0;1;38;5;185m0;1;39m0;1;38;5;185mworkqueue: drm_fb_helper_damage_work hogged Cm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Inserted module 'autofs4'm
+KJuln08 00:49:517localhost kernel: 0;1;38;5;185m0;1;39m0;1;38;5;185mworkqueue: drm_fb_helper_damage_work hogged Cm7m>27m
+KJuln08 00:49:517localhost systemd[1]: systemd 255.4-1ubuntu8.5 running in system7m>27m
+KJuln08 00:49:517localhost systemd[1]: Detected virtualization kvm.m
+KJuln08 00:49:517localhost systemd[1]: Detected architecture x86-64.m
+KJuln08 00:49:517localhost systemd[1]: No hostname configured, using default hosm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Hostname set to <localhost>.m
+KJuln08 00:49:517localhost systemd[1]: Queued start job for default target graphm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Created slice system-modprobe.slice - Slim7m>27m
+KJuln08 00:49:517localhost systemd[1]: Created slice system-systemd\x2dfsck.slicm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Created slice user.slice - User and Sessim7m>27m
+KJuln08 00:49:517localhost systemd[1]: Started systemd-ask-password-wall.path - m7m>27m
+KJuln08 00:49:517localhost systemd[1]: Set up automount proc-sys-fs-binfmt_misc.m7m>27m
+KJuln08 00:49:517localhost systemd[1]: Expecting device dev-disk-by\x2duuid-c3f8m7m>27m
+KJuln08 00:49:517localhost systemd[1]: Reached target integritysetup.target - Lom7m>27m
+KJuln08 00:49:517localhost systemd[1]: Reached target slices.target - Slice Unitm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Reached target snapd.mounts-pre.target - m7m>27m
+KJuln08 00:49:517localhost systemd[1]: Reached target snapd.mounts.target - Mounm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Reached target veritysetup.target - Localm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Listening on dm-event.socket - Device-mapm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Listening on lvm2-lvmpolld.socket - LVM2 m7m>27m
+KJuln08 00:49:517localhost systemd[1]: Listening on multipathd.socket - multipatm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Listening on syslog.socket - Syslog Sockem7m>27m
+KJuln08 00:49:517localhost systemd[1]: Listening on systemd-fsckd.socket - fsck m7m>27m
+KJuln08 00:49:517localhost systemd[1]: Listening on systemd-initctl.socket - inim7m>27m
+KJuln08 00:49:517localhost systemd[1]: Listening on systemd-journald-dev-log.socm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Listening on systemd-journald.socket - Jom7m>27m
+KJuln08 00:49:517localhost systemd[1]: Listening on systemd-networkd.socket - Nem7m>27m
+KJuln08 00:49:517localhost systemd[1]: systemd-pcrextend.socket - TPM2 PCR Extenm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Listening on systemd-udevd-control.socketm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Listening on systemd-udevd-kernel.socket m7m>27m
+KJuln08 00:49:517localhost systemd[1]: Mounting dev-hugepages.mount - Huge Pagesm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Mounting dev-mqueue.mount - POSIX Messagem7m>27m
+KJuln08 00:49:517localhost systemd[1]: Mounting sys-kernel-debug.mount - Kernel m7m>27m
+KJuln08 00:49:517localhost systemd[1]: Mounting sys-kernel-tracing.mount - Kernem7m>27m
+KJuln08 00:49:517localhost systemd[1]: Starting systemd-journald.service - Journm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Starting keyboard-setup.service - Set them7m>27m
+KJuln08 00:49:517localhost systemd[1]: Starting kmod-static-nodes.service - Cream7m>27m
+KJuln08 00:49:517localhost systemd[1]: Starting lvm2-monitor.service - Monitorinm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Starting modprobe@configfs.service - Loadm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Starting modprobe@dm_mod.service - Load Km7m>27m
+KJuln08 00:49:517localhost systemd[1]: Starting modprobe@drm.service - Load Kernm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Starting modprobe@efi_pstore.service - Lom7m>27m
+KJuln08 00:49:517localhost systemd[1]: Starting modprobe@fuse.service - Load Kerm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Starting modprobe@loop.service - Load Kerm7m>27m
+KJuln08 00:49:517localhost systemd[1]: netplan-ovs-cleanup.service - OpenVSwitchm7m>27m
+KJuln08 00:49:517localhost systemd[1]: systemd-fsck-root.service - File System Cm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Starting systemd-modules-load.service - Lm7m>27m
+KJuln08 00:49:517localhost systemd[1]: systemd-pcrmachine.service - TPM2 PCR Macm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Starting systemd-remount-fs.service - Remm7m>27m
+KJuln08 00:49:517localhost systemd[1]: systemd-tpm2-setup-early.service - TPM2 Sm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Starting systemd-udev-trigger.service - Cm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Mounted dev-hugepages.mount - Huge Pages m7m>27m
+KJuln08 00:49:517localhost systemd[1]: Mounted dev-mqueue.mount - POSIX Message m7m>27m
+KJuln08 00:49:517localhost systemd[1]: Mounted sys-kernel-debug.mount - Kernel Dm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Mounted sys-kernel-tracing.mount - Kernelm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Finished kmod-static-nodes.service - Cream7m>27m
+KJuln08 00:49:517localhost systemd[1]: modprobe@configfs.service: Deactivated sum7m>27m
+KJuln08 00:49:517localhost systemd[1]: Finished modprobe@configfs.service - Loadm7m>27m
+KJuln08 00:49:517localhost systemd[1]: modprobe@dm_mod.service: Deactivated succm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Finished modprobe@dm_mod.service - Load Km7m>27m
+KJuln08 00:49:517localhost systemd[1]: modprobe@drm.service: Deactivated successm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Finished modprobe@drm.service - Load Kernm7m>27m
+KJuln08 00:49:517localhost systemd[1]: modprobe@efi_pstore.service: Deactivated m7m>27m
+KJuln08 00:49:517localhost systemd[1]: Finished modprobe@efi_pstore.service - Lom7m>27m
+KJuln08 00:49:517localhost systemd[1]: modprobe@fuse.service: Deactivated succesm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Finished modprobe@fuse.service - Load Kerm7m>27m
+KJuln08 00:49:517localhost systemd[1]: modprobe@loop.service: Deactivated succesm7m>27m
+KJuln08 00:49:517localhost systemd-journald[308]: Collecting audit messages is dm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Finished modprobe@loop.service - Load Kerm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Mounting sys-fs-fuse-connections.mount - m7m>27m
+KJuln08 00:49:517localhost systemd[1]: Mounting sys-kernel-config.mount - Kernelm7m>27m
+KJuln08 00:49:517localhost systemd[1]: systemd-repart.service - Repartition Rootm7m>27m
+KJuln08 00:49:517localhost systemd[1]: Starting systemd-tmpfiles-setup-dev-earlym7m>27m
+KJuln08 00:49:517localhost systemd[1]: Mounted sys-fs-fuse-connections.mount - Fm7m>27m
+KJuln08 00:49:517localhost systemd-journald[308]: Journal startedm
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCfind-/var/logo-namee"auth.log"2-v37:~# 7mfind /var/log -name "auth.log"27m
+/var/log/auth.log
+?2004h0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# 7mawk '{src=$5; $1=$2=$3=$4=$5=""; print src, $0}' /va27m7mr27m7m/log/auth.log | sed -E 's/\[[0-awk\'{src=$5;o$1=$2=$3=$4=$5=""; print src, $0}' /var/log/auth.log | sed -E 's/\[[0-9]+\]//g' | sort
+12904l	 logged out. Waiting for processes to exit.
+27	logged out. Waiting for processes to exit.
+2      logged out. Waiting for processes to exit.
+32	logged out. Waiting for processes to exit.
+35	logged out. Waiting for processes to exit.
+4      logged out. Waiting for processes to exit.
+added	   to /etc/group: name=shared_group, GID=1004
+added	   to /etc/group: name=user2, GID=1002
+added	   to /etc/group: name=user3, GID=1003
+added	   to /etc/gshadow: name=shared_group
+added	   to /etc/gshadow: name=user2
+added	   to /etc/gshadow: name=user3
+adding	    faulty module: pam_lastlog.so
+closed	    by authenticating user root 172.16.8.4 port 43802 [preauth]
+closed	    by authenticating user root 172.16.8.4 port 43810 [preauth]
+Connection	from 172.16.8.4 port 45692: Broken pipe [preauth]
+disconnect	from 172.16.8.4 port 37716:11: disconnected by user
+disconnect	from 172.16.8.4 port 37978:11: disconnected by user
+disconnect	from 172.16.8.4 port 42676:11: disconnected by user
+disconnect	from 172.16.8.4 port 43818:11: disconnected by user
+disconnect	from 172.16.8.4 port 44956:11: disconnected by user
+disconnect	from 172.16.8.4 port 55726:11: disconnected by user
+for	 'tech' changed by 'root'
+from	  user root 172.16.8.4 port 37716
+from	  user root 172.16.8.4 port 37978
+from	  user root 172.16.8.4 port 42676
+from	  user root 172.16.8.4 port 43818
+from	  user root 172.16.8.4 port 44956
+from	  user root 172.16.8.4 port 55726
+garbage	     unconditionally...
+garbage	     unconditionally...
+garbage	     unconditionally...
+garbage	     unconditionally...
+group:	    name=shared_group, GID=1004
+group:	    name=tech, GID=1000
+group:	    name=user1, GID=1001
+group:	    name=user2, GID=1002
+group:	    name=user3, GID=1003
+is	powering down (hypervisor initiated shutdown).
+is	rebooting.
+is	rebooting.
+listening      on :: port 22.
+listening      on :: port 22.
+loading,      compiling and executing 6 rules
+loading,      compiling and executing 6 rules
+loading,      compiling and executing 6 rules
+loading,      compiling and executing 6 rules
+loading,      compiling and executing 6 rules
+loading,      compiling and executing 6 rules
+loading,      compiling and executing 6 rules
+loading,      compiling and executing 6 rules
+login	   by root (UID: 1003) on /dev/pts/0
+of	group users set by root to user2
+of	group users set by root to user2,user3
+password      changed for root
+password      changed for root
+password      changed for user1
+password      changed for user2
+password      changed for user3
+password      expiry for user1
+password      expiry for user2
+password      expiry for user3
+password      for root from 172.16.8.4 port 37716 ssh2
+password      for root from 172.16.8.4 port 42676 ssh2
+password      for root from 172.16.8.4 port 43818 ssh2
+password      for root from 172.16.8.4 port 44956 ssh2
+publickey      for root from 172.16.8.4 port 37978 ssh2: RSA SHA256:M+XQ5qxONQ85KEMvOe/gIMKID80cz7/esY7VjpvLg04
+publickey      for root from 172.16.8.4 port 55726 ssh2: RSA SHA256:M+XQ5qxONQ85KEMvOe/gIMKID80cz7/esY7VjpvLg04
+publickey      for root from 172.16.8.4 port 60494 ssh2: RSA SHA256:M+XQ5qxONQ85KEMvOe/gIMKID80cz7/esY7VjpvLg04
+root)	   root on pts/0
+rules
+rules
+rules
+rules
+rules	   from directory /etc/polkit-1/rules.d
+rules	   from directory /etc/polkit-1/rules.d
+rules	   from directory /etc/polkit-1/rules.d
+rules	   from directory /etc/polkit-1/rules.d
+rules	   from directory /etc/polkit-1/rules.d
+rules	   from directory /etc/polkit-1/rules.d
+rules	   from directory /etc/polkit-1/rules.d
+rules	   from directory /etc/polkit-1/rules.d
+rules	   from directory /usr/share/polkit-1/rules.d
+rules	   from directory /usr/share/polkit-1/rules.d
+rules	   from directory /usr/share/polkit-1/rules.d
+rules	   from directory /usr/share/polkit-1/rules.d
+rules	   from directory /usr/share/polkit-1/rules.d
+rules	   from directory /usr/share/polkit-1/rules.d
+rules	   from directory /usr/share/polkit-1/rules.d
+rules	   from directory /usr/share/polkit-1/rules.d
+/run/nologin,	   blocking further logins...
+seat	  seat0.
+seat	  seat0.
+seat	  seat0.
+seat	  seat0.
+session	     129.
+session	     129 of user root.
+session	     144 of user root.
+session	     1 of user tech.
+session	     2.
+session	     27.
+session	     27 of user root.
+session	     2 of user root.
+session	     32.
+session	     32 of user root.
+session	     35.
+session	     35 of user root.
+session	     4.
+session	     4 of user root.
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user root
+session	     closed for user user1
+session	     closed for user user1
+session	     closed for user user1
+session	     closed for user user1
+session	     closed for user user1
+session	     closed for user user2
+session	     closed for user user2
+session	     closed for user user2
+session	     closed for user user2
+session	     closed for user user3
+session	     closed for user user3
+session	     closed for user user3
+session	     closed for user user3
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=0)
+session	     opened for user root(uid=0) by root(uid=1001)
+session	     opened for user root(uid=0) by tech(uid=0)
+session	     opened for user root(uid=0) by tech(uid=1000)
+session	     opened for user tech(uid=1000) by tech(uid=0)
+session	     opened for user tech(uid=1000) by tech(uid=0)
+session	     opened for user user1(uid=1001) by root(uid=0)
+session	     opened for user user1(uid=1001) by root(uid=0)
+session	     opened for user user1(uid=1001) by root(uid=0)
+session	     opened for user user1(uid=1001) by root(uid=0)
+session	     opened for user user1(uid=1001) by root(uid=0)
+session	     opened for user user2(uid=1002) by root(uid=0)
+session	     opened for user user2(uid=1002) by root(uid=0)
+session	     opened for user user2(uid=1002) by root(uid=0)
+session	     opened for user user2(uid=1002) by root(uid=0)
+session	     opened for user user3(uid=1003) by root(uid=0)
+session	     opened for user user3(uid=1003) by root(uid=0)
+session	     opened for user user3(uid=1003) by root(uid=0)
+session	     opened for user user3(uid=1003) by root(uid=0)
+system	    buttons on /dev/input/event0 (Power Button)
+system	    buttons on /dev/input/event0 (Power Button)
+system	    buttons on /dev/input/event0 (Power Button)
+system	    buttons on /dev/input/event0 (Power Button)
+system	    buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+system	    buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+system	    buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+system	    buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+system	    will reboot now!
+system	    will reboot now!
+'tech'	    to group 'adm'
+'tech'	    to group 'cdrom'
+'tech'	    to group 'dip'
+'tech'	    to group 'lxd'
+'tech'	    to group 'plugdev'
+'tech'	    to group 'sudo'
+'tech'	    to shadow group 'adm'
+'tech'	    to shadow group 'cdrom'
+'tech'	    to shadow group 'dip'
+'tech'	    to shadow group 'lxd'
+'tech'	    to shadow group 'plugdev'
+'tech'	    to shadow group 'sudo'
+the	 name org.freedesktop.PolicyKit1 on the system bus
+the	 name org.freedesktop.PolicyKit1 on the system bus
+the	 name org.freedesktop.PolicyKit1 on the system bus
+the	 name org.freedesktop.PolicyKit1 on the system bus
+:      TTY=pts/0 ; PWD=/home/user1 ; USER=root ; COMMAND=/usr/bin/dmesg
+:      TTY=tty1 ; PWD=/home/tech ; USER=root ; COMMAND=/usr/bin/su -
+unable	    to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+user1)	    root on pts/0
+user1)	    root on pts/0
+user1)	    root on pts/0
+user1)	    root on pts/0
+user1)	    root on pts/0
+'user1'	     to group 'shared_group'
+'user1'	     to shadow group 'shared_group'
+user2)	    root on pts/0
+user2)	    root on pts/0
+user2)	    root on pts/0
+user2)	    root on pts/0
+'user2'	     to group 'shared_group'
+'user2'	     to shadow group 'shared_group'
+user3)	    root on pts/0
+user3)	    root on pts/0
+user3)	    root on pts/0
+user3)	    root on pts/0
+'user3'	     to group 'shared_group'
+'user3'	     to shadow group 'shared_group'
+user:	   name=tech, UID=1000, GID=1000, home=/home/tech, shell=/bin/bash, from=none
+user:	   name=user1, UID=1001, GID=1001, home=/home/user1, shell=/bin/bash, from=/dev/pts/0
+user:	   name=user2, UID=1002, GID=1002, home=/home/user2, shell=/bin/bash, from=/dev/pts/0
+user:	   name=user3, UID=1003, GID=1003, home=/home/user3, shell=/bin/bash, from=/dev/pts/0
+user	  'user2' information
+user	  'user3' information
+user	  'user3' shell from '/bin/bash' to '/usr/sbin/nologin'
+?2004h?2004l@eltex-practice2-v37: ~root@eltex-practice2-v37:~# ^C?2004l
+?2004h0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# 7mawk '{src=$3; $1=$2=$3=""; print src, $0}' /var/log/27m7ma27m7muth.log | sed -E 's/\[[0-9]+\]/awk '{src=$3;A$1=$2=$3=""; print src, $0}' /var/log/auth.log | sed -E 's/\[[0-9]+\]//g' | sort
+chage:	  changed password expiry for user1
+chage:	  changed password expiry for user2
+chage:	  changed password expiry for user3
+chfn:	 changed user 'user2' information
+chfn:	 changed user 'user3' information
+chpasswd:    pam_unix(chpasswd:chauthtok): password changed for root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session closed for user root
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON:	 pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+gpasswd:    members of group users set by root to user2
+gpasswd:    members of group users set by root to user2,user3
+groupadd:    group added to /etc/group: name=shared_group, GID=1004
+groupadd:    group added to /etc/group: name=user2, GID=1002
+groupadd:    group added to /etc/group: name=user3, GID=1003
+groupadd:    group added to /etc/gshadow: name=shared_group
+groupadd:    group added to /etc/gshadow: name=user2
+groupadd:    group added to /etc/gshadow: name=user3
+groupadd:    new group: name=shared_group, GID=1004
+groupadd:    new group: name=user2, GID=1002
+groupadd:    new group: name=user3, GID=1003
+login:	  PAM adding faulty module: pam_lastlog.so
+login:	  PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+login:	  pam_unix(login:session): session opened for user tech(uid=1000) by tech(uid=0)
+nologin:    Attempted login by root (UID: 1003) on /dev/pts/0
+passwd:	   pam_unix(passwd:chauthtok): password changed for root
+passwd:	   pam_unix(passwd:chauthtok): password changed for user1
+passwd:	   pam_unix(passwd:chauthtok): password changed for user2
+passwd:	   pam_unix(passwd:chauthtok): password changed for user3
+passwd:	   password for 'tech' changed by 'root'
+polkitd:    Acquired the name org.freedesktop.PolicyKit1 on the system bus
+polkitd:    Acquired the name org.freedesktop.PolicyKit1 on the system bus
+polkitd:    Acquired the name org.freedesktop.PolicyKit1 on the system bus
+polkitd:    Acquired the name org.freedesktop.PolicyKit1 on the system bus
+polkitd:    Collecting garbage unconditionally...
+polkitd:    Collecting garbage unconditionally...
+polkitd:    Collecting garbage unconditionally...
+polkitd:    Collecting garbage unconditionally...
+polkitd:    Finished loading, compiling and executing 6 rules
+polkitd:    Finished loading, compiling and executing 6 rules
+polkitd:    Finished loading, compiling and executing 6 rules
+polkitd:    Finished loading, compiling and executing 6 rules
+polkitd:    Finished loading, compiling and executing 6 rules
+polkitd:    Finished loading, compiling and executing 6 rules
+polkitd:    Finished loading, compiling and executing 6 rules
+polkitd:    Finished loading, compiling and executing 6 rules
+polkitd:    Loading rules from directory /etc/polkit-1/rules.d
+polkitd:    Loading rules from directory /etc/polkit-1/rules.d
+polkitd:    Loading rules from directory /etc/polkit-1/rules.d
+polkitd:    Loading rules from directory /etc/polkit-1/rules.d
+polkitd:    Loading rules from directory /etc/polkit-1/rules.d
+polkitd:    Loading rules from directory /etc/polkit-1/rules.d
+polkitd:    Loading rules from directory /etc/polkit-1/rules.d
+polkitd:    Loading rules from directory /etc/polkit-1/rules.d
+polkitd:    Loading rules from directory /usr/share/polkit-1/rules.d
+polkitd:    Loading rules from directory /usr/share/polkit-1/rules.d
+polkitd:    Loading rules from directory /usr/share/polkit-1/rules.d
+polkitd:    Loading rules from directory /usr/share/polkit-1/rules.d
+polkitd:    Loading rules from directory /usr/share/polkit-1/rules.d
+polkitd:    Loading rules from directory /usr/share/polkit-1/rules.d
+polkitd:    Loading rules from directory /usr/share/polkit-1/rules.d
+polkitd:    Loading rules from directory /usr/share/polkit-1/rules.d
+polkitd:    Reloading rules
+polkitd:    Reloading rules
+polkitd:    Reloading rules
+polkitd:    Reloading rules
+sshd:	 Accepted password for root from 172.16.8.4 port 37716 ssh2
+sshd:	 Accepted password for root from 172.16.8.4 port 42676 ssh2
+sshd:	 Accepted password for root from 172.16.8.4 port 43818 ssh2
+sshd:	 Accepted password for root from 172.16.8.4 port 44956 ssh2
+sshd:	 Accepted publickey for root from 172.16.8.4 port 37978 ssh2: RSA SHA256:M+XQ5qxONQ85KEMvOe/gIMKID80cz7/esY7VjpvLg04
+sshd:	 Accepted publickey for root from 172.16.8.4 port 55726 ssh2: RSA SHA256:M+XQ5qxONQ85KEMvOe/gIMKID80cz7/esY7VjpvLg04
+sshd:	 Accepted publickey for root from 172.16.8.4 port 60494 ssh2: RSA SHA256:M+XQ5qxONQ85KEMvOe/gIMKID80cz7/esY7VjpvLg04
+sshd:	 Connection closed by authenticating user root 172.16.8.4 port 43802 [preauth]
+sshd:	 Connection closed by authenticating user root 172.16.8.4 port 43810 [preauth]
+sshd:	 Disconnected from user root 172.16.8.4 port 37716
+sshd:	 Disconnected from user root 172.16.8.4 port 37978
+sshd:	 Disconnected from user root 172.16.8.4 port 42676
+sshd:	 Disconnected from user root 172.16.8.4 port 43818
+sshd:	 Disconnected from user root 172.16.8.4 port 44956
+sshd:	 Disconnected from user root 172.16.8.4 port 55726
+sshd:	 pam_unix(sshd:session): session closed for user root
+sshd:	 pam_unix(sshd:session): session closed for user root
+sshd:	 pam_unix(sshd:session): session closed for user root
+sshd:	 pam_unix(sshd:session): session closed for user root
+sshd:	 pam_unix(sshd:session): session closed for user root
+sshd:	 pam_unix(sshd:session): session closed for user root
+sshd:	 pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd:	 pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd:	 pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd:	 pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd:	 pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd:	 pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd:	 pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd:	 Received disconnect from 172.16.8.4 port 37716:11: disconnected by user
+sshd:	 Received disconnect from 172.16.8.4 port 37978:11: disconnected by user
+sshd:	 Received disconnect from 172.16.8.4 port 42676:11: disconnected by user
+sshd:	 Received disconnect from 172.16.8.4 port 43818:11: disconnected by user
+sshd:	 Received disconnect from 172.16.8.4 port 44956:11: disconnected by user
+sshd:	 Received disconnect from 172.16.8.4 port 55726:11: disconnected by user
+sshd:	 Server listening on :: port 22.
+sshd:	 Server listening on :: port 22.
+sshd:	 ssh_dispatch_run_fatal: Connection from 172.16.8.4 port 45692: Broken pipe [preauth]
+sudo:	 pam_unix(sudo:session): session closed for user root
+sudo:	 pam_unix(sudo:session): session closed for user root
+sudo:	 pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=1001)
+sudo:	 pam_unix(sudo:session): session opened for user root(uid=0) by tech(uid=1000)
+sudo:	 tech : TTY=tty1 ; PWD=/home/tech ; USER=root ; COMMAND=/usr/bin/su -
+sudo:	 user1 : TTY=pts/0 ; PWD=/home/user1 ; USER=root ; COMMAND=/usr/bin/dmesg
+su:    pam_unix(su-l:session): session closed for user root
+su:    pam_unix(su-l:session): session closed for user user1
+su:    pam_unix(su-l:session): session closed for user user1
+su:    pam_unix(su-l:session): session closed for user user1
+su:    pam_unix(su-l:session): session closed for user user1
+su:    pam_unix(su-l:session): session closed for user user1
+su:    pam_unix(su-l:session): session closed for user user2
+su:    pam_unix(su-l:session): session closed for user user2
+su:    pam_unix(su-l:session): session closed for user user2
+su:    pam_unix(su-l:session): session closed for user user2
+su:    pam_unix(su-l:session): session opened for user root(uid=0) by tech(uid=0)
+su:    pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+su:    pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+su:    pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+su:    pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+su:    pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+su:    pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su:    pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su:    pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su:    pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su:    pam_unix(su:session): session closed for user user3
+su:    pam_unix(su:session): session closed for user user3
+su:    pam_unix(su:session): session closed for user user3
+su:    pam_unix(su:session): session closed for user user3
+su:    pam_unix(su:session): session opened for user user3(uid=1003) by root(uid=0)
+su:    pam_unix(su:session): session opened for user user3(uid=1003) by root(uid=0)
+su:    pam_unix(su:session): session opened for user user3(uid=1003) by root(uid=0)
+su:    pam_unix(su:session): session opened for user user3(uid=1003) by root(uid=0)
+su:    (to root) root on pts/0
+su:    (to user1) root on pts/0
+su:    (to user1) root on pts/0
+su:    (to user1) root on pts/0
+su:    (to user1) root on pts/0
+su:    (to user1) root on pts/0
+su:    (to user2) root on pts/0
+su:    (to user2) root on pts/0
+su:    (to user2) root on pts/0
+su:    (to user2) root on pts/0
+su:    (to user3) root on pts/0
+su:    (to user3) root on pts/0
+su:    (to user3) root on pts/0
+su:    (to user3) root on pts/0
+systemd-logind:	   Creating /run/nologin, blocking further logins...
+systemd-logind:	   New seat seat0.
+systemd-logind:	   New seat seat0.
+systemd-logind:	   New seat seat0.
+systemd-logind:	   New seat seat0.
+systemd-logind:	   New session 129 of user root.
+systemd-logind:	   New session 144 of user root.
+systemd-logind:	   New session 1 of user tech.
+systemd-logind:	   New session 27 of user root.
+systemd-logind:	   New session 2 of user root.
+systemd-logind:	   New session 32 of user root.
+systemd-logind:	   New session 35 of user root.
+systemd-logind:	   New session 4 of user root.
+systemd-logind:	   Removed session 129.
+systemd-logind:	   Removed session 2.
+systemd-logind:	   Removed session 27.
+systemd-logind:	   Removed session 32.
+systemd-logind:	   Removed session 35.
+systemd-logind:	   Removed session 4.
+systemd-logind:	   Session 129 logged out. Waiting for processes to exit.
+systemd-logind:	   Session 27 logged out. Waiting for processes to exit.
+systemd-logind:	   Session 2 logged out. Waiting for processes to exit.
+systemd-logind:	   Session 32 logged out. Waiting for processes to exit.
+systemd-logind:	   Session 35 logged out. Waiting for processes to exit.
+systemd-logind:	   Session 4 logged out. Waiting for processes to exit.
+systemd-logind:	   System is powering down (hypervisor initiated shutdown).
+systemd-logind:	   System is rebooting.
+systemd-logind:	   System is rebooting.
+systemd-logind:	   The system will reboot now!
+systemd-logind:	   The system will reboot now!
+systemd-logind:	   Watching system buttons on /dev/input/event0 (Power Button)
+systemd-logind:	   Watching system buttons on /dev/input/event0 (Power Button)
+systemd-logind:	   Watching system buttons on /dev/input/event0 (Power Button)
+systemd-logind:	   Watching system buttons on /dev/input/event0 (Power Button)
+systemd-logind:	   Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+systemd-logind:	   Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+systemd-logind:	   Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+systemd-logind:	   Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+(systemd):    pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd):    pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd):    pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd):    pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd):    pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd):    pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd):    pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd):    pam_unix(systemd-user:session): session opened for user tech(uid=1000) by tech(uid=0)
+useradd:    add 'tech' to group 'adm'
+useradd:    add 'tech' to group 'cdrom'
+useradd:    add 'tech' to group 'dip'
+useradd:    add 'tech' to group 'lxd'
+useradd:    add 'tech' to group 'plugdev'
+useradd:    add 'tech' to group 'sudo'
+useradd:    add 'tech' to shadow group 'adm'
+useradd:    add 'tech' to shadow group 'cdrom'
+useradd:    add 'tech' to shadow group 'dip'
+useradd:    add 'tech' to shadow group 'lxd'
+useradd:    add 'tech' to shadow group 'plugdev'
+useradd:    add 'tech' to shadow group 'sudo'
+useradd:    new group: name=tech, GID=1000
+useradd:    new group: name=user1, GID=1001
+useradd:    new user: name=tech, UID=1000, GID=1000, home=/home/tech, shell=/bin/bash, from=none
+useradd:    new user: name=user1, UID=1001, GID=1001, home=/home/user1, shell=/bin/bash, from=/dev/pts/0
+useradd:    new user: name=user2, UID=1002, GID=1002, home=/home/user2, shell=/bin/bash, from=/dev/pts/0
+useradd:    new user: name=user3, UID=1003, GID=1003, home=/home/user3, shell=/bin/bash, from=/dev/pts/0
+usermod:    add 'user1' to group 'shared_group'
+usermod:    add 'user1' to shadow group 'shared_group'
+usermod:    add 'user2' to group 'shared_group'
+usermod:    add 'user2' to shadow group 'shared_group'
+usermod:    add 'user3' to group 'shared_group'
+usermod:    add 'user3' to shadow group 'shared_group'
+usermod:    change user 'user3' shell from '/bin/bash' to '/usr/sbin/nologin'
+?2004h0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# 7mawk '{print $3}' /var/log/auth.log | sed -E 's/\[[0-27m7m927m7m]+\]:?//g' | sort | uniq -c | sawk '{print $3}' /var/log/auth.log | sed -E 's/\[[0-9]+\]:?//g' | sort | uniq -c | sort -rn
+?200284 CRON
+     42 su
+     38 systemd-logind
+     37 sshd
+     36 polkitd
+     18 useradd
+      9 groupadd
+      8 (systemd):
+      7 usermod
+      6 sudo:
+      5 passwd
+      3 login
+      3 chage
+      2 gpasswd
+      2 chfn
+      1 nologin:
+      1 chpasswd
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCawk7-F:r'$7@==t"/usr/sbin/nologin" {print-$3,'$1}'=/etc/passwd/|osortn-k1p-rnt|$while}read7uideuser;tdopgroups=$(groups1"$user"w|icutr-d: -f2-u|esedd's/^o//;=s/g/,/g');$echo""$uid,7$user,m[$groups]"; doned 's/^ //; s/ /,/g'); echo "$uid, $user, [$groups]"; done27mAA
+65534, nobody, [nogroup]
+1003, user3, [user3,users,shared_group]
+998, systemd-network, [systemd-network]
+997, systemd-timesync, [systemd-timesync]
+992, systemd-resolve, [systemd-resolve]
+991, polkitd, [polkitd]
+989, fwupd-refresh, [fwupd-refresh]
+109, sshd, [nogroup]
+108, usbmux, [plugdev]
+107, landscape, [landscape]
+105, tcpdump, [tcpdump]
+104, uuidd, [uuidd]
+103, syslog, [syslog,adm]
+101, messagebus, [messagebus]
+42, _apt, [nogroup]
+39, irc, [irc]
+38, list, [list]
+34, backup, [backup]
+33, www-data, [www-data]
+13, proxy, [proxy]
+10, uucp, [uucp]
+9, news, [news]
+8, mail, [mail]
+7, lp, [lp]
+6, man, [man]
+5, games, [games]
+3, sys, [sys]
+2, bin, [bin]
+1, daemon, [daemon]
+0;root@eltex-practice2-v37:2~root@eltex-practice2-v37:~#v7mdmedmesgg|egrepe"kernel"
+[20040.157853] Booting paravirtualized 01;31mKkernelmK on KVM
+[    0.159433] Unknown 01;31mKkernelmK command line parameters "BOOT_IMAGE=/vmlinuz-6.8.0-55-generic", will be passed to user space.
+[    0.335598] Memory: 3933488K/4193760K available (22528K 01;31mKkernelmK code, 4443K rwdata, 14344K rodata, 4988K init, 4716K bss, 260012K reserved, 0K cma-reserved)
+[    1.738319] Loaded X.509 cert 'Build time autogenerated 01;31mKkernelmK key: e0bedf6fa049a1e09bd65ebab3904f14cdd5bc68'
+[    1.997763] Loaded X.509 cert 'Build time autogenerated 01;31mKkernelmK key: e0bedf6fa049a1e09bd65ebab3904f14cdd5bc68'
+[    2.045125] Freeing unused 01;31mKkernelmK image (initmem) memory: 4988K
+[    2.047424] Write protecting the 01;31mKkernelmK read-only data: 38912k
+[    2.052851] Freeing unused 01;31mKkernelmK image (rodata/data gap) memory: 2040K
+[   15.074776] systemd[1]: Listening on systemd-udevd-01;31mKkernelmK.socket - udev Kernel Socket.
+[   15.116247] systemd[1]: Mounting sys-01;31mKkernelmK-debug.mount - Kernel Debug File System...
+[   15.119158] systemd[1]: Mounting sys-01;31mKkernelmK-tracing.mount - Kernel Trace File System...
+[   15.426573] systemd[1]: Mounted sys-01;31mKkernelmK-debug.mount - Kernel Debug File System.
+[   15.430330] systemd[1]: Mounted sys-01;31mKkernelmK-tracing.mount - Kernel Trace File System.
+[   15.492989] systemd[1]: Mounting sys-01;31mKkernelmK-config.mount - Kernel Configuration File System...
+?2004h0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# 7mwc wc -la/var/log/kern.log
+28934/var/log/kern.log
+?2004h0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# 7mawk 'BEGIN{RS=""; FS="\n"} {cmd=""; start=""; end=""; 27m7mf27m7mor(i=1; i<=NF; i++){ if($i ~ /^Commandline:/) cmd=$i; if($i ~ /^Start-Date:/) sta27m7mr27m7mt=$i; if($i ~ /^End-Date:/) end=$i } if(cmd != "") print cmd " ; " start " ; " en27m7md27m7m}' /var/log/apt/history.log27mAAAawk 'BEGIN{RS=""; FS="\n"} {cmd=""; start=""; end=""; for(i=1; i<=NF; i++){ if($i ~ /^Commandline:/) cmd=$i; if($i ~ /^Start-Date:/) start=$i; if($i ~ /^End-Date:/) end=$i } if(cmd != "") print cmd " ; " start " ; " end}' /var/log/apt/history.log
+Commandline: apt-get install --reinstall apt ; Start-Date: 2025-02-16  20:51:22 ; End-Date: 2025-02-16	20:51:24
+Commandline: apt-get install --reinstall base-files ; Start-Date: 2025-02-16  20:51:26 ; End-Date: 2025-02-16  20:51:28
+Commandline: apt-get install --reinstall base-passwd ; Start-Date: 2025-02-16  20:51:31 ; End-Date: 2025-02-16	20:51:32
+Commandline: apt-get install --reinstall bash ; Start-Date: 2025-02-16	20:51:35 ; End-Date: 2025-02-16	 20:51:37
+Commandline: apt-get install --reinstall bsdutils ; Start-Date: 2025-02-16  20:51:39 ; End-Date: 2025-02-16  20:51:41
+Commandline: apt-get install --reinstall coreutils ; Start-Date: 2025-02-16  20:51:44 ; End-Date: 2025-02-16  20:51:45
+Commandline: apt-get install --reinstall dash ; Start-Date: 2025-02-16	20:51:48 ; End-Date: 2025-02-16	 20:51:49
+Commandline: apt-get install --reinstall debconf ; Start-Date: 2025-02-16  20:51:52 ; End-Date: 2025-02-16  20:51:53
+Commandline: apt-get install --reinstall debianutils ; Start-Date: 2025-02-16  20:51:56 ; End-Date: 2025-02-16	20:51:58
+Commandline: apt-get install --reinstall diffutils ; Start-Date: 2025-02-16  20:52:00 ; End-Date: 2025-02-16  20:52:02
+Commandline: apt-get install --reinstall dpkg ; Start-Date: 2025-02-16	20:52:04 ; End-Date: 2025-02-16	 20:52:06
+Commandline: apt-get install --reinstall e2fsprogs ; Start-Date: 2025-02-16  20:52:09 ; End-Date: 2025-02-16  20:52:10
+Commandline: apt-get install --reinstall findutils ; Start-Date: 2025-02-16  20:52:13 ; End-Date: 2025-02-16  20:52:14
+Commandline: apt-get install --reinstall gcc-14-base:amd64 ; Start-Date: 2025-02-16  20:52:17 ; End-Date: 2025-02-16  20:52:18
+Commandline: apt-get install --reinstall gpgv ; Start-Date: 2025-02-16	20:52:21 ; End-Date: 2025-02-16	 20:52:23
+Commandline: apt-get install --reinstall grep ; Start-Date: 2025-02-16	20:52:25 ; End-Date: 2025-02-16	 20:52:27
+Commandline: apt-get install --reinstall gzip ; Start-Date: 2025-02-16	20:52:29 ; End-Date: 2025-02-16	 20:52:31
+Commandline: apt-get install --reinstall hostname ; Start-Date: 2025-02-16  20:52:34 ; End-Date: 2025-02-16  20:52:35
+Commandline: apt-get install --reinstall init-system-helpers ; Start-Date: 2025-02-16  20:52:38 ; End-Date: 2025-02-16	20:52:39
+Commandline: apt-get install --reinstall libacl1:amd64 ; Start-Date: 2025-02-16	 20:52:42 ; End-Date: 2025-02-16  20:52:43
+Commandline: apt-get install --reinstall libapt-pkg6.0t64:amd64 ; Start-Date: 2025-02-16  20:52:46 ; End-Date: 2025-02-16  20:52:47
+Commandline: apt-get install --reinstall libassuan0:amd64 ; Start-Date: 2025-02-16  20:52:50 ; End-Date: 2025-02-16  20:52:51
+Commandline: apt-get install --reinstall libattr1:amd64 ; Start-Date: 2025-02-16  20:52:54 ; End-Date: 2025-02-16  20:52:56
+Commandline: apt-get install --reinstall libaudit-common ; Start-Date: 2025-02-16  20:52:58 ; End-Date: 2025-02-16  20:53:00
+Commandline: apt-get install --reinstall libaudit1:amd64 ; Start-Date: 2025-02-16  20:53:02 ; End-Date: 2025-02-16  20:53:04
+Commandline: apt-get install --reinstall libblkid1:amd64 ; Start-Date: 2025-02-16  20:53:06 ; End-Date: 2025-02-16  20:53:08
+Commandline: apt-get install --reinstall libbz2-1.0:amd64 ; Start-Date: 2025-02-16  20:53:11 ; End-Date: 2025-02-16  20:53:12
+Commandline: apt-get install --reinstall libc-bin ; Start-Date: 2025-02-16  20:53:15 ; End-Date: 2025-02-16  20:53:17
+Commandline: apt-get install --reinstall libc6:amd64 ; Start-Date: 2025-02-16  20:53:19 ; End-Date: 2025-02-16	20:53:22
+Commandline: apt-get install --reinstall libcap-ng0:amd64 ; Start-Date: 2025-02-16  20:53:25 ; End-Date: 2025-02-16  20:53:26
+Commandline: apt-get install --reinstall libcap2:amd64 ; Start-Date: 2025-02-16	 20:53:29 ; End-Date: 2025-02-16  20:53:30
+Commandline: apt-get install --reinstall libcom-err2:amd64 ; Start-Date: 2025-02-16  20:53:33 ; End-Date: 2025-02-16  20:53:34
+Commandline: apt-get install --reinstall libcrypt1:amd64 ; Start-Date: 2025-02-16  20:53:37 ; End-Date: 2025-02-16  20:53:38
+Commandline: apt-get install --reinstall libdebconfclient0:amd64 ; Start-Date: 2025-02-16  20:53:41 ; End-Date: 2025-02-16  20:53:42
+Commandline: apt-get install --reinstall libext2fs2t64:amd64 ; Start-Date: 2025-02-16  20:53:45 ; End-Date: 2025-02-16	20:53:46
+Commandline: apt-get install --reinstall libffi8:amd64 ; Start-Date: 2025-02-16	 20:53:49 ; End-Date: 2025-02-16  20:53:50
+Commandline: apt-get install --reinstall libgcc-s1:amd64 ; Start-Date: 2025-02-16  20:53:53 ; End-Date: 2025-02-16  20:53:54
+Commandline: apt-get install --reinstall libgcrypt20:amd64 ; Start-Date: 2025-02-16  20:53:57 ; End-Date: 2025-02-16  20:53:59
+Commandline: apt-get install --reinstall libgmp10:amd64 ; Start-Date: 2025-02-16  20:54:01 ; End-Date: 2025-02-16  20:54:03
+Commandline: apt-get install --reinstall libgnutls30t64:amd64 ; Start-Date: 2025-02-16	20:54:05 ; End-Date: 2025-02-16	 20:54:07
+Commandline: apt-get install --reinstall libgpg-error0:amd64 ; Start-Date: 2025-02-16  20:54:10 ; End-Date: 2025-02-16	20:54:11
+Commandline: apt-get install --reinstall libhogweed6t64:amd64 ; Start-Date: 2025-02-16	20:54:14 ; End-Date: 2025-02-16	 20:54:15
+Commandline: apt-get install --reinstall libidn2-0:amd64 ; Start-Date: 2025-02-16  20:54:18 ; End-Date: 2025-02-16  20:54:19
+Commandline: apt-get install --reinstall liblz4-1:amd64 ; Start-Date: 2025-02-16  20:54:22 ; End-Date: 2025-02-16  20:54:23
+Commandline: apt-get install --reinstall liblzma5:amd64 ; Start-Date: 2025-02-16  20:54:26 ; End-Date: 2025-02-16  20:54:27
+Commandline: apt-get install --reinstall libmd0:amd64 ; Start-Date: 2025-02-16	20:54:30 ; End-Date: 2025-02-16	 20:54:32
+Commandline: apt-get install --reinstall libmount1:amd64 ; Start-Date: 2025-02-16  20:54:34 ; End-Date: 2025-02-16  20:54:36
+Commandline: apt-get install --reinstall libncursesw6:amd64 ; Start-Date: 2025-02-16  20:54:38 ; End-Date: 2025-02-16  20:54:39
+Commandline: apt-get install --reinstall libnettle8t64:amd64 ; Start-Date: 2025-02-16  20:54:42 ; End-Date: 2025-02-16	20:54:43
+Commandline: apt-get install --reinstall libnpth0t64:amd64 ; Start-Date: 2025-02-16  20:54:46 ; End-Date: 2025-02-16  20:54:48
+Commandline: apt-get install --reinstall libp11-kit0:amd64 ; Start-Date: 2025-02-16  20:54:50 ; End-Date: 2025-02-16  20:54:52
+Commandline: apt-get install --reinstall libpam-modules:amd64 ; Start-Date: 2025-02-16	20:54:54 ; End-Date: 2025-02-16	 20:54:56
+Commandline: apt-get install --reinstall libpam-modules-bin ; Start-Date: 2025-02-16  20:54:58 ; End-Date: 2025-02-16  20:55:00
+Commandline: apt-get install --reinstall libpam-runtime ; Start-Date: 2025-02-16  20:55:03 ; End-Date: 2025-02-16  20:55:04
+Commandline: apt-get install --reinstall libpam0g:amd64 ; Start-Date: 2025-02-16  20:55:07 ; End-Date: 2025-02-16  20:55:08
+Commandline: apt-get install --reinstall libpcre2-8-0:amd64 ; Start-Date: 2025-02-16  20:55:11 ; End-Date: 2025-02-16  20:55:12
+Commandline: apt-get install --reinstall libproc2-0:amd64 ; Start-Date: 2025-02-16  20:55:15 ; End-Date: 2025-02-16  20:55:16
+Commandline: apt-get install --reinstall libseccomp2:amd64 ; Start-Date: 2025-02-16  20:55:19 ; End-Date: 2025-02-16  20:55:20
+Commandline: apt-get install --reinstall libselinux1:amd64 ; Start-Date: 2025-02-16  20:55:23 ; End-Date: 2025-02-16  20:55:24
+Commandline: apt-get install --reinstall libsemanage-common ; Start-Date: 2025-02-16  20:55:27 ; End-Date: 2025-02-16  20:55:28
+Commandline: apt-get install --reinstall libsemanage2:amd64 ; Start-Date: 2025-02-16  20:55:31 ; End-Date: 2025-02-16  20:55:32
+Commandline: apt-get install --reinstall libsepol2:amd64 ; Start-Date: 2025-02-16  20:55:35 ; End-Date: 2025-02-16  20:55:36
+Commandline: apt-get install --reinstall libsmartcols1:amd64 ; Start-Date: 2025-02-16  20:55:38 ; End-Date: 2025-02-16	20:55:40
+Commandline: apt-get install --reinstall libss2:amd64 ; Start-Date: 2025-02-16	20:55:42 ; End-Date: 2025-02-16	 20:55:44
+Commandline: apt-get install --reinstall libssl3t64:amd64 ; Start-Date: 2025-02-16  20:55:46 ; End-Date: 2025-02-16  20:55:48
+Commandline: apt-get install --reinstall libstdc++6:amd64 ; Start-Date: 2025-02-16  20:55:51 ; End-Date: 2025-02-16  20:55:52
+Commandline: apt-get install --reinstall libsystemd0:amd64 ; Start-Date: 2025-02-16  20:55:55 ; End-Date: 2025-02-16  20:55:56
+Commandline: apt-get install --reinstall libtasn1-6:amd64 ; Start-Date: 2025-02-16  20:55:59 ; End-Date: 2025-02-16  20:56:00
+Commandline: apt-get install --reinstall libtinfo6:amd64 ; Start-Date: 2025-02-16  20:56:03 ; End-Date: 2025-02-16  20:56:04
+Commandline: apt-get install --reinstall libudev1:amd64 ; Start-Date: 2025-02-16  20:56:07 ; End-Date: 2025-02-16  20:56:08
+Commandline: apt-get install --reinstall libunistring5:amd64 ; Start-Date: 2025-02-16  20:56:11 ; End-Date: 2025-02-16	20:56:13
+Commandline: apt-get install --reinstall libuuid1:amd64 ; Start-Date: 2025-02-16  20:56:15 ; End-Date: 2025-02-16  20:56:17
+Commandline: apt-get install --reinstall libxxhash0:amd64 ; Start-Date: 2025-02-16  20:56:19 ; End-Date: 2025-02-16  20:56:21
+Commandline: apt-get install --reinstall libzstd1:amd64 ; Start-Date: 2025-02-16  20:56:23 ; End-Date: 2025-02-16  20:56:25
+Commandline: apt-get install --reinstall login ; Start-Date: 2025-02-16	 20:56:28 ; End-Date: 2025-02-16  20:56:29
+Commandline: apt-get install --reinstall logsave ; Start-Date: 2025-02-16  20:56:32 ; End-Date: 2025-02-16  20:56:33
+Commandline: apt-get install --reinstall mawk ; Start-Date: 2025-02-16	20:56:36 ; End-Date: 2025-02-16	 20:56:37
+Commandline: apt-get install --reinstall mount ; Start-Date: 2025-02-16	 20:56:39 ; End-Date: 2025-02-16  20:56:41
+Commandline: apt-get install --reinstall ncurses-base ; Start-Date: 2025-02-16	20:56:43 ; End-Date: 2025-02-16	 20:56:45
+Commandline: apt-get install --reinstall ncurses-bin ; Start-Date: 2025-02-16  20:56:47 ; End-Date: 2025-02-16	20:56:49
+Commandline: apt-get install --reinstall passwd ; Start-Date: 2025-02-16  20:56:52 ; End-Date: 2025-02-16  20:56:53
+Commandline: apt-get install --reinstall perl-base ; Start-Date: 2025-02-16  20:56:55 ; End-Date: 2025-02-16  20:56:57
+Commandline: apt-get install --reinstall procps ; Start-Date: 2025-02-16  20:57:00 ; End-Date: 2025-02-16  20:57:01
+Commandline: apt-get install --reinstall sed ; Start-Date: 2025-02-16  20:57:04 ; End-Date: 2025-02-16	20:57:05
+Commandline: apt-get install --reinstall sensible-utils ; Start-Date: 2025-02-16  20:57:08 ; End-Date: 2025-02-16  20:57:09
+Commandline: apt-get install --reinstall sysvinit-utils ; Start-Date: 2025-02-16  20:57:12 ; End-Date: 2025-02-16  20:57:13
+Commandline: apt-get install --reinstall tar ; Start-Date: 2025-02-16  20:57:16 ; End-Date: 2025-02-16	20:57:17
+Commandline: apt-get install --reinstall ubuntu-keyring ; Start-Date: 2025-02-16  20:57:20 ; End-Date: 2025-02-16  20:57:21
+Commandline: apt-get install --reinstall util-linux ; Start-Date: 2025-02-16  20:57:24 ; End-Date: 2025-02-16  20:57:26
+Commandline: apt-get install --reinstall zlib1g:amd64 ; Start-Date: 2025-02-16	20:57:28 ; End-Date: 2025-02-16	 20:57:30
+Commandline: apt-get --yes -oDebug::pkgDepCache::AutoInstall=yes --force-yes upgrade ; Start-Date: 2025-02-16  20:57:34 ; End-Date: 2025-02-16	20:57:38
+Commandline: apt-get --yes -oDebug::pkgDepCache::AutoInstall=yes --force-yes dist-upgrade ; Start-Date: 2025-02-16  20:57:39 ; End-Date: 2025-02-16  20:57:39
+Commandline: apt-get --yes -oDebug::pkgDepCache::AutoInstall=yes install adduser apparmor apport apport-core-dump-handler apt base-passwd bcache-tools btrfs-progs busybox-initramfs ca-certificates cloud-guest-utils cloud-init coreutils cpio cryptsetup cryptsetup-bin curl dbus dbus-bin dbus-daemon dbus-session-bus-common dbus-system-bus-common dbus-user-session debconf dhcpcd-base distro-info-data dmeventd dmsetup dpkg dracut-install e2fsprogs ethtool fdisk fuse3 gawk gcc-14-base gettext-base gir1.2-girepository-2.0 gir1.2-glib-2.0 gpgv init-system-helpers initramfs-tools initramfs-tools-bin initramfs-tools-core iproute2 klibc-utils kmod kpartx libacl1 libaio1t64 libapparmor1 libapt-pkg6.0t64 libargon2-1 libassuan0 libattr1 libaudit-common libaudit1 libblkid1 libbpf1 libbrotli1 libbsd0 libbz2-1.0 libc6 libcap-ng0 libcap2 libcap2-bin libcbor0.10 libcom-err2 libcrypt1 libcryptsetup12 libcurl4t64 libdb5.3t64 libdbus-1-3 libdebconfclient0 libdevmapper-event1.02.1 libdevmapper1.02.1 libdrm-common libdrm2 libedit2 libelf1t64 libexpat1 libext2fs2t64 libfdisk1 libffi8 libfido2-1 libfuse3-3 libgcc-s1 libgcrypt20 libgdbm-compat4t64 libgdbm6t64 libgirepository-1.0-1 libglib2.0-0t64 libgmp10 libgnutls30t64 libgpg-error0 libgssapi-krb5-2 libhogweed6t64 libicu74 libidn2-0 libinih1 libintl-perl libisns0t64 libjson-c5 libk5crypto3 libkeyutils1 libklibc libkmod2 libkrb5-3 libkrb5support0 libldap2 liblvm2cmd2.03 liblz4-1 liblzma5 liblzo2-2 libmd0 libmnl0 libmodule-find-perl libmodule-scandeps-perl libmount1 libmpfr6 libncursesw6 libnetplan1 libnettle8t64 libnghttp2-14 libnpth0t64 libopeniscsiusr libp11-kit0 libpam-modules libpam-modules-bin libpam-runtime libpam-systemd libpam0g libpci3 libpcre2-8-0 libperl5.38t64 libpopt0 libproc-processtable-perl libproc2-0 libpsl5t64 libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib libreadline8t64 libreiserfscore0t64 librtmp1 libsasl2-2 libsasl2-modules-db libseccomp2 libselinux1 libsemanage-common libsemanage2 libsepol2 libsgutils2-1.46-2 libsigsegv2 libsmartcols1 libsort-naturally-perl libsqlite3-0 libss2 libssh-4 libssl3t64 libstdc++6 libsystemd-shared libsystemd0 libtasn1-6 libterm-readkey-perl libtinfo6 libtirpc-common libtirpc3t64 libudev1 libunistring5 liburcu8t64 libusb-1.0-0 libuuid1 libxtables12 libxxhash0 libyaml-0-2 libzstd1 linux-base logsave lsb-base lsb-release lvm2 mdadm media-types mount multipath-tools needrestart netbase netplan-generator netplan.io open-iscsi openssh-client openssl passwd pci.ids pciutils perl perl-base perl-modules-5.38 pollinate procps python-apt-common python3 python3-apport python3-apt python3-attr python3-blinker python3-certifi python3-cffi-backend python3-chardet python3-click python3-colorama python3-configobj python3-cryptography python3-dbus python3-debconf python3-distro python3-distro-info python3-distupgrade python3-gi python3-httplib2 python3-idna python3-jinja2 python3-json-pointer python3-jsonpatch python3-jsonschema python3-jwt python3-launchpadlib python3-lazr.restfulclient python3-lazr.uri python3-markupsafe python3-minimal python3-netplan python3-oauthlib python3-pkg-resources python3-problem-report python3-pyparsing python3-pyrsistent python3-requests python3-serial python3-six python3-update-manager python3-urllib3 python3-wadllib python3-xkit python3-yaml python3.12 python3.12-minimal readline-common sed sensible-utils sg3-utils sg3-utils-udev snapd squashfs-tools sudo systemd systemd-dev systemd-resolved systemd-sysv sysvinit-utils tar tzdata ubuntu-drivers-common ubuntu-keyring ubuntu-release-upgrader-core ubuntu-server-minimal ucf udev unattended-upgrades unminimize usbutils xfsprogs xxd xz-utils zlib1g lxd-installer ; Start-Date: 2025-02-16  20:57:42 ; End-Date: 2025-02-16  20:58:20
+Commandline: apt-get install --reinstall -y gdisk zstd unattended-upgrades xfsprogs multipath-tools kpartx cloud-init squashfs-tools sg3-utils pollinate packagekit-tools polkitd xml-core needrestart mdadm lvm2 libterm-readkey-perl libsort-naturally-perl libproc-processtable-perl:amd64 libmodule-scandeps-perl libmodule-find-perl libldap-common libintl-xs-perl libintl-perl libglib2.0-bin gpg-wks-client gnupg keyboxd gpgsm gpg-agent pinentry-curses gpg gnupg-utils finalrd fdisk eatmydata dmeventd dirmngr gpgconf curl initramfs-tools linux-base initramfs-tools-core cryptsetup cryptsetup-bin btrfs-progs bcache-tools appstream libsasl2-2:amd64 xz-utils xauth ubuntu-release-upgrader-core plymouth openssh-client libx11-data libedit2:amd64 groff-base gettext-base fuse3 cpio apparmor xxd xdg-user-dirs ucf systemd-timesyncd systemd-resolved sudo shared-mime-info python3-pygments networkd-dispatcher netplan.io cloud-guest-utils thin-provisioning-tools software-properties-common snapd iproute2 libcap2-bin libtirpc-common libpam-systemd:amd64 coreutils ncurses-bin mawk libsemanage-common bash base-passwd tar sysvinit-utils sensible-utils sed apt init-system-helpers hostname gzip grep gpgv findutils diffutils debconf debianutils dash adduser kmod usbutils pciutils sgml-base perl libperl5.38t64:amd64 dmsetup dhcpcd-base open-iscsi udev gawk python3-chardet lsb-release dbus-daemon dbus-bin systemd-sysv systemd python3 python3.12 readline-common ethtool netplan-generator libpam-cap:amd64 libnss-systemd:amd64 console-setup keyboard-configuration xkb-data liblocale-gettext-perl kbd ca-certificates openssl libpam-modules:amd64 python3-minimal python3.12-minimal procps passwd libpam-modules-bin logsave libpam-runtime libaudit-common mount e2fsprogs util-linux perl-base bsdutils apport libc-bin base-files login dpkg ; Start-Date: 2025-02-16  20:58:40 ; End-Date: 2025-02-16  20:59:23
+Commandline: apt-get install --reinstall -y cryptsetup-initramfs dbus dbus-session-bus-common dbus-system-bus-common distro-info-data dracut-install gcc-14-base:amd64 gnupg-l10n iso-codes libapt-pkg6.0t64:amd64 libc6:amd64 libcbor0.10:amd64 libcryptsetup12:amd64 libdb5.3t64:amd64 libdbus-1-3:amd64 libexpat1:amd64 libfuse3-3:amd64 libgcrypt20:amd64 libglib2.0-0t64:amd64 libgmp10:amd64 libgnutls30t64:amd64 libgpg-error0:amd64 libidn2-0:amd64 libjson-c5:amd64 libklibc:amd64 libkrb5-3:amd64 libksba8:amd64 libldap2:amd64 liblzma5:amd64 liblzo2-2:amd64 libmpfr6:amd64 libnettle8t64:amd64 libnghttp2-14:amd64 libopeniscsiusr libp11-kit0:amd64 libpam0g:amd64 libpcre2-8-0:amd64 libpng16-16t64:amd64 libpolkit-gobject-1-0:amd64 libpopt0:amd64 libproc2-0:amd64 libpython3-stdlib:amd64 libpython3.12-minimal:amd64 libreadline8t64:amd64 libsigsegv2:amd64 libsqlite3-0:amd64 libssh-4:amd64 libstemmer0d:amd64 libsystemd-shared:amd64 libsystemd0:amd64 libtasn1-6:amd64 libtirpc3t64:amd64 libudev1:amd64 libusb-1.0-0:amd64 libxml2:amd64 libxtables12:amd64 lsb-base ncurses-base packagekit perl-modules-5.38 publicsuffix python3-babel python3-certifi python3-colorama python3-dbus python3-gi python3-httplib2 python3-json-pointer python3-jsonpatch python3-jwt python3-launchpadlib python3-lazr.restfulclient python3-lazr.uri python3-markdown-it python3-oauthlib python3-pkg-resources python3-requests python3-rich python3-serial python3-software-properties python3-tz python3-wadllib python3-yaml systemd-dev tzdata ubuntu-drivers-common ; Start-Date: 2025-02-16  20:59:26 ; End-Date: 2025-02-16  20:59:43
+Commandline: apt-get install -y ubuntu-minimal ubuntu-standard ; Start-Date: 2025-02-16	 20:59:50 ; End-Date: 2025-02-16  21:00:01
+Commandline: apt-get -y --fix-policy install ; Start-Date: 2025-02-16  21:00:04 ; End-Date: 2025-02-16	21:00:04
+Commandline: apt-get --yes -oDebug::pkgDepCache::AutoInstall=yes install adduser apparmor apport apport-core-dump-handler apport-symptoms appstream apt apt-utils base-files base-passwd bash bash-completion bc bcache-tools bind9-dnsutils bind9-host bind9-libs bolt bsdextrautils bsdutils btrfs-progs busybox-initramfs busybox-static byobu ca-certificates cloud-guest-utils cloud-initramfs-copymods cloud-initramfs-dyn-netconf command-not-found console-setup console-setup-linux coreutils cpio cron cron-daemon-common cryptsetup cryptsetup-bin cryptsetup-initramfs curl dash dbus dbus-bin dbus-daemon dbus-session-bus-common dbus-system-bus-common dbus-user-session debconf debconf-i18n debianutils dhcpcd-base diffutils dirmngr distro-info distro-info-data dmeventd dmidecode dmsetup dosfstools dpkg dracut-install e2fsprogs ed eject ethtool fdisk file finalrd findutils fonts-ubuntu-console friendly-recovery ftp fuse3 fwupd fwupd-signed gawk gcc-14-base gdisk gettext-base gir1.2-girepository-2.0 gir1.2-glib-2.0 gir1.2-packagekitglib-1.0 git git-man gnupg gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpgconf gpgsm gpgv grep groff-base gzip hdparm hostname htop ibverbs-providers inetutils-telnet info init init-system-helpers initramfs-tools initramfs-tools-bin initramfs-tools-core install-info iproute2 iptables iputils-ping iputils-tracepath iso-codes jq kbd keyboard-configuration keyboxd klibc-utils kmod kpartx krb5-locales landscape-common less libacl1 libaio1t64 libapparmor1 libappstream5 libapt-pkg6.0t64 libarchive13t64 libargon2-1 libassuan0 libatasmart4 libatm1t64 libattr1 libaudit-common libaudit1 libblkid1 libblockdev-crypto3 libblockdev-fs3 libblockdev-loop3 libblockdev-mdraid3 libblockdev-nvme3 libblockdev-part3 libblockdev-swap3 libblockdev-utils3 libblockdev3 libbpf1 libbrotli1 libbsd0 libbytesize-common libbytesize1 libbz2-1.0 libc-bin libc6 libcap-ng0 libcap2 libcap2-bin libcbor0.10 libcom-err2 libcrypt1 libcryptsetup12 libcurl3t64-gnutls libcurl4t64 libdb5.3t64 libdbus-1-3 libdebconfclient0 libdevmapper-event1.02.1 libdevmapper1.02.1 libdrm-common libdrm2 libduktape207 libdw1t64 libedit2 libelf1t64 liberror-perl libestr0 libevdev2 libevent-core-2.1-7t64 libexpat1 libext2fs2t64 libfastjson4 libfdisk1 libffi8 libfido2-1 libflashrom1 libfribidi0 libftdi1-2 libfuse3-3 libfwupd2 libgcc-s1 libgcrypt20 libgdbm-compat4t64 libgdbm6t64 libgirepository-1.0-1 libglib2.0-0t64 libglib2.0-bin libglib2.0-data libgmp10 libgnutls30t64 libgpg-error0 libgpgme11t64 libgpm2 libgssapi-krb5-2 libgstreamer1.0-0 libgudev-1.0-0 libgusb2 libhogweed6t64 libibverbs1 libicu74 libidn2-0 libinih1 libintl-perl libintl-xs-perl libip4tc2 libip6tc2 libisns0t64 libjansson4 libjcat1 libjq1 libjson-c5 libjson-glib-1.0-0 libjson-glib-1.0-common libk5crypto3 libkeyutils1 libklibc libkmod2 libkrb5-3 libkrb5support0 libksba8 libldap-common libldap2 liblmdb0 liblocale-gettext-perl liblvm2cmd2.03 liblz4-1 liblzma5 liblzo2-2 libmagic-mgc libmagic1t64 libmaxminddb0 libmbim-glib4 libmbim-proxy libmbim-utils libmd0 libmm-glib0 libmnl0 libmodule-find-perl libmodule-scandeps-perl libmount1 libmpfr6 libmspack0t64 libncurses6 libncursesw6 libnetfilter-conntrack3 libnetplan1 libnettle8t64 libnewt0.52 libnfnetlink0 libnftables1 libnftnl11 libnghttp2-14 libnl-3-200 libnl-genl-3-200 libnl-route-3-200 libnpth0t64 libnspr4 libnss-systemd libnss3 libntfs-3g89t64 libnuma1 libnvme1t64 libonig5 libopeniscsiusr libp11-kit0 libpackagekit-glib2-18 libpam-cap libpam-modules libpam-modules-bin libpam-runtime libpam-systemd libpam0g libparted2t64 libpcap0.8t64 libpci3 libpcre2-8-0 libperl5.38t64 libpipeline1 libplymouth5 libpng16-16t64 libpolkit-agent-1-0 libpolkit-gobject-1-0 libpopt0 libproc-processtable-perl libproc2-0 libprotobuf-c1 libpsl5t64 libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib libpython3.12t64 libqmi-glib5 libqmi-proxy libqmi-utils libqrtr-glib0 libreadline8t64 libreiserfscore0t64 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libseccomp2 libselinux1 libsemanage-common libsemanage2 libsensors-config libsensors5 libsepol2 libsgutils2-1.46-2 libsigsegv2 libslang2 libsmartcols1 libsodium23 libsort-naturally-perl libsqlite3-0 libss2 libssh-4 libssl3t64 libstdc++6 libstemmer0d libsystemd-shared libsystemd0 libtasn1-6 libtcl8.6 libterm-readkey-perl libtext-charwidth-perl libtext-iconv-perl libtext-wrapi18n-perl libtinfo6 libtirpc-common libtirpc3t64 libtraceevent1 libtraceevent1-plugin libtracefs1 libtss2-esys-3.0.2-0t64 libtss2-mu-4.0.1-0t64 libtss2-sys1t64 libtss2-tcti-cmd0t64 libtss2-tcti-device0t64 libtss2-tcti-mssim0t64 libtss2-tcti-swtpm0t64 libuchardet0 libudev1 libudisks2-0 libunistring5 libunwind8 liburcu8t64 libusb-1.0-0 libutempter0 libuuid1 libuv1t64 libvolume-key1 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxext6 libxkbcommon0 libxml2 libxmlb2 libxmlsec1t64 libxmlsec1t64-openssl libxmuu1 libxslt1.1 libxtables12 libxxhash0 libyaml-0-2 libzstd1 linux-base locales login logrotate logsave lsb-release lshw lsof lvm2 lxd-agent-loader lxd-installer man-db manpages mawk mdadm media-types modemmanager motd-news-config mount mtr-tiny multipath-tools nano ncurses-base ncurses-bin needrestart netbase netcat-openbsd netplan-generator netplan.io networkd-dispatcher nftables ntfs-3g numactl open-iscsi open-vm-tools openssh-client openssl overlayroot packagekit packagekit-tools parted passwd pastebinit patch pci.ids pciutils perl perl-base perl-modules-5.38 pinentry-curses plymouth plymouth-theme-ubuntu-text polkitd pollinate powermgmt-base procps psmisc publicsuffix python-apt-common python3 python3-apport python3-apt python3-attr python3-automat python3-bcrypt python3-blinker python3-boto3 python3-botocore python3-certifi python3-cffi-backend python3-chardet python3-click python3-colorama python3-commandnotfound python3-configobj python3-constantly python3-cryptography python3-dateutil python3-dbus python3-debconf python3-debian python3-distro python3-distro-info python3-distupgrade python3-gdbm python3-gi python3-hamcrest python3-httplib2 python3-hyperlink python3-idna python3-incremental python3-jmespath python3-jwt python3-launchpadlib python3-lazr.restfulclient python3-lazr.uri python3-magic python3-markdown-it python3-mdurl python3-minimal python3-netifaces python3-netplan python3-newt python3-oauthlib python3-openssl python3-packaging python3-pexpect python3-pkg-resources python3-problem-report python3-ptyprocess python3-pyasn1 python3-pyasn1-modules python3-pygments python3-pyparsing python3-requests python3-rich python3-s3transfer python3-service-identity python3-setuptools python3-six python3-software-properties python3-systemd python3-twisted python3-update-manager python3-urllib3 python3-wadllib python3-yaml python3-zope.interface python3.12 python3.12-minimal readline-common rsync rsyslog run-one sbsigntool screen secureboot-db sed sensible-utils sg3-utils sg3-utils-udev sgml-base shared-mime-info snapd software-properties-common sosreport squashfs-tools strace sudo sysstat systemd systemd-dev systemd-hwe-hwdb systemd-resolved systemd-sysv systemd-timesyncd sysvinit-utils tar tcl tcl8.6 tcpdump telnet thin-provisioning-tools time tmux tnftp tpm-udev trace-cmd tzdata ubuntu-keyring ubuntu-minimal ubuntu-pro-client ubuntu-pro-client-l10n ubuntu-release-upgrader-core ubuntu-server ubuntu-standard ucf udev udisks2 ufw unattended-upgrades update-manager-core update-notifier-common usb-modeswitch usb-modeswitch-data usb.ids usbutils util-linux uuid-runtime vim vim-common vim-runtime vim-tiny wget whiptail xauth xdg-user-dirs xfsprogs xkb-data xml-core xxd xz-utils zerofree zlib1g zstd cloud-init ; Start-Date: 2025-02-16	 21:00:10 ; End-Date: 2025-02-16  21:00:28
+Commandline: apt-get --quiet --assume-yes --option=Dpkg::options::=--force-unsafe-io --option=Dpkg::Options::=--force-confold install grub-pc ; Start-Date: 2025-03-12	18:07:37 ; End-Date: 2025-03-12	 18:08:03
+Commandline: apt-get --quiet --assume-yes --option=Dpkg::options::=--force-unsafe-io --option=Dpkg::Options::=--force-confold install linux-generic ; Start-Date: 2025-03-12  18:08:37 ; End-Date: 2025-03-12  18:11:58
+Commandline: apt-get --quiet --assume-yes --option=Dpkg::options::=--force-unsafe-io --option=Dpkg::Options::=--force-confold install openssh-server ; Start-Date: 2025-03-12  18:12:45 ; End-Date: 2025-03-12	18:13:11
+Commandline: /usr/bin/unattended-upgrades -v ; Start-Date: 2025-03-12  18:13:21 ; End-Date: 2025-03-12	18:14:11
+Commandline: apt dist-upgrade ; Start-Date: 2025-03-12	18:19:08 ; End-Date: 2025-03-12	 18:21:04
+Commandline: apt install vim qemu-guest-agent ; Start-Date: 2025-03-12	18:21:23 ; End-Date: 2025-03-12	 18:21:31
+Commandline: apt install gcc -y ; Start-Date: 2026-07-08  18:42:37 ; End-Date: 2026-07-08  18:43:28
+Commandline: apt install p7zip-full -y ; Start-Date: 2026-07-08	 19:03:15 ; End-Date: 2026-07-08  19:03:20
+Commandline: apt install bzip2 -y ; Start-Date: 2026-07-08  19:09:19 ; End-Date: 2026-07-08  19:09:22
+?2004h0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# exit
+logout
+Connection to 172.16.9.211 closed.
+?2004heltex-v37@eltex-2026-summer-03:41> exit
+exit4l
+
+Script done on 2026-07-09 03:41:28+07:00 [COMMAND_EXIT_CODE="0"]
