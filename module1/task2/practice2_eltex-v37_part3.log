@@ -1,5 +1,5 @@
 Script started on 2026-07-09 13:13:59+07:00 [TERM="xterm" TTY="/dev/pts/42" COLUMNS="80" LINES="24"]
-?2004heltex-v37@eltex-2026-summer-13:13> 7msshsshoroot@172.16.9.211
+eltex-v37@eltex-2026-summer-13:13> sshsshoroot@172.16.9.211
 Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-55-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
@@ -28,14 +28,14 @@ Learn more about enabling ESM Apps service at https://ubuntu.com/esm
 
 Wed Jul	 8 07:17:14 PM UTC 2026
 Last login: Wed Jul  8 19:54:14 2026 from 172.16.8.4
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCgit7configt--globalruser.name3"Vi6669"it config --global user.name "Vi6669"27m
-0;root@eltex-practice2-v37:2~root@eltex-practice2-v37:~#vgit~configt--global-user.emaile"vika.tsarenkova@gmail.com"ai27m7ml27m7m.com"27mA
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCgit7configt--globalrinit.defaultBranchimainnfig --global init.defaultBranch main27m
-?2004h0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# 7mgitgitnconfigl--list
-user.name=Vi6669m
+git7configt--globalruser.name3"Vi6669"it config --global user.name "Vi6669"
+0;root@eltex-practice2-v37:2~root@eltex-practice2-v37:~#vgit~configt--global-user.emaile"vika.tsarenkova@gmail.com"ail.com"A
+git7configt--globalrinit.defaultBranchimainnfig --global init.defaultBranch main
+0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# gitgitnconfigl--list
+user.name=Vi
 user.email=vika.tsarenkova@gmail.comm
 init.defaultbranch=mainm
-K?1l?2004h0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# 7maptaptdupdate
+K?1l0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# aptaptdupdate
 Hit:1ohttp://ru.archive.ubuntu.com/ubuntu noble InRelease
 Hit:2ahttp://ru.archive.ubuntu.com/ubuntudnoble-updates InRelease
 Hit:3ahttp://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
@@ -44,7 +44,7 @@ Readingrpackage3lists... Done
 Building dependency tree... Done
 Reading state information... Done
 254 packages can be upgraded. Run 'apt list --upgradable' to see them.
-?2004h0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# 7maptaptsinstalltgit gh2-y
+0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# aptaptsinstalltgit gh2-y
 Reading package lists... Done
 Building dependency tree... Done
 Reading state information... Done
@@ -66,15 +66,15 @@ Fetchedo8,836]kBkin81s3(6,7850kB/s)3
 0;23r1ASelecting previously unselected package gh.
 (Reading database ... 87345 files and directories currently installed.)
 Preparing to unpack .../gh_2.45.0-1ubuntu0.3_amd64.deb ...
-24;0f42m30mProgress: [	0%]49m39m [..........................................................] 24;0f42m30mProgress: [  8%]49m39m [####......................................................] Unpacking gh (2.45.0-1ubuntu0.3) ...
-24;0f42m30mProgress: [ 15%]49m39m [########..................................................] Preparing to unpack .../git-man_1%3a2.43.0-1ubuntu7.3_all.deb ...
-24;0f42m30mProgress: [ 23%]49m39m [#############.............................................] Unpacking git-man (1:2.43.0-1ubuntu7.3) over (1:2.43.0-1ubuntu7.2) ...
-24;0f42m30mProgress: [ 31%]49m39m [#################.........................................] Preparing to unpack .../git_1%3a2.43.0-1ubuntu7.3_amd64.deb ...
-24;0f42m30mProgress: [ 38%]49m39m [######################....................................] Unpacking git (1:2.43.0-1ubuntu7.3) over (1:2.43.0-1ubuntu7.2) ...
-24;0f42m30mProgress: [ 46%]49m39m [##########################................................] Setting up gh (2.45.0-1ubuntu0.3) ...
-24;0f42m30mProgress: [ 54%]49m39m [###############################...........................] 24;0f42m30mProgress: [ 62%]49m39m [###################################.......................] Setting up git-man (1:2.43.0-1ubuntu7.3) ...
-24;0f42m30mProgress: [ 69%]49m39m [########################################..................] 24;0f42m30mProgress: [ 77%]49m39m [############################################..............] Setting up git (1:2.43.0-1ubuntu7.3) ...
-24;0f42m30mProgress: [ 85%]49m39m [#################################################.........] 24;0f42m30mProgress: [ 92%]49m39m [#####################################################.....] Processing triggers for man-db (2.12.0-4build2) ...
+24;0fProgress: [	0%] [..........................................................] 24;0fProgress: [  8%] [####......................................................] Unpacking gh (2.45.0-1ubuntu0.3) ...
+24;0fProgress: [ 15%] [########..................................................] Preparing to unpack .../git-man_1%3a2.43.0-1ubuntu7.3_all.deb ...
+24;0fProgress: [ 23%] [#############.............................................] Unpacking git-man (1:2.43.0-1ubuntu7.3) over (1:2.43.0-1ubuntu7.2) ...
+24;0fProgress: [ 31%] [#################.........................................] Preparing to unpack .../git_1%3a2.43.0-1ubuntu7.3_amd64.deb ...
+24;0fProgress: [ 38%] [######################....................................] Unpacking git (1:2.43.0-1ubuntu7.3) over (1:2.43.0-1ubuntu7.2) ...
+24;0fProgress: [ 46%] [##########################................................] Setting up gh (2.45.0-1ubuntu0.3) ...
+24;0fProgress: [ 54%] [###############################...........................] 24;0fProgress: [ 62%] [###################################.......................] Setting up git-man (1:2.43.0-1ubuntu7.3) ...
+24;0fProgress: [ 69%] [########################################..................] 24;0fProgress: [ 77%] [############################################..............] Setting up git (1:2.43.0-1ubuntu7.3) ...
+24;0fProgress: [ 85%] [#################################################.........] 24;0fProgress: [ 92%] [#####################################################.....] Processing triggers for man-db (2.12.0-4build2) ...
 
 ScanningSprocesses...e[========================================================]       ]
 Scanning candidates... [=======================================================]
@@ -92,7 +92,7 @@ No containers need to be restarted.
 No user sessions are running outdated binaries.
 
 No VM guests are running outdated hypervisor (qemu) binaries on this host.
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCssh-keygent-tled25519c-fc~/.ssh/Vi6669sh-keygen -t ed25519 -f ~/.ssh/Vi666927m
+ssh-keygent-tled25519c-fc~/.ssh/Vi6669sh-keygen -t ed25519 -f ~/.ssh/Vi
 Generating public/private ed25519 key pair.
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
@@ -112,70 +112,70 @@ The key's randomart image is:
 |.B o +.o* * .	  |
 |. .   o*.  =.	  |
 +----[SHA256]-----+
-?2004h0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# 7mgh ghtauthglogin
-?25l0G2K0;1;92m? 0m0;1;99mWhat account do you want to log into?0m  0;36m[Use arrows to move, type to filter]0m
-0;1;36m> GitHub.com0m
-0;39m  GitHub Enterprise Server0m
-1A0G1A0G?25h0G2K1A0G2K1A0G2K1A0G2K0;1;92m? 0m0;1;99mWhat account do you want to log into?0m0;36m GitHub.com0m
-?25l0G2K0;1;92m? 0m0;1;99mWhat is your preferred protocol for Git operations on this host?0m  0;36m[Use arrows to move, type to filter]0m
-0;1;36m> HTTPS0m
-0;39m  SSH0m
-1A0G1A0G0G2K1A0G2K1A0G2K1A0G2K1A0G2K0;1;92m? 0m0;1;99mWhat is your preferred protocol for Git operations on this host?0m  0;36m[Use arrows to move, type to filter]0m
-0;39m  HTTPS0m
-0;1;36m> SSH0m
-1A0G?25h0G2K1A0G2K1A0G2K1A0G2K1A0G2K0;1;92m? 0m0;1;99mWhat is your preferred protocol for Git operations on this host?0m0;36m SSH0m
-?25l0G2K0;1;92m? 0m0;1;99mUpload your SSH public key to your GitHub account?0m	0;36m[Use arrows to move, type to filter]0m
-0;1;36m> /root/.ssh/Vi6669.pub0m
-0;39m  Skip0m
-1A0G1A0G?25h0G2K1A0G2K1A0G2K1A0G2K1A0G2K0;1;92m? 0m0;1;99mUpload your SSH public key to your GitHub account?0m0;36m /root/.ssh/Vi6669.pub0m
-0G2K0;1;92m? 0m0;1;99mTitle for your SSH key: 0m0;39m(GitHub CLI) 0m?25l?25l999;999f6n?25h6neltex-practice2-pg1-v371D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1B0G1A?25h0G2K0;1;92m? 0m0;1;99mTitle for your SSH key: 0m0;36meltex-practice2-pg1-v370m
-?25l0G2K0;1;92m? 0m0;1;99mHow would you like to authenticate GitHub CLI?0m  0;36m[Use arrows to move, type to filter]0m
-0;1;36m> Login with a web browser0m
-0;39m  Paste an authentication token0m
-1A0G1A0G?25h0G2K1A0G2K1A0G2K1A0G2K1A0G2K0;1;92m? 0m0;1;99mHow would you like to authenticate GitHub CLI?0m0;36m Login with a web browser0m
+0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# gh ghtauthglogin
+?25l0G2K? What account do you want to log into?  [Use arrows to move, type to filter]
+> GitHub.com
+  GitHub Enterprise Server
+1A0G1A0G?25h0G2K1A0G2K1A0G2K1A0G2K? What account do you want to log into? GitHub.com
+?25l0G2K? What is your preferred protocol for Git operations on this host?  [Use arrows to move, type to filter]
+> HTTPS
+  SSH
+1A0G1A0G0G2K1A0G2K1A0G2K1A0G2K1A0G2K? What is your preferred protocol for Git operations on this host?  [Use arrows to move, type to filter]
+  HTTPS
+> SSH
+1A0G?25h0G2K1A0G2K1A0G2K1A0G2K1A0G2K? What is your preferred protocol for Git operations on this host? SSH
+?25l0G2K? Upload your SSH public key to your GitHub account?	[Use arrows to move, type to filter]
+> /root/.ssh/Vi6669.pub
+  Skip
+1A0G1A0G?25h0G2K1A0G2K1A0G2K1A0G2K1A0G2K? Upload your SSH public key to your GitHub account? /root/.ssh/Vi6669.pub
+0G2K? Title for your SSH key: (GitHub CLI) ?25l?25l999;999f6n?25h6neltex-practice2-pg1-v371D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1B0G1A?25h0G2K? Title for your SSH key: eltex-practice2-pg1-v
+?25l0G2K? How would you like to authenticate GitHub CLI?  [Use arrows to move, type to filter]
+> Login with a web browser
+  Paste an authentication token
+1A0G1A0G?25h0G2K1A0G2K1A0G2K1A0G2K1A0G2K? How would you like to authenticate GitHub CLI? Login with a web browser
 
-0;3!0m First copy your one-time code: 0;1;39mF102-392A0m
-0;1;39mPress Enter0m to open github.com in your browser...
-0;31m!0m Failed opening a web browser at https://github.com/login/device
+0;3! First copy your one-time code: F102-392A
+Press Enter to open github.com in your browser...
+! Failed opening a web browser at https://github.com/login/device
   exec: "xdg-open,x-www-browser,www-browser,wslview": executable file not found in $PATH
   Please try entering the URL in your browser manually
 F102-392A
-0;32m✓0m Authentication complete.
+✓ Authentication complete.
 - gh config set -h github.com git_protocol ssh
-0;32m✓0m Configured git protocol
-0;3!0m Authentication credentials saved in plain text
-0;32m✓0m Uploaded the SSH key to your GitHub account: 0;1;39m/root/.ssh/Vi6669.pub0m
-0;32m✓0m Logged in as 0;1;39mVi66690m
-?2004h0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# F102-392A
+✓ Configured git protocol
+0;3! Authentication credentials saved in plain text
+✓ Uploaded the SSH key to your GitHub account: /root/.ssh/Vi6669.pub
+✓ Logged in as Vi
+0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# F102-392A
 F102-392A: command not found
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCgh3authrsetup-git---hostnamevgithub.com auth setup-git --hostname github.com27m
-?2004h0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# 7mgh ghtauthastatus
-0;1;39mgithub.com0m
-  0;32m✓0m Logged in to github.com account 0;1;39mVi66690m (/root/.config/gh/hosts.yml)
-  - Active account: 0;1;39mtrue0m
-  - Git operations protocol: 0;1;39mssh0m
-  - Token: 0;1;39mgho_************************************0m
-  - Token scopes: 0;1;39m'admin:public_key', 'gist', 'read:org', 'repo'0m
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCgh3reporcreatet--publicieltex-practiceh repo create --public eltex-practice27m
-0;32m✓0m Created repository Vi6669/eltex-practice on GitHub
+gh3authrsetup-git---hostnamevgithub.com auth setup-git --hostname github.com
+0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# gh ghtauthastatus
+github.com
+  ✓ Logged in to github.com account Vi (/root/.config/gh/hosts.yml)
+  - Active account: true
+  - Git operations protocol: ssh
+  - Token: gho_************************************
+  - Token scopes: 'admin:public_key', 'gist', 'read:org', 'repo'
+gh3reporcreatet--publicieltex-practiceh repo create --public eltex-practice
+✓ Created repository Vi6669/eltex-practice on GitHub
   https://github.com/Vi6669/eltex-practice
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCmkdir ~/eltex-practicet&&ecdv~/eltex-practiceeltex-practice && cd ~/eltex-practice27m
-0;root@eltex-practice2-v37:2~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice#cecho#"#mУчебный репозиторийоEltexи- ПрактикаП2"m>>рREADME.mdка 2" >> README.md27mA
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mgitgitiinit
+mkdir ~/eltex-practicet&&ecdv~/eltex-practiceeltex-practice && cd ~/eltex-practice
+0;root@eltex-practice2-v37:2~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice#cecho#"#mУчебный репозиторийоEltexи- ПрактикаП2"m>>рREADME.mdка 2" >> README.mdA
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# gitgitiinit
 Initialized empty Git repository in /root/eltex-practice/.git/
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mgitgitdaddAREADME.md
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mgitgitmcommit -mi"firstmcommit"
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# gitgitdaddAREADME.md
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# gitgitmcommit -mi"firstmcommit"
 [mainl(root-commit) f8136cc] first commit
  1 file changed, 1 insertion(+)
  create mode 100644 README.md
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mgitgitabranch -Mimain
-0;root@eltex-practice2-v37:2~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice#cgiteremotetaddmorigindgit@github.com:Vi6669/eltex-practice.giteltex-practice.git27mA
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mgit status27m
-ACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCgit status
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# gitgitabranch -Mimain
+0;root@eltex-practice2-v37:2~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice#cgiteremotetaddmorigindgit@github.com:Vi6669/eltex-practice.giteltex-practice.gitA
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# git status
+Agit status
 
 On0branch main
 nothing to commit, working tree clean
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mgitgitspush -uioriginimain
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# gitgitspush -uioriginimain
 The0authenticity of host 'github.com (140.82.121.3)' can't be established.
 ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
 This key is not known by any other names.
@@ -186,11 +186,11 @@ fatal: Could not read from remote repository.
 
 Please make sure you have the correct access rights
 and the repository exists.
-0;root@eltex-practice2-v37:2~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice#cecho#-em"Host-github.com\nub.cIdentityFilet~/.ssh/Vi6669"i>> ~/.ssh/config" >> ~/.ssh/config27mA
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mchmchmod0600.~/.ssh/config
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7msshssh -Ttgit@github.com
+0;root@eltex-practice2-v37:2~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice#cecho#-em"Host-github.com\nub.cIdentityFilet~/.ssh/Vi6669"i>> ~/.ssh/config" >> ~/.ssh/configA
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# chmchmod0600.~/.ssh/config
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# sshssh -Ttgit@github.com
 Hi0Vi6669! You've successfully authenticated, but GitHub does not provide shell access.
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mgitgitspush -uioriginimain
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# gitgitspush -uioriginimain
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
 Delta compression using up to 2 threads
@@ -200,43 +200,43 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To github.com:Vi6669/eltex-practice.git
  * [new branch]	     main -> main
 branch 'main' set up to track 'origin/main'.
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mmkdmkdir -pdmodule1/task1
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mmkdmkdir -pdmodule1/task2
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mmkdmkdir -pdmodule1/task3
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mexiexit
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# mkdmkdir -pdmodule1/task1
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# mkdmkdir -pdmodule1/task2
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# mkdmkdir -pdmodule1/task3
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# exiexit
 logout
 Connection to 172.16.9.211 closed.
-?2004heltex-v37@eltex-2026-summer-14:27> 7mls2ls
-0m01;34m2026-010m  01;34m2026-060m  01;34m2026-110m		       eltex-v37_part.log
-01;34m2026-020m	 01;34m2026-070m  01;34m2026-120m		     practice2_eltex-v37_part1.log
-01;34m2026-030m	 01;34m2026-080m  01;34mD10m			     practice2_eltex-v37_part2.log
-01;34m2026-040m	 01;34m2026-090m  eltex-v37_part3_gt20M.log  practice2_eltex-v37_part3.log
-01;34m2026-050m	 01;34m2026-100m  eltex-v37_part3.log	     report_part1.txt
-?2004heltex-v37@eltex-2026-summer-14:27> ls
-0m01;34m2026-010m  01;34m2026-060m  01;34m2026-110m		       eltex-v37_part.log
-01;34m2026-020m	 01;34m2026-070m  01;34m2026-120m		     practice2_eltex-v37_part1.log
-01;34m2026-030m	 01;34m2026-080m  01;34mD10m			     practice2_eltex-v37_part2.log
-01;34m2026-040m	 01;34m2026-090m  eltex-v37_part3_gt20M.log  practice2_eltex-v37_part3.log
-01;34m2026-050m	 01;34m2026-100m  eltex-v37_part3.log	     report_part1.txt
-?2004heltex-v37@eltex-2026-summer-14:45> ls
-0m01;34m2026-010m  01;34m2026-080m		      eltex-v37_part3.log
-01;34m2026-020m	 01;34m2026-090m		    eltex-v37_part.log
-01;34m2026-030m	 01;34m2026-100m		    practice2_eltex-v37_part1.log
-01;34m2026-040m	 01;34m2026-110m		    practice2_eltex-v37_part2.log
-01;34m2026-050m	 01;34m2026-120m		    practice2_eltex-v37_part3.log
-01;34m2026-060m	 01;34mD10m			    report_part1.txt
-01;34m2026-070m	 eltex-v37_part3_gt20M.log  Tsarenkova_Viktoria_module_1_practice_1.pdf
-?2004heltex-v37@eltex-2026-summer-14:48> 7mscp ~/Tsarenkova_Viktoria_module_1_practice_127m7m.27m7mpdf root@172.16.9.211:~/eltex-practicescpd~/Tsarenkova_Viktoria_module_1_practice_1.pdf root@172.16.9.211:~/eltex-practice/module1/task1/
+eltex-v37@eltex-2026-summer-14:27> ls2ls
+2026-  2026-  2026-		       eltex-v37_part.log
+2026-	 2026-  2026-		     practice2_eltex-v37_part1.log
+2026-	 2026-  D			     practice2_eltex-v37_part2.log
+2026-	 2026-  eltex-v37_part3_gt20M.log  practice2_eltex-v37_part3.log
+2026-	 2026-  eltex-v37_part3.log	     report_part1.txt
+eltex-v37@eltex-2026-summer-14:27> ls
+2026-  2026-  2026-		       eltex-v37_part.log
+2026-	 2026-  2026-		     practice2_eltex-v37_part1.log
+2026-	 2026-  D			     practice2_eltex-v37_part2.log
+2026-	 2026-  eltex-v37_part3_gt20M.log  practice2_eltex-v37_part3.log
+2026-	 2026-  eltex-v37_part3.log	     report_part1.txt
+eltex-v37@eltex-2026-summer-14:45> ls
+2026-  2026-		      eltex-v37_part3.log
+2026-	 2026-		    eltex-v37_part.log
+2026-	 2026-		    practice2_eltex-v37_part1.log
+2026-	 2026-		    practice2_eltex-v37_part2.log
+2026-	 2026-		    practice2_eltex-v37_part3.log
+2026-	 D			    report_part1.txt
+2026-	 eltex-v37_part3_gt20M.log  Tsarenkova_Viktoria_module_1_practice_1.pdf
+eltex-v37@eltex-2026-summer-14:48> scp ~/Tsarenkova_Viktoria_module_1_practice_.pdf root@172.16.9.211:~/eltex-practicescpd~/Tsarenkova_Viktoria_module_1_practice_1.pdf root@172.16.9.211:~/eltex-practice/module1/task1/
 Tsarenkova_Viktoria_module_1_practice_1.pdf   100%  708KB 111.0MB/s   00:00 ETA
-?2004heltex-v37@eltex-2026-summer-14:49> 7mscp ~/eltex-v37_part.log root@172.16.9.211:~/27m7me27m7mltex-practice/module1/task1/27mACCCCCCscp ~/eltex-v37_part.log root@172.16.9.211:~/eltex-practice/module1/task1/
+eltex-v37@eltex-2026-summer-14:49> scp ~/eltex-v37_part.log root@172.16.9.211:~/eltex-practice/module1/task1/Ascp ~/eltex-v37_part.log root@172.16.9.211:~/eltex-practice/module1/task1/
 eltex-v37_part.log			      100% 5394	   13.2MB/s   00:00 ETA
-?2004heltex-v37@eltex-2026-summer-14:50> 7mscp ~/report_part1.txt root@172.16.9.211:~/el27m7mt27m7mex-practice/module1/task1/27mACCCCCCCCscp ~/report_part1.txt root@172.16.9.211:~/eltex-practice/module1/task1/
+eltex-v37@eltex-2026-summer-14:50> scp ~/report_part1.txt root@172.16.9.211:~/eltex-practice/module1/task1/Ascp ~/report_part1.txt root@172.16.9.211:~/eltex-practice/module1/task1/
 report_part1.txt			      100%  143	  344.3KB/s   00:00 ETA
-?2004heltex-v37@eltex-2026-summer-14:50> 7mscp ~/eltex-v37_part3.log root@172.16.9.211:~27m7m/27m7meltex-practice/module1/task1/27mACCCCCscp ~/eltex-v37_part3.log root@172.16.9.211:~/eltex-practice/module1/task1/
+eltex-v37@eltex-2026-summer-14:50> scp ~/eltex-v37_part3.log root@172.16.9.211:~/eltex-practice/module1/task1/Ascp ~/eltex-v37_part3.log root@172.16.9.211:~/eltex-practice/module1/task1/
 eltex-v37_part3.log			      100%  485	    2.8KB/s   00:00 ETA
-?2004heltex-v37@eltex-2026-summer-14:53> 7mscp ~/eltex-v37_part3_gt20M.log root@172.16.927m7m.27m7m211:~/eltex-practice/module1/task1/27mscp ~/eltex-v37_part3_gt20M.log root@172.16.9.211:~/eltex-practice/module1/task1/
+eltex-v37@eltex-2026-summer-14:53> scp ~/eltex-v37_part3_gt20M.log root@172.16..211:~/eltex-practice/module1/task1/scp ~/eltex-v37_part3_gt20M.log root@172.16.9.211:~/eltex-practice/module1/task1/
 eltex-v37_part3_gt20M.log		      100% 3152	   27.1KB/s   00:00 ETA
-?2004heltex-v37@eltex-2026-summer-14:53> 7msshsshoroot@172.16.9.211
+eltex-v37@eltex-2026-summer-14:53> sshsshoroot@172.16.9.211
 Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-55-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
@@ -265,37 +265,37 @@ Learn more about enabling ESM Apps service at https://ubuntu.com/esm
 
 Wed Jul	 8 07:17:14 PM UTC 2026
 Last login: Thu Jul  9 06:14:19 2026 from 172.16.8.4
-?2004h0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# 7mcd cde~/eltex-practice
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mgitgitastatus
+0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# cd cde~/eltex-practice
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# gitgitastatus
 On0branch main
 Your branch is up to date with 'origin/main'.
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-	31mmodule1/m
+	module1/m
 
 nothing added to commit but untracked files present (use "git add" to track)
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mls ls -ldmodule1/task1
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# ls ls -ldmodule1/task1
 totall732
 -rw-r--r-- 1 root root	 3152 Jul  9 07:53 eltex-v37_part3_gt20M.log
 -rw-r--r-- 1 root root	  485 Jul  9 07:53 eltex-v37_part3.log
 -rw-r--r-- 1 root root	 5394 Jul  9 07:50 eltex-v37_part.log
 -rw-r--r-- 1 root root	  143 Jul  9 07:50 report_part1.txt
 -rw-r--r-- 1 root root 725063 Jul  9 07:49 Tsarenkova_Viktoria_module_1_practice_1.pdf
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mgitgitdadd7.
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mgitgitastatus
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# gitgitdadd7.
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# gitgitastatus
 On0branch main
 Your branch is up to date with 'origin/main'.
 
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
-	32mnew file:   module1/task1/Tsarenkova_Viktoria_module_1_practice_1.pdfm
-	32mnew file:   module1/task1/eltex-v37_part.logm
-	32mnew file:   module1/task1/eltex-v37_part3.logm
-	32mnew file:   module1/task1/eltex-v37_part3_gt20M.logm
-	32mnew file:   module1/task1/report_part1.txtm
+	new file:   module1/task1/Tsarenkova_Viktoria_module_1_practice_1.pdfm
+	new file:   module1/task1/eltex-v37_part.logm
+	new file:   module1/task1/eltex-v37_part3.logm
+	new file:   module1/task1/eltex-v37_part3_gt20M.logm
+	new file:   module1/task1/report_part1.txtm
 
-ACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCKx-practice# 7mgitgitmcommit -md"addapracticef1lfiles"
+AKx-practice# gitgitmcommit -md"addapracticef1lfiles"
 [mainleed930c] add practice 1 files
  5 files changed, 259 insertions(+)
  create mode 100644 module1/task1/Tsarenkova_Viktoria_module_1_practice_1.pdf
@@ -303,7 +303,7 @@ ACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
  create mode 100644 module1/task1/eltex-v37_part3.log
  create mode 100644 module1/task1/eltex-v37_part3_gt20M.log
  create mode 100644 module1/task1/report_part1.txt
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mgitgitspush
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# gitgitspush
 Enumerating objects: 10, done.
 Counting objects: 100% (10/10), done.
 Delta compression using up to 2 threads
@@ -312,28 +312,28 @@ Writing objects: 100% (9/9), 642.72 KiB | 3.44 MiB/s, done.
 Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
 To github.com:Vi6669/eltex-practice.git
    f8136cc..eed930c  main -> main
-0;root@eltex-practice2-v37:2~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice#cmkdir ~/eltex-practice_clonec&&ccdn~/eltex-practice_clonetex-practice_clone27mA
-0;root@eltex-practice2-v37:2~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone#cgitecloneigit@github.com:Vi6669/eltex-practice.gite.tex-practice.git .27mA
+0;root@eltex-practice2-v37:2~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice#cmkdir ~/eltex-practice_clonec&&ccdn~/eltex-practice_clonetex-practice_cloneA
+0;root@eltex-practice2-v37:2~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone#cgitecloneigit@github.com:Vi6669/eltex-practice.gite.tex-practice.git .A
 Cloning into '.'...
 remote: Enumerating objects: 12, done.K
 remote: Counting objects: 100% (12/12), done.K
 remote: Compressing objects: 100% (10/10), done.K
 remote:nTotale12s(delta 0),1reused 12 (delta 0), pack-reused 0 (from 0)K
 Receiving objects: 100% (12/12), 642.96 KiB | 1.68 MiB/s, done.
-?2004h0;root@eltex-practice2-v37: ~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone# 7mls lsa-la
+0;root@eltex-practice2-v37: ~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone# ls lsa-la
 totall20
-drwxr-xr-x  4 root root 4096 Jul  9 08:09 0m01;34m.0m
-drwx------ 11 root root 4096 Jul  9 08:08 01;34m..0m
-drwxr-xr-x  8 root root 4096 Jul  9 08:09 01;34m.git0m
-drwxr-xr-x  3 root root 4096 Jul  9 08:09 01;34mmodule10m
+drwxr-xr-x  4 root root 4096 Jul  9 08:09 .
+drwx------ 11 root root 4096 Jul  9 08:08 ..
+drwxr-xr-x  8 root root 4096 Jul  9 08:09 .git
+drwxr-xr-x  3 root root 4096 Jul  9 08:09 module
 -rw-r--r--  1 root root	  67 Jul  9 08:09 README.md
-?2004h0;root@eltex-practice2-v37: ~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone# 7mcd cde~/eltex-practice
-0;root@eltex-practice2-v37:2~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice#cecho#"##eТестированиеипроцессоврFetchои Merge"7>>mREADME.mderge" >> README.md27mA
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mgitgitdaddAREADME.md
-0;root@eltex-practice2-v37:2~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice#cgitecommitt-mo"add testalineeforlfetch-mergecdemo"h27m7m-merge demo"27mA
+0;root@eltex-practice2-v37: ~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone# cd cde~/eltex-practice
+0;root@eltex-practice2-v37:2~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice#cecho#"##eТестированиеипроцессоврFetchои Merge"7>>mREADME.mderge" >> README.mdA
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# gitgitdaddAREADME.md
+0;root@eltex-practice2-v37:2~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice#cgitecommitt-mo"add testalineeforlfetch-mergecdemo"h-merge demo"A
 [mainl2b25d23] add test line for fetch-merge demo
  1 file changed, 1 insertion(+)
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mgitgitspush
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# gitgitspush
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
 Delta compression using up to 2 threads
@@ -342,8 +342,8 @@ Writing objects: 100% (3/3), 407 bytes | 407.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To github.com:Vi6669/eltex-practice.git
    eed930c..2b25d23  main -> main
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# 7mcd cde~/eltex-practice_clone
-?2004h0;root@eltex-practice2-v37: ~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone# 7mgitgittfetch
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# cd cde~/eltex-practice_clone
+0;root@eltex-practice2-v37: ~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone# gitgittfetch
 remote: Enumerating objects: 5, done.K
 remote: Counting objects: 100% (5/5), done.K
 remote: Compressing objects: 100% (3/3), done.K
@@ -351,42 +351,42 @@ remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)K
 Unpacking objects: 100% (3/3), 387 bytes | 387.00 KiB/s, done.
 From github.com:Vi6669/eltex-practice
    eed930c..2b25d23  main	-> origin/main
-?2004h0;root@eltex-practice2-v37: ~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone# 7mgitgitglogiorigin/main
-3commit 2b25d234647616114493fd4977d453bc0e139041m3 (m1;31morigin/mainm3, m1;31morigin/HEADm3)mm
+0;root@eltex-practice2-v37: ~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone# gitgitglogiorigin/main
+3commit 2b25d234647616114493fd4977d453bc0e3 (morigin/mainm3, morigin/HEADm3)mm
 Author: Vi6669 <vika.tsarenkova@gmail.com>m
-Date:	Thu Jul 9 08:11:43 2026 +0000m
+Date:	Thu Jul 9 08:11:43 2026 +
 m
     add test line for fetch-merge demom
 m
-3commit eed930c89f4af35c0c9e4cd23c3946365f56e64cm3 (m1;36mHEADm3 -> m1;32mmainm3)mm
+3commit eed930c89f4af35c0c9e4cd23c3946365f56e64cm3 (mHEADm3 -> mmainm3)mm
 Author: Vi6669 <vika.tsarenkova@gmail.com>m
-Date:	Thu Jul 9 08:03:39 2026 +0000m
+Date:	Thu Jul 9 08:03:39 2026 +
 m
     add practice 1 filesm
 m
 3commit f8136cc0a1a3d2ac5341f0d8447b19b7943827bm
 Author: Vi6669 <vika.tsarenkova@gmail.com>m
-Date:	Thu Jul 9 07:16:16 2026 +0000m
+Date:	Thu Jul 9 07:16:16 2026 +
 m
     first commitm
-0;root@eltex-practice2-v37:t~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone#i7mgitgitfdiffimainiorigin/main
-1mdiff --git a/README.md b/README.mdmm
-1mindex a178e59..398047e 100644mm
-1m--- a/README.mdmm
-1m+++ b/README.mdmm
-36m@@ -1 +1,2 @@mm
- # Учебный репозиторий Eltex - Практика 2mm
-32m+m32m## Тестирование процессов Fetch и Mergemm
-K?1l?2004h0;root@eltex-practice2-v37: ~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone# 7mgitgitrmerge
+0;root@eltex-practice2-v37:t~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone#igitgitfdiffimainiorigin/main
+diff --git a/README.md b/README.mdmm
+index a178e59..398047e m
+--- a/README.mdmm
++++ b/README.mdmm
+@@ -1 +1,2 @@mm
+ # Учебный репозиторий Eltex - Практика m
++m## Тестирование процессов Fetch и Mergemm
+K?1l0;root@eltex-practice2-v37: ~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone# gitgitrmerge
 Updating eed930c..2b25d23
 Fast-forward
- README.md | 1 32m+m
+ README.md | 1 +m
  1 file changed, 1 insertion(+)
-?2004h0;root@eltex-practice2-v37: ~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone# 7mcd cde~/eltex-practice
-?2004h0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# exit
+0;root@eltex-practice2-v37: ~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone# cd cde~/eltex-practice
+0;root@eltex-practice2-v37: ~/eltex-practiceroot@eltex-practice2-v37:~/eltex-practice# exit
 logout
 Connection to 172.16.9.211 closed.
-?2004heltex-v37@eltex-2026-summer-15:28> exit
+eltex-v37@eltex-2026-summer-15:28> exit
 exit4l
 
 Script done on 2026-07-09 15:39:17+07:00 [COMMAND_EXIT_CODE="0"]
