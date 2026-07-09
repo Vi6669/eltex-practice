@@ -77,7 +77,7 @@ Jul 08 00:49:51localhost kernel: ACPI: RSDP 0x00000000000F5290 000014 (v00 BOCm>
 Jul 08 00:49:51localhost kernel: ACPI: RSDT 0x00000000BFFE3B52 000034 (v01 BOCm>
 Jul 08 00:49:51localhost kernel: ACPI: FACP 0x00000000BFFE396C 000074 (v01 BOCm>
 Jul 08 00:49:51localhost kernel: ACPI: DSDT 0x00000000BFFDF040 00492C (v01 BOCm>
-Jul 08 00:49:51localhost kernel: ACPI: FACS 0x00000000BFFDF000 
+Jul 08 00:49:51localhost kernel: ACPI: FACS 0x00000000BFFDF000
 Jul 08 00:49:51localhost kernel: ACPI: APIC 0x00000000BFFE39E0 000080 (v03 BOCm>
 Jul 08 00:49:51localhost kernel: ACPI: SSDT 0x00000000BFFE3A60 0000CA (v01 BOCm>
 Jul 08 00:49:51localhost kernel: ACPI: WAET 0x00000000BFFE3B2A 000028 (v01 BOCm>
@@ -91,15 +91,15 @@ Jul 08 00:49:51localhost kernel: No NUMA configuration foundm
 Jul 08 00:49:51localhost kernel: Faking a node at [mem 0x0000000000000000-0x>
 Jul 08 00:49:51localhost kernel: NODE_DATA(0) allocated [mem 0x13ffd2000-0x13fm>
 Jul 08 00:49:51localhost kernel: Zone ranges:m
-Jul 08 00:49:51localhost kernel:   DMA      [mem 0x0000000000001000-0x>
+Jul 08 00:49:51localhost kernel:   DMA	    [mem 0x0000000000001000-0x>
 Jul 08 00:49:51localhost kernel:   DMA32    [mem 0x0000000001000000-0x>
 Jul 08 00:49:51localhost kernel:   Normal   [mem 0x0000000100000000-0x>
 Jul 08 00:49:51localhost kernel:   Device   emptym
 Jul 08 00:49:51localhost kernel: Movable zone start for each nodem
 Jul 08 00:49:51localhost kernel: Early memory node rangesm
-Jul 08 00:49:51localhost kernel:   node   0: [mem 0x0000000000001000-0x>
-Jul 08 00:49:51localhost kernel:   node   0: [mem 0x0000000000100000-0x>
-Jul 08 00:49:51localhost kernel:   node   0: [mem 0x0000000100000000-0x>
+Jul 08 00:49:51localhost kernel:   node	  0: [mem 0x0000000000001000-0x>
+Jul 08 00:49:51localhost kernel:   node	  0: [mem 0x0000000000100000-0x>
+Jul 08 00:49:51localhost kernel:   node	  0: [mem 0x0000000100000000-0x>
 Jul 08 00:49:51localhost kernel: Initmem setup node 0 [mem 0x0000000000001000-m>
 Jul 08 00:49:51localhost kernel: On node 0, zone DMA: 1 pages in unavailable rm>
 Jul 08 00:49:51localhost kernel: On node 0, zone DMA: 97 pages in unavailable m>
@@ -138,7 +138,7 @@ Jul 08 00:49:51localhost kernel: Unknown kernel command line parameters "BOOT_m>
 Jul 08 00:49:51localhost kernel: Dentry cache hash table entries: 524288 (ordem>
 Jul 08 00:49:localhost kernel: Inode-cache hash table entries: 262144 (orderm>
 Jul 08 00:49:localhost kernel: Fallback order for Node 0: 0 m
-Jul 08 00:49:localhost kernel: Built 1 zonelists, mobility grouping on.  Totm>
+Jul 08 00:49:localhost kernel: Built 1 zonelists, mobility grouping on.	 Totm>
 Jul 08 00:49:localhost kernel: Policy zone: Normalm
 Jul 08 00:49:localhost kernel: mem auto-init: stack:all(zero), heap alloc:onm>
 Jul 08 00:49:localhost kernel: AGP: Checking aperture...m
@@ -160,7 +160,7 @@ Jul 08 00:49:localhost kernel: NR_IRQS: 524544, nr_irqs: 440, preallocated im>
 Jul 08 00:49:localhost kernel: rcu: srcu_init: Setting srcu_struct sizes basm>
 Jul 08 00:49:517localhost kernel: Console: colour dummy device 80x
 Jul 08 00:49:517localhost kernel: printk: legacy console [tty0] enabledm
-Jul 08 00:49:517localhost kernel: ACPI: Core revision 
+Jul 08 00:49:517localhost kernel: ACPI: Core revision
 Jul 08 00:49:517localhost kernel: APIC: Switch to symmetric I/O mode setupm
 Jul 08 00:49:517localhost kernel: x2apic enabledm
 Jul 08 00:49:517localhost kernel: APIC: Switched APIC routing to: physical x2apm>
@@ -176,7 +176,7 @@ Jul 08 00:49:517localhost kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigatim
 Jul 08 00:49:517localhost kernel: Spectre V2 : Spectre v2 / SpectreRSB : Fillinm>
 Jul 08 00:49:517localhost kernel: x86/fpu: x87 FPU will use FXSAVEm
 Jul 08 00:49:517localhost kernel: Freeing SMP alternatives memory: 48Km
-Jul 08 00:49:517localhost kernel: pid_max: default: 32768 minimum: 
+Jul 08 00:49:517localhost kernel: pid_max: default: 32768 minimum:
 Jul 08 00:49:517localhost kernel: LSM: initializing lsm=lockdown,capability,lanm>
 Jul 08 00:49:517localhost kernel: landlock: Up and running.m
 Jul 08 00:49:517localhost kernel: Yama: becoming mindful.m
@@ -188,7 +188,7 @@ Jul 08 00:49:517localhost kernel: RCU Tasks: Setting shift to 1 and lim to 1 rcm
 Jul 08 00:49:517localhost kernel: RCU Tasks Rude: Setting shift to 1 and lim tom>
 Jul 08 00:49:517localhost kernel: RCU Tasks Trace: Setting shift to 1 and lim tm>
 Jul 08 00:49:517localhost kernel: Performance Events: PMU not available due to m>
-Jul 08 00:49:517localhost kernel: signal: max sigframe size: 
+Jul 08 00:49:517localhost kernel: signal: max sigframe size:
 Jul 08 00:49:517localhost kernel: rcu: Hierarchical SRCU implementation.m
 Jul 08 00:49:517localhost kernel: rcu:		Max phase no-delay instances is m>
 Jul 08 00:49:517localhost kernel: NMI watchdog: Perf NMI watchdog permanently dm>
@@ -196,7 +196,7 @@ Jul 08 00:49:517localhost kernel: smp: Bringing up secondary CPUs ...m
 Jul 08 00:49:517localhost kernel: smpboot: x86: Booting SMP configuration:m
 Jul 08 00:49:517localhost kernel: .... node  #0, CPUs:	     #
 Jul 08 00:49:517localhost kernel: smp: Brought up 1 node, 2 CPUsm
-Jul 08 00:49:517localhost kernel: smpboot: Max logical packages: 
+Jul 08 00:49:517localhost kernel: smpboot: Max logical packages:
 Jul 08 00:49:517localhost kernel: smpboot: Total of 2 processors activated (>
 Jul 08 00:49:517localhost kernel: devtmpfs: initializedm
 Jul 08 00:49:517localhost kernel: x86/mm: Memory block size: 128MBm
@@ -298,7 +298,7 @@ Jul 08 00:49:517localhost kernel: pci 0000:00:03.0: BAR 4 [mem 0xc0a0000000-0xcm
 Jul 08 00:49:517localhost kernel: pci 0000:00:05.0: [1b36:0001] type 01 class >
 Jul 08 00:49:517localhost kernel: pci 0000:00:05.0: BAR 0 [mem 0xc000000000-0xcm>
 Jul 08 00:49:517localhost kernel: pci 0000:00:05.0: PCI bridge to [bus 01]m
-Jul 08 00:49:517localhost kernel: pci 0000:00:05.0:   bridge window [io  0xe>
+Jul 08 00:49:517localhost kernel: pci 0000:00:05.0:   bridge window [io	 0xe>
 Jul 08 00:49:517localhost kernel: pci 0000:00:05.0:   bridge window [mem 0xfe>
 Jul 08 00:49:517localhost kernel: pci 0000:00:05.0:   bridge window [mem 0xc>
 Jul 08 00:49:517localhost kernel: pci 0000:00:08.0: [1af4:1003] type 00 class >
@@ -313,13 +313,13 @@ Jul 08 00:49:517localhost kernel: pci 0000:00:12.0: ROM [mem 0xfea00000-0xfea3fm
 Jul 08 00:49:517localhost kernel: pci 0000:00:1e.0: [1b36:0001] type 01 class >
 Jul 08 00:49:517localhost kernel: pci 0000:00:1e.0: BAR 0 [mem 0xc000001000-0xcm>
 Jul 08 00:49:517localhost kernel: pci 0000:00:1e.0: PCI bridge to [bus 02]m
-Jul 08 00:49:517localhost kernel: pci 0000:00:1e.0:   bridge window [io  0xd>
+Jul 08 00:49:517localhost kernel: pci 0000:00:1e.0:   bridge window [io	 0xd>
 Jul 08 00:49:517localhost kernel: pci 0000:00:1e.0:   bridge window [mem 0xfe>
 Jul 08 00:49:517localhost kernel: pci 0000:00:1e.0:   bridge window [mem 0xc>
 Jul 08 00:49:517localhost kernel: pci 0000:00:1f.0: [1b36:0001] type 01 class >
 Jul 08 00:49:517localhost kernel: pci 0000:00:1f.0: BAR 0 [mem 0xc000002000-0xcm>
 Jul 08 00:49:517localhost kernel: pci 0000:00:1f.0: PCI bridge to [bus 03]m
-Jul 08 00:49:517localhost kernel: pci 0000:00:1f.0:   bridge window [io  0xc>
+Jul 08 00:49:517localhost kernel: pci 0000:00:1f.0:   bridge window [io	 0xc>
 Jul 08 00:49:517localhost kernel: pci 0000:00:1f.0:   bridge window [mem 0xfe>
 Jul 08 00:49:517localhost kernel: pci 0000:00:1f.0:   bridge window [mem 0xc>
 Jul 08 00:49:517localhost kernel: pci_bus 0000:01: extended config space not acm>
@@ -446,7 +446,7 @@ Jul 08 00:49:517localhost kernel: pps_core: Software ver. 5.3.6 - Copyright >
 Jul 08 00:49:517localhost kernel: PTP clock support registeredm
 Jul 08 00:49:517localhost kernel: EDAC MC: Ver: 3.0.
 Jul 08 00:49:517localhost kernel: NetLabel: Initializingm
-Jul 08 00:49:517localhost kernel: NetLabel:  domain hash size = 
+Jul 08 00:49:517localhost kernel: NetLabel:  domain hash size =
 Jul 08 00:49:517localhost kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIm>
 Jul 08 00:49:517localhost kernel: NetLabel:  unlabeled traffic allowed by defaum>
 Jul 08 00:49:517localhost kernel: mctp: management component transport protocolm>
@@ -480,15 +480,15 @@ Jul 08 00:49:517localhost kernel: UDP-Lite hash table entries: 2048 (order: 4, m
 Jul 08 00:49:517localhost kernel: NET: Registered PF_UNIX/PF_LOCAL protocol famm>
 Jul 08 00:49:517localhost kernel: NET: Registered PF_XDP protocol familym
 Jul 08 00:49:517localhost kernel: pci 0000:00:05.0: PCI bridge to [bus 01]m
-Jul 08 00:49:517localhost kernel: pci 0000:00:05.0:   bridge window [io  0xe>
+Jul 08 00:49:517localhost kernel: pci 0000:00:05.0:   bridge window [io	 0xe>
 Jul 08 00:49:517localhost kernel: pci 0000:00:05.0:   bridge window [mem 0xfe>
 Jul 08 00:49:517localhost kernel: pci 0000:00:05.0:   bridge window [mem 0xc>
 Jul 08 00:49:517localhost kernel: pci 0000:00:1e.0: PCI bridge to [bus 02]m
-Jul 08 00:49:517localhost kernel: pci 0000:00:1e.0:   bridge window [io  0xd>
+Jul 08 00:49:517localhost kernel: pci 0000:00:1e.0:   bridge window [io	 0xd>
 Jul 08 00:49:517localhost kernel: pci 0000:00:1e.0:   bridge window [mem 0xfe>
 Jul 08 00:49:517localhost kernel: pci 0000:00:1e.0:   bridge window [mem 0xc>
 Jul 08 00:49:517localhost kernel: pci 0000:00:1f.0: PCI bridge to [bus 03]m
-Jul 08 00:49:517localhost kernel: pci 0000:00:1f.0:   bridge window [io  0xc>
+Jul 08 00:49:517localhost kernel: pci 0000:00:1f.0:   bridge window [io	 0xc>
 Jul 08 00:49:517localhost kernel: pci 0000:00:1f.0:   bridge window [mem 0xfe>
 Jul 08 00:49:517localhost kernel: pci 0000:00:1f.0:   bridge window [mem 0xc>
 Jul 08 00:49:517localhost kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cfm>
@@ -507,8 +507,8 @@ Jul 08 00:49:517localhost kernel: pci_bus 0000:03: resource 1 [mem 0xfe400000->
 Jul 08 00:49:517localhost kernel: pci_bus 0000:03: resource 2 [mem 0xc>
 Jul 08 00:49:517localhost kernel: pci 0000:00:01.0: PIIX3: Enabling Passive Relm>
 Jul 08 00:49:517localhost kernel: pci 0000:00:00.0: Limiting direct PCI/PCI tram>
-Jul 08 00:49:517localhost kernel: ACPI: \_SB_.LNKD: Enabled at IRQ 
-Jul 08 00:49:517localhost kernel: PCI: CLS 0 bytes, default 
+Jul 08 00:49:517localhost kernel: ACPI: \_SB_.LNKD: Enabled at IRQ
+Jul 08 00:49:517localhost kernel: PCI: CLS 0 bytes, default
 Jul 08 00:49:517localhost kernel: PCI-DMA: Using software bounce buffering for m>
 Jul 08 00:49:517localhost kernel: software IO TLB: mapped [mem 0x00000000bbfda>
 Jul 08 00:49:517localhost kernel: Trying to unpack rootfs image as initramfs...m
@@ -536,9 +536,9 @@ Jul 08 00:49:517localhost kernel: shpchp 0000:00:1f.0: Cannot get control of SHm
 Jul 08 00:49:517localhost kernel: shpchp: Standard Hot Plug PCI Controller Drivm>
 Jul 08 00:49:517localhost kernel: input: Power Button as /devices/LNXSYSTM:00/Lm>
 Jul 08 00:49:517localhost kernel: ACPI: button: Power Button [PWRF]m
-Jul 08 00:49:517localhost kernel: ACPI: \_SB_.LNKC: Enabled at IRQ 
-Jul 08 00:49:517localhost kernel: ACPI: \_SB_.LNKB: Enabled at IRQ 
-Jul 08 00:49:517localhost kernel: ACPI: \_SB_.LNKA: Enabled at IRQ 
+Jul 08 00:49:517localhost kernel: ACPI: \_SB_.LNKC: Enabled at IRQ
+Jul 08 00:49:517localhost kernel: ACPI: \_SB_.LNKB: Enabled at IRQ
+Jul 08 00:49:517localhost kernel: ACPI: \_SB_.LNKA: Enabled at IRQ
 Jul 08 00:49:517localhost kernel: Free page reporting enabledm
 Jul 08 00:49:517localhost kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharm>
 Jul 08 00:49:517localhost kernel: Linux agpgart interface v0.10
@@ -566,8 +566,8 @@ Jul 08 00:49:517localhost kernel: usb usb1: SerialNumber: 0000:00:01.
 Jul 08 00:49:517localhost kernel: hub 1-0:1.0: USB hub foundm
 Jul 08 00:49:517localhost kernel: hub 1-0:1.0: 2 ports detectedm
 Jul 08 00:49:517localhost kernel: i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP>
-Jul 08 00:49:517localhost kernel: serio: i8042 KBD port at 0x60,0x64 irq 
-Jul 08 00:49:517localhost kernel: serio: i8042 AUX port at 0x60,0x64 irq 
+Jul 08 00:49:517localhost kernel: serio: i8042 KBD port at 0x60,0x64 irq
+Jul 08 00:49:517localhost kernel: serio: i8042 AUX port at 0x60,0x64 irq
 Jul 08 00:49:517localhost kernel: mousedev: PS/2 mouse device common for all mim>
 Jul 08 00:49:517localhost kernel: rtc_cmos 00:03: RTC can wake from S
 Jul 08 00:49:517localhost kernel: input: AT Translated Set 2 keyboard as /devicm>
@@ -578,7 +578,7 @@ Jul 08 00:49:517localhost kernel: i2c_dev: i2c /dev entries driverm
 Jul 08 00:49:517localhost kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLm>
 Jul 08 00:49:517localhost kernel: device-mapper: uevent: version 1.0.
 Jul 08 00:49:517localhost kernel: device-mapper: ioctl: 4.48.0-ioctl (2023-03->
-Jul 08 00:49:517localhost kernel: platform eisa.0: Probing EISA bus 
+Jul 08 00:49:517localhost kernel: platform eisa.0: Probing EISA bus
 Jul 08 00:49:517localhost kernel: platform eisa.0: EISA: Cannot allocate resourm>
 Jul 08 00:49:517localhost kernel: platform eisa.0: Cannot allocate resource form>
 Jul 08 00:49:517localhost kernel: platform eisa.0: Cannot allocate resource form>
@@ -611,7 +611,7 @@ Jul 08 00:49:517localhost kernel: NET: Registered PF_PACKET protocol familym
 Jul 08 00:49:517localhost kernel: Key type dns_resolver registeredm
 Jul 08 00:49:517localhost kernel: IPI shorthand broadcast: enabledm
 Jul 08 00:49:517localhost kernel: sched_clock: Marking stable (1733007012, >
-Jul 08 00:49:517localhost kernel: registered taskstats version 
+Jul 08 00:49:517localhost kernel: registered taskstats version
 Jul 08 00:49:517localhost kernel: Loading compiled-in X.509 certificatesm
 Jul 08 00:49:517localhost kernel: Loaded X.509 cert 'Build time autogenerated km>
 Jul 08 00:49:517localhost kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch m>
@@ -627,7 +627,7 @@ Jul 08 00:49:517localhost kernel: Loaded X.509 cert 'Canonical Ltd. Secure Bootm
 Jul 08 00:49:517localhost kernel: Loaded X.509 cert 'Canonical Ltd. Secure Bootm>
 Jul 08 00:49:517localhost kernel: Key type .fscrypt registeredm
 Jul 08 00:49:517localhost kernel: Key type fscrypt-provisioning registeredm
-Jul 08 00:49:517localhost kernel: cryptd: max_cpu_qlen set to 
+Jul 08 00:49:517localhost kernel: cryptd: max_cpu_qlen set to
 Jul 08 00:49:517localhost kernel: ata2: found unknown device (class 0)m
 Jul 08 00:49:517localhost kernel: ata2.00: ATAPI: QEMU DVD-ROM, 2.5+, max UDMA/m>
 Jul 08 00:49:517localhost kernel: scsi 2:0:0:0: CD-ROM		QEMU	 QEMUm>
@@ -695,9 +695,9 @@ Jul 08 00:49:517localhost kernel: hid-generic 0003:0627:0001.0001: input,hidrawm
 Jul 08 00:49:517localhost kernel: Console: switching to colour frame buffer devm>
 Jul 08 00:49:517localhost kernel: bochs-drm 0000:00:02.0: [drm] fb0: bochs-drmdm>
 Jul 08 00:49:517localhost kernel: random: crng init donem
-Jul 08 00:49:517localhost kernel: raid6: sse2x4   gen() 17809 MB/sm
-Jul 08 00:49:517localhost kernel: raid6: sse2x2   gen()  5670 MB/sm
-Jul 08 00:49:517localhost kernel: raid6: sse2x1   gen()  1302 MB/sm
+Jul 08 00:49:517localhost kernel: raid6: sse2x4	  gen() 17809 MB/sm
+Jul 08 00:49:517localhost kernel: raid6: sse2x2	  gen()	 5670 MB/sm
+Jul 08 00:49:517localhost kernel: raid6: sse2x1	  gen()	 1302 MB/sm
 Jul 08 00:49:517localhost kernel: raid6: using algorithm sse2x4 gen() 17809 MB/sm
 Jul 08 00:49:517localhost kernel: raid6: .... xor() 3317 MB/s, rmw enabledm
 Jul 08 00:49:517localhost kernel: raid6: using ssse3x2 recovery algorithmm
