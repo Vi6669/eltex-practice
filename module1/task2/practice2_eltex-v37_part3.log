@@ -35,7 +35,7 @@ git7configt--globalrinit.defaultBranchimainnfig --global init.defaultBranch main
 user.name=Vi
 user.email=vika.tsarenkova@gmail.comm
 init.defaultbranch=mainm
-K?1l0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# aptaptdupdate
+K0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# aptaptdupdate
 Hit:1ohttp://ru.archive.ubuntu.com/ubuntu noble InRelease
 Hit:2ahttp://ru.archive.ubuntu.com/ubuntudnoble-updates InRelease
 Hit:3ahttp://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
@@ -66,15 +66,15 @@ Fetchedo8,836]kBkin81s3(6,7850kB/s)3
 0;23r1ASelecting previously unselected package gh.
 (Reading database ... 87345 files and directories currently installed.)
 Preparing to unpack .../gh_2.45.0-1ubuntu0.3_amd64.deb ...
-24;0fProgress: [	0%] [..........................................................] 24;0fProgress: [  8%] [####......................................................] Unpacking gh (2.45.0-1ubuntu0.3) ...
-24;0fProgress: [ 15%] [########..................................................] Preparing to unpack .../git-man_1%3a2.43.0-1ubuntu7.3_all.deb ...
-24;0fProgress: [ 23%] [#############.............................................] Unpacking git-man (1:2.43.0-1ubuntu7.3) over (1:2.43.0-1ubuntu7.2) ...
-24;0fProgress: [ 31%] [#################.........................................] Preparing to unpack .../git_1%3a2.43.0-1ubuntu7.3_amd64.deb ...
-24;0fProgress: [ 38%] [######################....................................] Unpacking git (1:2.43.0-1ubuntu7.3) over (1:2.43.0-1ubuntu7.2) ...
-24;0fProgress: [ 46%] [##########################................................] Setting up gh (2.45.0-1ubuntu0.3) ...
-24;0fProgress: [ 54%] [###############################...........................] 24;0fProgress: [ 62%] [###################################.......................] Setting up git-man (1:2.43.0-1ubuntu7.3) ...
-24;0fProgress: [ 69%] [########################################..................] 24;0fProgress: [ 77%] [############################################..............] Setting up git (1:2.43.0-1ubuntu7.3) ...
-24;0fProgress: [ 85%] [#################################################.........] 24;0fProgress: [ 92%] [#####################################################.....] Processing triggers for man-db (2.12.0-4build2) ...
+Progress: [	0%] [..........................................................] Progress: [  8%] [####......................................................] Unpacking gh (2.45.0-1ubuntu0.3) ...
+Progress: [ 15%] [########..................................................] Preparing to unpack .../git-man_1%3a2.43.0-1ubuntu7.3_all.deb ...
+Progress: [ 23%] [#############.............................................] Unpacking git-man (1:2.43.0-1ubuntu7.3) over (1:2.43.0-1ubuntu7.2) ...
+Progress: [ 31%] [#################.........................................] Preparing to unpack .../git_1%3a2.43.0-1ubuntu7.3_amd64.deb ...
+Progress: [ 38%] [######################....................................] Unpacking git (1:2.43.0-1ubuntu7.3) over (1:2.43.0-1ubuntu7.2) ...
+Progress: [ 46%] [##########################................................] Setting up gh (2.45.0-1ubuntu0.3) ...
+Progress: [ 54%] [###############################...........................] Progress: [ 62%] [###################################.......................] Setting up git-man (1:2.43.0-1ubuntu7.3) ...
+Progress: [ 69%] [########################################..................] Progress: [ 77%] [############################################..............] Setting up git (1:2.43.0-1ubuntu7.3) ...
+Progress: [ 85%] [#################################################.........] Progress: [ 92%] [#####################################################.....] Processing triggers for man-db (2.12.0-4build2) ...
 
 ScanningSprocesses...e[========================================================]       ]
 Scanning candidates... [=======================================================]
@@ -113,26 +113,26 @@ The key's randomart image is:
 |. .   o*.  =.	  |
 +----[SHA256]-----+
 0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# gh ghtauthglogin
-?25l0G2K? What account do you want to log into?  [Use arrows to move, type to filter]
+0G2K? What account do you want to log into?  [Use arrows to move, type to filter]
 > GitHub.com
   GitHub Enterprise Server
-1A0G1A0G?25h0G2K1A0G2K1A0G2K1A0G2K? What account do you want to log into? GitHub.com
-?25l0G2K? What is your preferred protocol for Git operations on this host?  [Use arrows to move, type to filter]
+1A0G1A0G0G2K1A0G2K1A0G2K1A0G2K? What account do you want to log into? GitHub.com
+0G2K? What is your preferred protocol for Git operations on this host?  [Use arrows to move, type to filter]
 > HTTPS
   SSH
 1A0G1A0G0G2K1A0G2K1A0G2K1A0G2K1A0G2K? What is your preferred protocol for Git operations on this host?  [Use arrows to move, type to filter]
   HTTPS
 > SSH
-1A0G?25h0G2K1A0G2K1A0G2K1A0G2K1A0G2K? What is your preferred protocol for Git operations on this host? SSH
-?25l0G2K? Upload your SSH public key to your GitHub account?	[Use arrows to move, type to filter]
+1A0G0G2K1A0G2K1A0G2K1A0G2K1A0G2K? What is your preferred protocol for Git operations on this host? SSH
+0G2K? Upload your SSH public key to your GitHub account?	[Use arrows to move, type to filter]
 > /root/.ssh/Vi6669.pub
   Skip
-1A0G1A0G?25h0G2K1A0G2K1A0G2K1A0G2K1A0G2K? Upload your SSH public key to your GitHub account? /root/.ssh/Vi6669.pub
-0G2K? Title for your SSH key: (GitHub CLI) ?25l?25l999;999f6n?25h6neltex-practice2-pg1-v371D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1B0G1A?25h0G2K? Title for your SSH key: eltex-practice2-pg1-v
-?25l0G2K? How would you like to authenticate GitHub CLI?  [Use arrows to move, type to filter]
+1A0G1A0G0G2K1A0G2K1A0G2K1A0G2K1A0G2K? Upload your SSH public key to your GitHub account? /root/.ssh/Vi6669.pub
+0G2K? Title for your SSH key: (GitHub CLI) 6n6neltex-practice2-pg1-v371D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1D1B0G1A0G2K? Title for your SSH key: eltex-practice2-pg1-v
+0G2K? How would you like to authenticate GitHub CLI?  [Use arrows to move, type to filter]
 > Login with a web browser
   Paste an authentication token
-1A0G1A0G?25h0G2K1A0G2K1A0G2K1A0G2K1A0G2K? How would you like to authenticate GitHub CLI? Login with a web browser
+1A0G1A0G0G2K1A0G2K1A0G2K1A0G2K1A0G2K? How would you like to authenticate GitHub CLI? Login with a web browser
 
 0;3! First copy your one-time code: F102-392A
 Press Enter to open github.com in your browser...
@@ -295,7 +295,7 @@ Changes to be committed:
 	new file:   module1/task1/eltex-v37_part3_gt20M.logm
 	new file:   module1/task1/report_part1.txtm
 
-AKx-practice# gitgitmcommit -md"addapracticef1lfiles"
+AKx-practice# gitgitmcommit -md"addapracticeffiles"
 [mainleed930c] add practice 1 files
  5 files changed, 259 insertions(+)
  create mode 100644 module1/task1/Tsarenkova_Viktoria_module_1_practice_1.pdf
@@ -377,7 +377,7 @@ index a178e59..398047e m
 @@ -1 +1,2 @@mm
  # Учебный репозиторий Eltex - Практика m
 +m## Тестирование процессов Fetch и Mergemm
-K?1l0;root@eltex-practice2-v37: ~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone# gitgitrmerge
+K0;root@eltex-practice2-v37: ~/eltex-practice_cloneroot@eltex-practice2-v37:~/eltex-practice_clone# gitgitrmerge
 Updating eed930c..2b25d23
 Fast-forward
  README.md | 1 +m
@@ -387,6 +387,6 @@ Fast-forward
 logout
 Connection to 172.16.9.211 closed.
 eltex-v37@eltex-2026-summer-15:28> exit
-exit4l
+exit
 
 Script done on 2026-07-09 15:39:17+07:00 [COMMAND_EXIT_CODE="0"]

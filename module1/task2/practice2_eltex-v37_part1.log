@@ -11,7 +11,7 @@ drwxr-x--- 17 eltex-v37 eltex-v37 4096 Jul  8 11:35 ..
 eltex-v37@eltex-2026-summer-11:54> ls -l ~/.ssh/id_rsa.pub
 -rw-r--r-- 1 eltex-v37 eltex-v37 409 Jul  8 11:44 /home/eltex-v37/.ssh/id_rsa.pub
 eltex-v37@eltex-2026-summer-11:57> cat ~/.ssh/id_rsa.pub
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7Mrk4fBhXURa6to64ERluip3HrjcAtMyLeBql39yaBRjgFiFf13N+17hFLVd3OCLW0QV7Y3sPa3sZ7tKOPz+l4yGL84kTEoMxq4O3RCdjzC42Z4yAfHBTbX8QeyZseS7+pkEkO2yjLK7BWno4hHIlPULtwaKnCuYWJiuQZ7hGSNsgEx0v7gX39Gx5Y/SB9gO2cM7mXh+cpruuvU8RU3FFYw6NHQRmu6IRtKcyBjteMwTZYaefbQDRY4aJrZOcJDfn+kkESOPFdRjwS040MYCcNbZcFUF0WlJlOs3IHTR+iMzBbxd1vo9sdVYTvs9hgifPKDUlPyg+dC4s+nICCI4R eltex-v37@eltex-2026-summer
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7Mrk4fBhXURa6to64ERluip3HrjcAtMyLeBql39yaBRjgFiFf13N+17hFLVd3OCLW0QV7Y3sPa3sZ7tKOPz+l4yGL84kTEoMxq4O3RCdjzC42Z4yAfHBTbX8QeyZseS7+pkEkO2yjLK7BWno4hHIlPULtwaKnCuYWJiuQZ7hGSNsgEx0v7gX39Gx5Y/SB9gO2cMXh+cpruuvU8RU3FFYw6NHQRmu6IRtKcyBjteMwTZYaefbQDRY4aJrZOcJDfn+kkESOPFdRjwS040MYCcNbZcFUF0WlJlOs3IHTR+iMzBbxd1vo9sdVYTvs9hgifPKDUlPyg+dC4s+nICCI4R eltex-v37@eltex-2026-summer
 eltex-v37@eltex-2026-summer-11:57> ls -l ~/.ssh/id_rsa.pub
 -rw-r--r-- 1 eltex-v37 eltex-v37 409 Jul  8 11:44 /home/eltex-v37/.ssh/id_rsa.pub
 eltex-v37@eltex-2026-summer-11:58> ssh root@172.16.9.211
@@ -42,7 +42,7 @@ To check for new updates run: sudo apt update
 
 Last login: Wed Jul  8 04:25:01 2026 from 172.16.8.4
 0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# cat ~/.ssh/authorized_keys
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7Mrk4fBhXURa6to64ERluip3HrjcAtMyLeBql39yaBRjgFiFf13N+17hFLVd3OCLW0QV7Y3sPa3sZ7tKOPz+l4yGL84kTEoMxq4O3RCdjzC42Z4yAfHBTbX8QeyZseS7+pkEkO2yjLK7BWno4hHIlPULtwaKnCuYWJiuQZ7hGSNsgEx0v7gX39Gx5Y/SB9gO2cM7mXh+cpruuvU8RU3FFYw6NHQRmu6IRtKcyBjteMwTZYaefbQDRY4aJrZOcJDfn+kkESOPFdRjwS040MYCcNbZcFUF0WlJlOs3IHTR+iMzBbxd1vo9sdVYTvs9hgifPKDUlPyg+dC4s+nICCI4R eltex-v37@eltex-2026-summer
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7Mrk4fBhXURa6to64ERluip3HrjcAtMyLeBql39yaBRjgFiFf13N+17hFLVd3OCLW0QV7Y3sPa3sZ7tKOPz+l4yGL84kTEoMxq4O3RCdjzC42Z4yAfHBTbX8QeyZseS7+pkEkO2yjLK7BWno4hHIlPULtwaKnCuYWJiuQZ7hGSNsgEx0v7gX39Gx5Y/SB9gO2cMXh+cpruuvU8RU3FFYw6NHQRmu6IRtKcyBjteMwTZYaefbQDRY4aJrZOcJDfn+kkESOPFdRjwS040MYCcNbZcFUF0WlJlOs3IHTR+iMzBbxd1vo9sdVYTvs9hgifPKDUlPyg+dC4s+nICCI4R eltex-v37@eltex-2026-summer
 0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# ls -la ~/.ssh
 total 12
 drwx------ 2 root root 4096 Mar 12  2025 .
@@ -225,7 +225,7 @@ chmodt440t/etc/sudoers.d/user1oot@eltex-practice2-v37:~# chmod 440 /etc/sudoers.
 0;user1@eltex-practice2-v37: ~user1@eltex-practice2-v37:~$ exit
 logout
 0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# nano /opt/run_dmesg.sh
-chownrroot:root-/opt/run_dmesg.shoot@eltex-practice2-v37:~#BchownFroot:root?/opt/run_dmesg.sh5l B[ Writing...u]BBiBB[CWrotec2llines1]BB^OBMWriteaOutoB^WBlWhereBIsPBB^KBpCutOB WritB^TBTExecuteeerB^CB LocationBXB ExitB^TB EB^RBtReadBFileLB^\BiReplacexitB^UB Paste ReadB^JBeJustifyeplB^/B Go^To Line?12l?25h?25lustify   B^/B Go To Line?12l?25h?25l
+chownrroot:root-/opt/run_dmesg.shoot@eltex-practice2-v37:~#BchownFroot:root?/opt/run_dmesg.sh5l B[ Writing...u]BBiBB[CWrotec2llines1]BB^OBMWriteaOutoB^WBlWhereBIsPBB^KBpCutOB WritB^TBTExecuteeerB^CB LocationBXB ExitB^TB EB^RBtReadBFileLB^\BiReplacexitB^UB Paste ReadB^JBeJustifyeplB^/B Go^To Line?12lustify   B^/B Go To Line?12l
 0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# chmod 4755 /opt/run_dmesg.sh
 0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# su - user2
 0;user2@eltex-practice2-v37: ~user2@eltex-practice2-v37:~$ /opt/run_dmesg.sh
@@ -233,7 +233,7 @@ dmesg: read kernel buffer failed: Operation not permitted
 0;user2@eltex-practice2-v37: ~user2@eltex-practice2-v37:~$ exit
 logout
 0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# nano /opt/run_dmesg.c
-gcc0/opt/run_dmesg.ct-oe/opt/run_dmesgltex-practice2-v37:~#JgccB/opt/run_dmesg.cB-o?/opt/run_dmesgting...B]BBcBB[rWrote 8 linesB]BB^OBnWrite Out B^WB WhereeIs	B^KB Cut       B^TB Execute   B^CB LocationBXB Exit	 B^RB Read File B^\B Replace   B^UB Paste     B^JB Justify   B^/B Go To Line?12l?25h
+gcc0/opt/run_dmesg.ct-oe/opt/run_dmesgltex-practice2-v37:~#JgccB/opt/run_dmesg.cB-o?/opt/run_dmesgting...B]BBcBB[rWrote 8 linesB]BB^OBnWrite Out B^WB WhereeIs	B^KB Cut       B^TB Execute   B^CB LocationBXB Exit	 B^RB Read File B^\B Replace   B^UB Paste     B^JB Justify   B^/B Go To Line?12l
 Command 'gcc' not found, but can be installed with:
 apt install gcc
 aptoupdatee&&papttinstall7gccr-yt@eltex-practice2-v37:~# apt update && apt install gcc -y
@@ -502,7 +502,7 @@ Minimum number of days between password change		: 0
 Maximum number of days between password change		: 10
 Number of days of warning before password expires	: 7
 0;root@eltex-practice2-v37: ~root@eltex-practice2-v37:~# nano /etc/motd
-?1l0;root@eltex-practice2-v37:B~root@eltex-practice2-v37:~#.catB/etc/motde?25linesB]B2l?25h?25lYB5Yes2Writing...M]BBhBB[5Wrotet1 lineB]BB^OBpWrite Out B^WBBWhereBIskuB^KBlCutB CanceB^TB ExecuteBM-B^CBaLocationBXB Exit-PB PrB^RBdRead FileBB^\BBReplace   B^UB Paste	    B^JB Justify   B^/B Go To Line?12l?25h?25lB*B
+0;root@eltex-practice2-v37:B~root@eltex-practice2-v37:~#.catB/etc/motdeinesB]B2lYB5Yes2Writing...M]BBhBB[5Wrotet1 lineB]BB^OBpWrite Out B^WBBWhereBIskuB^KBlCutB CanceB^TB ExecuteBM-B^CBaLocationBXB Exit-PB PrB^RBdRead FileBB^\BBReplace   B^UB Paste	    B^JB Justify   B^/B Go To Line?12lB*B
 Виктория Царенкова
 
 rsynct-avt/etc/a/root/etc_backup/@eltex-practice2-v37:~# rsync -av /etc/ /root/etc_backup/
