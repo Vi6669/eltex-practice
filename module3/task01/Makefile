@@ -20,13 +20,13 @@ copier.o: copier.c copier.h
 tester.o: tester.c tester.h copier.h
 	$(CC) $(CFLAGS) -c tester.c
 
-# Сборка и запуск тестировщика
+# Сборка и непосредственный запуск тестировщика
 tester: $(TEST_OBJS)
 	$(CC) $(CFLAGS) -o $(TEST_TARGET) $(TEST_OBJS)
 	./$(TEST_TARGET)
 
 # Очистка всех бинарников, объектных файлов и тестовых копий
 clean:
-	rm -f $(TARGET) $(TEST_TARGET) $(OBJS) $(TEST_OBJS) *.copy test_document.pdf test_*.txt test_fifo*
+	rm -f $(TARGET) $(TEST_TARGET) $(OBJS) $(TEST_OBJS) *.copy test_*.txt test_fifo*
 
 .PHONY: all clean tester
