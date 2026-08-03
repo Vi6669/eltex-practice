@@ -3,7 +3,7 @@
 #include "copier.h"
 
 int main(int argc, char *argv[]) {
-    // Проверяем, передан ли хотя бы один исходный файл
+    // Ожидаем как минимум один исходный файл в качестве аргумента
     if (argc < 2) {
         fprintf(stderr, "Usage: %s <file1> [file2] [file3] ...\n", argv[0]);
         return EXIT_FAILURE;
@@ -11,9 +11,10 @@ int main(int argc, char *argv[]) {
 
     int overall_status = EXIT_SUCCESS;
 
-    // Последовательно обрабатываем каждый файл, переданный в аргументах
+    // Последовательно обрабатываем каждый файл
     for (int i = 1; i < argc; i++) {
-        if (copy_file_single_process(argv[i]) != 0) {
+        // На этом шаге передаем NULL вместо имени FIFO-канала
+        if (copy_file(argv[i], NULL) != 0) {
             overall_status = EXIT_FAILURE;
         }
     }
