@@ -1,6 +1,6 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -g
-LDFLAGS = -lrt
+CFLAGS = -Wall -Wextra -g -pthread
+LDFLAGS = -lrt -pthread
 
 TARGET = task03
 SRCS = main.c chat.c

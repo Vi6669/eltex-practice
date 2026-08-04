@@ -31,7 +31,6 @@ int init_chat_queues(chat_session_t *session) {
     session->rx_q = mq_open(session->q1_name, O_RDONLY | O_CREAT | O_EXCL, 0660, &attr);
 
     if (session->rx_q != (mqd_t)-1) {
-        // Мы успешно создали первую очередь -> Роль: Создатель
         session->is_creator = 1;
         printf("[Создатель] Очередь %s успешно создана.\n", session->q1_name);
 
@@ -45,7 +44,6 @@ int init_chat_queues(chat_session_t *session) {
         printf("[Создатель] Очередь %s успешно создана.\n", session->q2_name);
         printf("[Создатель] Режим: Прием из _1, Отправка в _2.\n");
     } else {
-        // Очередь уже создана -> Роль: Присоединившийся
         if (errno == EEXIST) {
             printf("[Присоединившийся] Обнаружены существующие очереди. Подключение...\n");
 
@@ -68,6 +66,87 @@ int init_chat_queues(chat_session_t *session) {
         }
     }
     return 0;
+}
+
+// Фоновый поток для непрерывного чтения входящих сообщений
+void *receive_thread_func(void *arg) {
+    chat_session_t *session = (chat_session_t *)arg;
+    char rx_buffer[MSG_BUFFER_SIZE];
+    unsigned int prio;
+
+    while (1) {
+        // Системный вызов заблокирует поток, пока в очереди не появится сообщение
+        ssize_t bytes_read = mq_receive(session->rx_q, rx_buffer, MSG_BUFFER_SIZE, &prio);
+        
+        if (bytes_read >= 0) {
+            rx_buffer[bytes_read] = '\0'; // Гарантируем корректное завершение строки
+            
+            // Выводим сообщение собеседника. Символы "\r" и "> " помогают 
+            // не портить внешний вид строки ввода при получении сообщения.
+            printf("\r[Собеседник]: %s\n> ", rx_buffer);
+            fflush(stdout);
+        } else {
+            // Если вызов mq_receive вернул ошибку (например, очередь закрыли), завершаем поток
+            break;
+        }
+    }
+    return NULL;
+}
+
+// Главный цикл чата (выполняется в основном потоке программы)
+void run_chat_loop(chat_session_t *session) {
+    char tx_buffer[MSG_BUFFER_SIZE];
+
+    // 1. Запускаем фоновый поток для приема входящих сообщений
+    if (pthread_create(&session->rx_thread, NULL, receive_thread_func, session) != 0) {
+        perror("Ошибка запуска приемного потока");
+        return;
+    }
+
+    printf("\n==== ЧАТ ЗАПУЩЕН ====\n");
+    printf("Введите сообщение и нажмите Enter. Для выхода наберите '/exit' или нажмите Ctrl+D.\n\n");
+    printf("> ");
+    fflush(stdout);
+
+    // 2. Основной поток читает ввод пользователя и отправляет сообщения
+    while (1) {
+        if (fgets(tx_buffer, sizeof(tx_buffer), stdin) == NULL) {
+            // Пользователь нажал Ctrl+D (EOF)
+            break;
+        }
+
+        // Удаляем символ переноса строки из конца ввода
+        size_t len = strlen(tx_buffer);
+        if (len > 0 && tx_buffer[len - 1] == '\n') {
+            tx_buffer[len - 1] = '\0';
+        }
+
+        // Проверяем команду выхода
+        if (strcmp(tx_buffer, "/exit") == 0) {
+            break;
+        }
+
+        // Игнорируем пустые сообщения
+        if (strlen(tx_buffer) == 0) {
+            printf("> ");
+            fflush(stdout);
+            continue;
+        }
+
+        // Отправляем сообщение с дефолтным приоритетом 1
+        if (mq_send(session->tx_q, tx_buffer, strlen(tx_buffer), 1) < 0) {
+            perror("\nОшибка отправки сообщения");
+        }
+
+        printf("> ");
+        fflush(stdout);
+    }
+
+    printf("\nЗавершение сессии чата...\n");
+
+    // 3. Останавливаем фоновый поток приема перед выходом
+    pthread_cancel(session->rx_thread);
+    pthread_join(session->rx_thread, NULL);
 }
 
 void cleanup_chat_queues(chat_session_t *session) {

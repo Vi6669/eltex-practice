@@ -11,21 +11,19 @@ int main(int argc, char *argv[]) {
 
     chat_session_t session;
 
-    // Подготовка имен очередей
     format_queue_names(argv[1], &session);
 
     printf("Попытка инициализации сессии для: %s\n", argv[1]);
 
-    // Инициализация сессии
     if (init_chat_queues(&session) < 0) {
         fprintf(stderr, "Критическая ошибка при инициализации очередей.\n");
         return EXIT_FAILURE;
     }
 
-    printf("Очереди настроены. Нажмите Enter для выхода...\n");
-    getchar();
+    // Запуск двустороннего асинхронного обмена
+    run_chat_loop(&session);
 
-    // Освобождение ресурсов и очистка
+    // Очистка ресурсов после выхода из цикла
     cleanup_chat_queues(&session);
 
     printf("Программа завершена.\n");
