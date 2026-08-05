@@ -5,6 +5,22 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <errno.h>
+#include <signal.h>
+
+// Глобальные переменные для безопасного обмена статусом с обработчиками сигналов
+volatile sig_atomic_t g_exit_flag = 0;
+pthread_t main_thread_id;
+
+// Обработчик Ctrl+C
+void sigint_handler(int sig) {
+    (void)sig;
+    g_exit_flag = 1; 
+}
+
+// Пустой обработчик для прерывания блокирующего fgets()
+void sigusr1_handler(int sig) {
+    (void)sig; 
+}
 
 void format_queue_names(const char *base_name, chat_session_t *session) {
     if (base_name[0] == '/') {
@@ -26,8 +42,8 @@ int init_chat_queues(chat_session_t *session) {
     session->rx_q = (mqd_t)-1;
     session->tx_q = (mqd_t)-1;
     session->is_creator = 0;
+    session->peer_exited = 0;
 
-    // Попытка создания первой очереди монопольно
     session->rx_q = mq_open(session->q1_name, O_RDONLY | O_CREAT | O_EXCL, 0660, &attr);
 
     if (session->rx_q != (mqd_t)-1) {
@@ -68,72 +84,94 @@ int init_chat_queues(chat_session_t *session) {
     return 0;
 }
 
-// Фоновый поток для непрерывного чтения входящих сообщений
 void *receive_thread_func(void *arg) {
     chat_session_t *session = (chat_session_t *)arg;
     char rx_buffer[MSG_BUFFER_SIZE];
     unsigned int prio;
 
     while (1) {
-        // Системный вызов заблокирует поток, пока в очереди не появится сообщение
         ssize_t bytes_read = mq_receive(session->rx_q, rx_buffer, MSG_BUFFER_SIZE, &prio);
         
         if (bytes_read >= 0) {
-            rx_buffer[bytes_read] = '\0'; // Гарантируем корректное завершение строки
+            rx_buffer[bytes_read] = '\0';
             
-            // Выводим сообщение собеседника. Символы "\r" и "> " помогают 
-            // не портить внешний вид строки ввода при получении сообщения.
+            // Если пришло сообщение с высоким приоритетом 255 — собеседник вышел
+            if (prio == EXIT_PRIORITY) {
+                printf("\r[Система]: Собеседник закрыл чат. Нажмите Enter для выхода...\n");
+                session->peer_exited = 1;
+                g_exit_flag = 1;
+                
+                // Прерываем fgets() основного потока, отправляя ему SIGUSR1
+                pthread_kill(main_thread_id, SIGUSR1);
+                break;
+            }
+
             printf("\r[Собеседник]: %s\n> ", rx_buffer);
             fflush(stdout);
         } else {
-            // Если вызов mq_receive вернул ошибку (например, очередь закрыли), завершаем поток
             break;
         }
     }
     return NULL;
 }
 
-// Главный цикл чата (выполняется в основном потоке программы)
 void run_chat_loop(chat_session_t *session) {
     char tx_buffer[MSG_BUFFER_SIZE];
+    main_thread_id = pthread_self(); // Запоминаем ID основного потока
 
-    // 1. Запускаем фоновый поток для приема входящих сообщений
+    // Настройка обработки SIGINT (Ctrl+C)
+    struct sigaction sa_int;
+    sa_int.sa_handler = sigint_handler;
+    sigemptyset(&sa_int.sa_mask);
+    sa_int.sa_flags = 0; // Не устанавливаем SA_RESTART, чтобы прерывать fgets()
+    sigaction(SIGINT, &sa_int, NULL);
+
+    // Настройка обработки SIGUSR1 (внутреннее пробуждение потока)
+    struct sigaction sa_usr;
+    sa_usr.sa_handler = sigusr1_handler;
+    sigemptyset(&sa_usr.sa_mask);
+    sa_usr.sa_flags = 0;
+    sigaction(SIGUSR1, &sa_usr, NULL);
+
+    // Запуск фонового потока приема
     if (pthread_create(&session->rx_thread, NULL, receive_thread_func, session) != 0) {
         perror("Ошибка запуска приемного потока");
         return;
     }
 
     printf("\n==== ЧАТ ЗАПУЩЕН ====\n");
-    printf("Введите сообщение и нажмите Enter. Для выхода наберите '/exit' или нажмите Ctrl+D.\n\n");
+    printf("Выход: '/exit', Ctrl+D или Ctrl+C.\n\n");
     printf("> ");
     fflush(stdout);
 
-    // 2. Основной поток читает ввод пользователя и отправляет сообщения
-    while (1) {
+    while (!g_exit_flag) {
         if (fgets(tx_buffer, sizeof(tx_buffer), stdin) == NULL) {
-            // Пользователь нажал Ctrl+D (EOF)
+            // Проверяем: был ли fgets прерван сигналом (SIGINT или SIGUSR1)
+            if (g_exit_flag) {
+                break;
+            }
+            // Если fgets вернул NULL без флага — это Ctrl+D (EOF)
+            g_exit_flag = 1;
             break;
         }
 
-        // Удаляем символ переноса строки из конца ввода
         size_t len = strlen(tx_buffer);
         if (len > 0 && tx_buffer[len - 1] == '\n') {
             tx_buffer[len - 1] = '\0';
         }
 
-        // Проверяем команду выхода
         if (strcmp(tx_buffer, "/exit") == 0) {
+            g_exit_flag = 1;
             break;
         }
 
-        // Игнорируем пустые сообщения
         if (strlen(tx_buffer) == 0) {
             printf("> ");
             fflush(stdout);
             continue;
         }
 
-        // Отправляем сообщение с дефолтным приоритетом 1
+        // Обычные сообщения отправляем с приоритетом 1
         if (mq_send(session->tx_q, tx_buffer, strlen(tx_buffer), 1) < 0) {
             perror("\nОшибка отправки сообщения");
         }
@@ -142,9 +180,15 @@ void run_chat_loop(chat_session_t *session) {
         fflush(stdout);
     }
 
+    // Если мы выходим по своей инициативе 
+    if (g_exit_flag && !session->peer_exited) {
+        // Отправляем специальный сигнал выхода с приоритетом 255
+        mq_send(session->tx_q, "EXIT", 4, EXIT_PRIORITY);
+    }
+
     printf("\nЗавершение сессии чата...\n");
 
-    // 3. Останавливаем фоновый поток приема перед выходом
+    // Останавливаем фоновый поток
     pthread_cancel(session->rx_thread);
     pthread_join(session->rx_thread, NULL);
 }

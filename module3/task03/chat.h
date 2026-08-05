@@ -6,6 +6,7 @@
 
 #define MSG_BUFFER_SIZE 256
 #define MAX_MESSAGES 10
+#define EXIT_PRIORITY 255 // Приоритет для сообщения о выходе
 
 // Структура для хранения состояния текущей сессии чата
 typedef struct {
@@ -14,7 +15,8 @@ typedef struct {
     mqd_t rx_q;
     mqd_t tx_q;
     int is_creator;
-    pthread_t rx_thread; // Поток для чтения входящих сообщений
+    pthread_t rx_thread;
+    int peer_exited; // Флаг завершил ли собеседник работу первым
 } chat_session_t;
 
 // Форматирование имен очередей
@@ -29,7 +31,7 @@ void run_chat_loop(chat_session_t *session);
 // Функция фонового потока для чтения из очереди
 void *receive_thread_func(void *arg);
 
-// Корректное закрытие и удаление очередей
+// Закрытие и удаление очередей
 void cleanup_chat_queues(chat_session_t *session);
 
-#endif // CHAT_Hs
+#endif // CHAT_H

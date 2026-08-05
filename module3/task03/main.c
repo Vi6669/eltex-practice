@@ -20,10 +20,8 @@ int main(int argc, char *argv[]) {
         return EXIT_FAILURE;
     }
 
-    // Запуск двустороннего асинхронного обмена
     run_chat_loop(&session);
 
-    // Очистка ресурсов после выхода из цикла
     cleanup_chat_queues(&session);
 
     printf("Программа завершена.\n");
