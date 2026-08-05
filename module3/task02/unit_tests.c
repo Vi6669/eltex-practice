@@ -377,7 +377,7 @@ int main() {
     RUN_TEST(test_one_topic_multiple_subs);
     RUN_TEST(test_boundary_and_unsubscribe);
     RUN_TEST(test_broker_exits_first);
-    RUN_TEST(test_concurrency_and_spam); // Добавлен нагрузочный тест
+    RUN_TEST(test_concurrency_and_spam); 
 
     printf("\nЗапущено тестов: %d, Ошибок: %d\n", tests_run, tests_failed);
 
