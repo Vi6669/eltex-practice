@@ -1,43 +1,32 @@
-#include "common.h"
+#include "consumer_logic.h"
 
 int main() {
-    printf("Consumer: Connecting...\n");
+    printf("Consumer [%d]: Starting main entry point (System V)...\n", getpid());
 
-    // Подключаемся к существующей разделяемой памяти
-    int shm_fd = shm_open(SHM_NAME, O_RDWR, 0666);
-    if (shm_fd == -1) {
-        perror("shm_open (is producer running?)");
+    // Генерация общего ключа ftok
+    key_t key = ftok(FTOK_PATH, PROJ_ID);
+    if (key == -1) {
+        perror("ftok");
         return EXIT_FAILURE;
     }
 
-    // Проецируем память
-    void *shm_ptr = mmap(NULL, SHM_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
-    if (shm_ptr == MAP_FAILED) {
-        perror("mmap");
-        close(shm_fd);
+    int shmid, semid;
+    void *shm_ptr = NULL;
+
+    // 1. Подключение к IPC ресурсам
+    if (connect_consumer_ipc(key, &shmid, &semid, &shm_ptr) == -1) {
         return EXIT_FAILURE;
     }
 
-    // Открываем существующий семафор
-    sem_t *sem = sem_open(SEM_NAME, 0);
-    if (sem == SEM_FAILED) {
-        perror("sem_open");
-        munmap(shm_ptr, SHM_SIZE);
-        close(shm_fd);
-        return EXIT_FAILURE;
-    }
+    printf("Consumer [%d]: Connected to shared memory (shmid=%d) and semaphore (semid=%d).\n", 
+           getpid(), shmid, semid);
 
-    // Читаем заголовок под семафором
-    sem_wait(sem);
-    struct ShmHeader *header = (struct ShmHeader *)shm_ptr;
-    printf("Consumer connected. Header info: free_offset = %zu, producer_done = %d\n",
-           header->free_offset, header->producer_done);
-    sem_post(sem);
+    // 2. Запуск цикла обработки данных
+    run_consumer_loop(shm_ptr, semid);
 
-    // Закрываем дескрипторы
-    sem_close(sem);
-    munmap(shm_ptr, SHM_SIZE);
-    close(shm_fd);
+    // 3. Отключение от разделяемой памяти
+    disconnect_consumer_ipc(shm_ptr);
 
+    printf("Consumer [%d]: Detached from shared memory. Program terminated.\n", getpid());
     return EXIT_SUCCESS;
 }

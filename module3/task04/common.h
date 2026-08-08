@@ -4,26 +4,38 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <fcntl.h>
-#include <sys/mman.h>
-#include <sys/stat.h>
-#include <semaphore.h>
-#include <time.h> // Добавлено для работы со временем (генератор случайных чисел)
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
+#include <sys/sem.h>
+#include <time.h>
 
-#define SHM_NAME "/eltex_task04_shm"
-#define SEM_NAME "/eltex_task04_sem"
+#define FTOK_PATH "/tmp"
+#define PROJ_ID 42
 #define SHM_SIZE 4096
 
+// Заголовок разделяемой памяти
 struct ShmHeader {
     size_t first_block_offset; 
     size_t free_offset;        
     int producer_done;         
 };
 
+// Структура одного блока данных
 struct Block {
     size_t num_elements;       
     size_t next_block_offset;  
     int data[];                
 };
 
+// Объединение semun для настройки семафора 
+#ifdef _SEM_SEMUN_UNDEFINED
+union semun {
+    int val;                  
+    struct semid_ds *buf;     
+    unsigned short *array;    
+    struct seminfo *__buf;    
+};
 #endif
+
+#endif /* COMMON_H */
