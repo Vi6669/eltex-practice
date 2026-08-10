@@ -1,4 +1,3 @@
-
 #include "tester.h"
 #include "common.h"
 #include <stdio.h>
@@ -25,16 +24,16 @@ static void test_ipc_initialization() {
 
     int shm_fd = shm_open(SHM_NAME, O_CREAT | O_RDWR, 0666);
     ASSERT_TRUE("Разделяемая память POSIX должна успешно создаваться", shm_fd != -1);
-    ftruncate(shm_fd, SHM_SIZE);
+    ftruncate(shm_fd, DEFAULT_SHM_SIZE);
 
-    void *shm_ptr = mmap(NULL, SHM_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
+    void *shm_ptr = mmap(NULL, DEFAULT_SHM_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
     ASSERT_TRUE("Разделяемая память POSIX должна успешно проецироваться", shm_ptr != MAP_FAILED);
 
     sem_t *sem = sem_open(SEM_NAME, O_CREAT, 0666, 1);
     ASSERT_TRUE("Семафор POSIX должен успешно создаваться", sem != SEM_FAILED);
 
     sem_close(sem);
-    munmap(shm_ptr, SHM_SIZE);
+    munmap(shm_ptr, DEFAULT_SHM_SIZE);
     close(shm_fd);
     force_cleanup_ipc();
 }
@@ -64,10 +63,11 @@ static void test_block_linking() {
     force_cleanup_ipc();
 
     int shm_fd = shm_open(SHM_NAME, O_CREAT | O_RDWR, 0666);
-    ftruncate(shm_fd, SHM_SIZE);
-    void *shm_ptr = mmap(NULL, SHM_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
+    ftruncate(shm_fd, DEFAULT_SHM_SIZE);
+    void *shm_ptr = mmap(NULL, DEFAULT_SHM_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
 
     struct ShmHeader *header = (struct ShmHeader *)shm_ptr;
+    header->shm_size = DEFAULT_SHM_SIZE;
     header->first_block_offset = 0;
     header->free_offset = sizeof(struct ShmHeader);
 
@@ -95,7 +95,7 @@ static void test_block_linking() {
     struct Block *read_b2 = (struct Block *)((char *)shm_ptr + read_b1->next_block_offset);
     ASSERT_TRUE("Второй блок последний (offset 0)", read_b2->next_block_offset == 0);
 
-    munmap(shm_ptr, SHM_SIZE);
+    munmap(shm_ptr, DEFAULT_SHM_SIZE);
     close(shm_fd);
     force_cleanup_ipc();
 }
@@ -105,16 +105,17 @@ static void test_memory_exhaustion() {
     force_cleanup_ipc();
 
     int shm_fd = shm_open(SHM_NAME, O_CREAT | O_RDWR, 0666);
-    ftruncate(shm_fd, SHM_SIZE);
-    void *shm_ptr = mmap(NULL, SHM_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
+    ftruncate(shm_fd, DEFAULT_SHM_SIZE);
+    void *shm_ptr = mmap(NULL, DEFAULT_SHM_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
 
     struct ShmHeader *header = (struct ShmHeader *)shm_ptr;
-    header->free_offset = SHM_SIZE - 20;
+    header->shm_size = DEFAULT_SHM_SIZE;
+    header->free_offset = DEFAULT_SHM_SIZE - 20;
     header->producer_done = 0;
 
     size_t block_size = sizeof(struct Block) + 5 * sizeof(int);
     int space_exhausted = 0;
-    if (header->free_offset + block_size > SHM_SIZE) {
+    if (header->free_offset + block_size > header->shm_size) {
         space_exhausted = 1;
         header->producer_done = 1;
     }
@@ -122,7 +123,7 @@ static void test_memory_exhaustion() {
     ASSERT_TRUE("Фиксация нехватки памяти", space_exhausted == 1);
     ASSERT_TRUE("Установка флага producer_done в 1", header->producer_done == 1);
 
-    munmap(shm_ptr, SHM_SIZE);
+    munmap(shm_ptr, DEFAULT_SHM_SIZE);
     close(shm_fd);
     force_cleanup_ipc();
 }
@@ -132,10 +133,11 @@ static void test_consumer_processing_logic() {
     force_cleanup_ipc();
 
     int shm_fd = shm_open(SHM_NAME, O_CREAT | O_RDWR, 0666);
-    ftruncate(shm_fd, SHM_SIZE);
-    void *shm_ptr = mmap(NULL, SHM_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
+    ftruncate(shm_fd, DEFAULT_SHM_SIZE);
+    void *shm_ptr = mmap(NULL, DEFAULT_SHM_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
 
     struct ShmHeader *header = (struct ShmHeader *)shm_ptr;
+    header->shm_size = DEFAULT_SHM_SIZE;
     header->first_block_offset = header->free_offset = sizeof(struct ShmHeader);
 
     struct Block *b = (struct Block *)((char *)shm_ptr + header->first_block_offset);
@@ -163,7 +165,7 @@ static void test_consumer_processing_logic() {
     ASSERT_TRUE("Максимум 100", max == 100);
     ASSERT_TRUE("Сброс элементов в 0", b->num_elements == 0);
 
-    munmap(shm_ptr, SHM_SIZE);
+    munmap(shm_ptr, DEFAULT_SHM_SIZE);
     close(shm_fd);
     force_cleanup_ipc();
 }

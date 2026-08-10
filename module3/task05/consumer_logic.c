@@ -1,27 +1,33 @@
-
 #include "consumer_logic.h"
 
 int connect_consumer_ipc(int *shm_fd, sem_t **sem, void **shm_ptr) {
-    // Подключаемся к разделяемой памяти (shm_open)
     *shm_fd = shm_open(SHM_NAME, O_RDWR, 0666);
     if (*shm_fd == -1) {
         perror("shm_open (is producer running?)");
         return -1;
     }
 
-    // Отображаем разделяемую память (mmap)
-    *shm_ptr = mmap(NULL, SHM_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, *shm_fd, 0);
+    // Узнаем размер разделяемой памяти динамически через файловый дескриптор!
+    struct stat shm_stat;
+    if (fstat(*shm_fd, &shm_stat) == -1) {
+        perror("fstat");
+        close(*shm_fd);
+        return -1;
+    }
+    size_t shm_size = shm_stat.st_size; // Получили точный размер сегмента памяти в ОС
+
+    // Проецируем память динамического размера
+    *shm_ptr = mmap(NULL, shm_size, PROT_READ | PROT_WRITE, MAP_SHARED, *shm_fd, 0);
     if (*shm_ptr == MAP_FAILED) {
         perror("mmap");
         close(*shm_fd);
         return -1;
     }
 
-    // Подключаемся к семафору (sem_open)
     *sem = sem_open(SEM_NAME, 0);
     if (*sem == SEM_FAILED) {
         perror("sem_open");
-        munmap(*shm_ptr, SHM_SIZE);
+        munmap(*shm_ptr, shm_size);
         close(*shm_fd);
         return -1;
     }
@@ -38,7 +44,6 @@ void run_consumer_loop(void *shm_ptr, sem_t *sem) {
         struct Block *block_to_process = NULL;
         size_t block_offset = 0;
 
-        // Поиск первого необработанного блока по цепочке смещений списка
         while (current_offset != 0) {
             struct Block *block = (struct Block *)((char *)shm_ptr + current_offset);
             if (block->num_elements > 0) {
@@ -64,12 +69,10 @@ void run_consumer_loop(void *shm_ptr, sem_t *sem) {
             }
             printf("] -> Min: %d, Max: %d\n", min, max);
 
-            // Помечаем блок как обработанный
             block_to_process->num_elements = 0;
 
             sem_post(sem);
 
-            // Спим некоторое время после обработки
             sleep(2);
         } else {
             if (header->producer_done) {
@@ -86,7 +89,9 @@ void run_consumer_loop(void *shm_ptr, sem_t *sem) {
 }
 
 void disconnect_consumer_ipc(int shm_fd, void *shm_ptr, sem_t *sem) {
+    struct ShmHeader *header = (struct ShmHeader *)shm_ptr;
+    size_t size = header->shm_size; // Считываем размер перед закрытием
     sem_close(sem);
-    munmap(shm_ptr, SHM_SIZE);
+    munmap(shm_ptr, size);
     close(shm_fd);
 }

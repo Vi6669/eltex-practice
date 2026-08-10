@@ -1,45 +1,41 @@
-
 #include "producer_logic.h"
 
 int init_producer_ipc(int *shm_fd, sem_t **sem, void **shm_ptr) {
-    // Удаляем старые именованные объекты, если они остались в системе
     shm_unlink(SHM_NAME);
     sem_unlink(SEM_NAME);
 
-    // Создаем разделяемую память POSIX (shm_open)
     *shm_fd = shm_open(SHM_NAME, O_CREAT | O_RDWR, 0666);
     if (*shm_fd == -1) {
         perror("shm_open");
         return -1;
     }
 
-    // Установка размера
-    if (ftruncate(*shm_fd, SHM_SIZE) == -1) {
+    // Задаем размер (динамически используем дефолтный)
+    size_t allocated_size = DEFAULT_SHM_SIZE;
+    if (ftruncate(*shm_fd, allocated_size) == -1) {
         perror("ftruncate");
         close(*shm_fd);
         return -1;
     }
 
-    // Проецирование памяти (mmap)
-    *shm_ptr = mmap(NULL, SHM_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, *shm_fd, 0);
+    *shm_ptr = mmap(NULL, allocated_size, PROT_READ | PROT_WRITE, MAP_SHARED, *shm_fd, 0);
     if (*shm_ptr == MAP_FAILED) {
         perror("mmap");
         close(*shm_fd);
         return -1;
     }
 
-    // Создание именованного семафора POSIX (sem_open)
     *sem = sem_open(SEM_NAME, O_CREAT, 0666, 1);
     if (*sem == SEM_FAILED) {
         perror("sem_open");
-        munmap(*shm_ptr, SHM_SIZE);
+        munmap(*shm_ptr, allocated_size);
         close(*shm_fd);
         return -1;
     }
 
-    // Размечаем заголовок памяти под защитой семафора (sem_wait / sem_post)
     sem_wait(*sem);
     struct ShmHeader *header = (struct ShmHeader *)*shm_ptr;
+    header->shm_size = allocated_size; 
     header->first_block_offset = 0;
     header->free_offset = sizeof(struct ShmHeader);
     header->producer_done = 0;
@@ -54,14 +50,15 @@ void run_generation_loop(void *shm_ptr, sem_t *sem) {
     struct ShmHeader *header = (struct ShmHeader *)shm_ptr;
 
     while (1) {
-        usleep(500000); // 0.5с
+        usleep(500000);
 
         sem_wait(sem);
 
         size_t n = 5 + (rand() % 11);
         size_t block_size = sizeof(struct Block) + n * sizeof(int);
 
-        if (header->free_offset + block_size > SHM_SIZE) {
+        
+        if (header->free_offset + block_size > header->shm_size) {
             printf("\nProducer: Memory limits reached. Stopping data generation.\n");
             header->producer_done = 1;
             sem_post(sem);
@@ -127,9 +124,11 @@ void wait_for_processing(void *shm_ptr, sem_t *sem) {
 }
 
 void cleanup_producer_ipc(int shm_fd, sem_t *sem, void *shm_ptr) {
+    struct ShmHeader *header = (struct ShmHeader *)shm_ptr;
+    size_t size = header->shm_size; // Считываем точный размер перед отключением!
     sem_close(sem);
     sem_unlink(SEM_NAME);
-    munmap(shm_ptr, SHM_SIZE);
+    munmap(shm_ptr, size);
     close(shm_fd);
     shm_unlink(SHM_NAME);
     printf("Producer: POSIX IPC resources unlinked. Program terminated.\n");
