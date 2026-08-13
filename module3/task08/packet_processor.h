@@ -9,14 +9,14 @@
 #define MAX_NICK_LEN 32
 #define MAX_TEXT_LEN 512
 
-// Типы сообщений из вашего Задания 6
+// Типы сообщений, синхронизированные с Заданием 6
 typedef enum {
     MSG_JOIN = 1,
     MSG_CHAT = 2,
     MSG_LEAVE = 3
 } MsgType;
 
-// Структура пакета чата из вашего Задания 6
+// Точная структура пакета чата из Задания 6 (для приведения типов)
 typedef struct {
     int type;
     pid_t pid;
@@ -24,7 +24,7 @@ typedef struct {
     char text[MAX_TEXT_LEN];
 } ChatPacket;
 
-// Структура для представления разобранного пакета
+// Удобная структура для хранения извлеченных данных из RAW-буфера
 typedef struct {
     unsigned char src_mac[6];
     unsigned char dest_mac[6];
@@ -36,13 +36,13 @@ typedef struct {
     int payload_len;
 } ParsedPacket;
 
-// Разбор сырого буфера
+// Умный разбор буфера на уровни L2 (Ethernet), L3 (IP) и L4 (UDP)
 bool parse_udp_packet(const unsigned char *buffer, int packet_size, ParsedPacket *pkt);
 
-// Форматированный вывод полезной нагрузки в ASCII и HEX
+// Печать "сырой" полезной нагрузки пакета в текстовом и шестнадцатеричном виде
 void print_payload(const unsigned char *payload, int len, FILE *log_file);
 
-// Вывод информации о пакете на экран и в лог-файл (choice 1 - Чат, 2 - DNS)
+// Главная функция логирования: выводит пакет на экран и пишет в capture.log
 void process_and_log_packet(const ParsedPacket *pkt, double elapsed, int choice, FILE *log_file);
 
 #endif

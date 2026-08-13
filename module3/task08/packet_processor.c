@@ -10,38 +10,33 @@ bool parse_udp_packet(const unsigned char *buffer, int packet_size, ParsedPacket
     int ip_offset = 0;
     const struct ethhdr *eth = (const struct ethhdr *)buffer;
 
-    // Умное определение: есть ли у пакета L2 (Ethernet) заголовок?
+    // АДАПТИВНЫЙ ПАРСИНГ L2 (Уровень канала данных)
+    // Если есть корректный заголовок Ethernet (обычная сеть, например ens18)
     if (packet_size >= (int)sizeof(struct ethhdr) && ntohs(eth->h_proto) == ETH_P_IP) {
-        // Пакет пришел с физической сетевой карты (ens18), парсим MAC-адреса
         memcpy(pkt->src_mac, eth->h_source, 6);
         memcpy(pkt->dest_mac, eth->h_dest, 6);
         ip_offset = sizeof(struct ethhdr);
-    } else if ((buffer[0] >> 4) == 4) {
-        // Пакет пришел из loopback (lo). Заголовка Ethernet нет, пакет начинается сразу с IP-заголовка (версия 4)
-        memset(pkt->src_mac, 0, 6);
+    } 
+    // Если пакет пришел из loopback (lo), заголовка Ethernet нет, сразу начинается IPv4 (0x4X)
+    else if ((buffer[0] >> 4) == 4) {
+        memset(pkt->src_mac, 0, 6); // Заполняем нулями
         memset(pkt->dest_mac, 0, 6);
         ip_offset = 0;
     } else {
-        // Неизвестный формат пакета
-        return false;
+        return false; // Неизвестный или не IPv4 пакет
     }
 
-    // Разбор IP-заголовка
-    if (packet_size < ip_offset + (int)sizeof(struct iphdr)) {
-        return false;
-    }
+    // ПАРСИНГ L3 (Сетевой уровень - IP)
+    if (packet_size < ip_offset + (int)sizeof(struct iphdr)) return false;
     const struct iphdr *ip = (const struct iphdr *)(buffer + ip_offset);
 
-    // Интересует только UDP
-    if (ip->protocol != IPPROTO_UDP) {
-        return false;
-    }
+    if (ip->protocol != IPPROTO_UDP) return false; // Пропускаем TCP, ICMP и др.
 
+    // ПАРСИНГ L4 (Транспортный уровень - UDP)
     int ip_header_len = ip->ihl * 4;
     int udp_offset = ip_offset + ip_header_len;
-    if (packet_size < udp_offset + (int)sizeof(struct udphdr)) {
-        return false;
-    }
+    
+    if (packet_size < udp_offset + (int)sizeof(struct udphdr)) return false;
     const struct udphdr *udp = (const struct udphdr *)(buffer + udp_offset);
 
     pkt->src_ip.s_addr = ip->saddr;
@@ -49,6 +44,7 @@ bool parse_udp_packet(const unsigned char *buffer, int packet_size, ParsedPacket
     pkt->src_port = ntohs(udp->source);
     pkt->dest_port = ntohs(udp->dest);
 
+    // Извлечение полезной нагрузки (данные чата/DNS)
     int payload_offset = udp_offset + sizeof(struct udphdr);
     pkt->payload_len = ntohs(udp->len) - sizeof(struct udphdr);
 
@@ -66,6 +62,7 @@ void print_payload(const unsigned char *payload, int len, FILE *log_file) {
     fprintf(stdout, "Payload (%d bytes):\n  ASCII: ", len);
     if (log_file) fprintf(log_file, "Payload (%d bytes):\n  ASCII: ", len);
     
+    // Печать печатных символов
     for (int i = 0; i < len; i++) {
         char c = payload[i];
         bool is_printable = (c >= 32 && c <= 126);
@@ -79,6 +76,7 @@ void print_payload(const unsigned char *payload, int len, FILE *log_file) {
     fprintf(stdout, "\n  HEX:   ");
     if (log_file) fprintf(log_file, "\n  HEX:   ");
     
+    // Печать шестнадцатеричного дампа
     for (int i = 0; i < len; i++) {
         fprintf(stdout, "%02x ", payload[i]);
         if (log_file) fprintf(log_file, "%02x ", payload[i]);
@@ -112,6 +110,7 @@ void process_and_log_packet(const ParsedPacket *pkt, double elapsed, int choice,
     PRINT_BOTH("  IP:   %s -> %s\n", src_ip_str, dest_ip_str);
     PRINT_BOTH("  UDP:  Порт %d -> Порт %d\n", pkt->src_port, pkt->dest_port);
     
+    // Если размер нагрузки идеально совпадает со структурой чата - декодируем его
     if (choice == 1 && pkt->payload_len == (int)sizeof(ChatPacket)) {
         const ChatPacket *chat = (const ChatPacket *)pkt->payload;
         
@@ -120,19 +119,16 @@ void process_and_log_packet(const ParsedPacket *pkt, double elapsed, int choice,
         PRINT_BOTH("    Никнейм:      %s\n", chat->nickname);
         
         const char *type_str = "UNKNOWN";
-        if (chat->type == MSG_JOIN) {
-            type_str = "MSG_JOIN (Новый участник вошел в сеть)";
-        } else if (chat->type == MSG_CHAT) {
-            type_str = "MSG_CHAT (Текстовое сообщение)";
-        } else if (chat->type == MSG_LEAVE) {
-            type_str = "MSG_LEAVE (Участник вышел из сети)";
-        }
+        if (chat->type == MSG_JOIN) type_str = "MSG_JOIN (Вход)";
+        else if (chat->type == MSG_CHAT) type_str = "MSG_CHAT (Текст)";
+        else if (chat->type == MSG_LEAVE) type_str = "MSG_LEAVE (Выход)";
         
         PRINT_BOTH("    Тип события:  %s\n", type_str);
         if (chat->type == MSG_CHAT) {
             PRINT_BOTH("    Сообщение:    \"%s\"\n", chat->text);
         }
     } else {
+        // Обычный текстовый и HEX-дамп для DNS или неизвестных пакетов
         if (pkt->payload_len > 0 && pkt->payload != NULL) {
             print_payload(pkt->payload, pkt->payload_len, log_file);
         } else {

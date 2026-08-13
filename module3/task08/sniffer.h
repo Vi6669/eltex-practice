@@ -4,16 +4,17 @@
 #include <time.h>
 #include <stdbool.h>
 
-// Инициализация низкоуровневого RAW-сокета
+// Инициализация низкоуровневого RAW-сокета на указанном интерфейсе
 int init_raw_socket(const char *device);
 
-// Включение/отключение беспорядочного режима (Promiscuous mode)
+// Включение или отключение "беспорядочного" режима (Promiscuous mode).
+// Позволяет сетевой карте принимать пакеты, адресованные другим узлам.
 int set_promisc_mode(int sock, const char *device, bool enable);
 
-// Получение времени, прошедшего с момента запуска утилиты
+// Вычисление времени в секундах, прошедшего с момента старта (start_time)
 double get_elapsed_time(struct timespec start_time);
 
-// Преобразование байтового массива MAC-адреса в строку
+// Преобразование массива из 6 байт MAC-адреса в читаемую строку (xx:xx:xx:xx:xx:xx)
 void format_mac(const unsigned char *mac, char *out_str);
 
 #endif

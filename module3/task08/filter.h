@@ -4,10 +4,10 @@
 #include <stdbool.h>
 #include "packet_processor.h"
 
-// Фильтр для сообщений группового чата (Задание 6) с динамическим портом
+// Проверяет, совпадает ли порт пакета с портом нашего чата
 bool filter_chat_task6(const ParsedPacket *pkt, int chat_port);
 
-// Фильтр для DNS-сообщений
+// Проверяет, является ли пакет DNS-запросом/ответом (порт 53)
 bool filter_dns(const ParsedPacket *pkt);
 
 #endif

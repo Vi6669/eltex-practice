@@ -12,7 +12,7 @@
 #include <netinet/in.h> // Для констант протоколов
 
 int init_raw_socket(const char *device) {
-    // Создаем пакетный сокет для захвата всех IPv4 пакетов
+    // Создаем пакетный сокет уровня L2 (захватывает полные кадры Ethernet для IPv4)
     int sock = socket(AF_PACKET, SOCK_RAW, htons(ETH_P_IP));
     if (sock < 0) {
         return -1;
@@ -21,15 +21,16 @@ int init_raw_socket(const char *device) {
     struct sockaddr_ll sll;
     memset(&sll, 0, sizeof(sll));
     sll.sll_family = AF_PACKET;
+    // Получаем внутренний индекс интерфейса по его имени (например, "ens18" -> 2)
     sll.sll_ifindex = if_nametoindex(device);
     sll.sll_protocol = htons(ETH_P_IP);
 
     if (sll.sll_ifindex == 0) {
         close(sock);
-        return -2; // Интерфейс с таким именем не найден
+        return -2; // Интерфейс не найден
     }
 
-    // Привязываем сокет к выбранному сетевому интерфейсу
+    // Жестко привязываем сокет к выбранному сетевому интерфейсу
     if (bind(sock, (struct sockaddr *)&sll, sizeof(sll)) < 0) {
         close(sock);
         return -3; // Ошибка привязки
@@ -47,9 +48,10 @@ int set_promisc_mode(int sock, const char *device, bool enable) {
     }
     mr.mr_type = PACKET_MR_PROMISC;
 
+    // PACKET_ADD_MEMBERSHIP включает режим, DROP - выключает
     int opt = enable ? PACKET_ADD_MEMBERSHIP : PACKET_DROP_MEMBERSHIP;
     if (setsockopt(sock, SOL_PACKET, opt, &mr, sizeof(mr)) < 0) {
-        return -2; // Ошибка переключения режима
+        return -2;
     }
     return 0;
 }
