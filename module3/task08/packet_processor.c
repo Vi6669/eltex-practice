@@ -7,23 +7,35 @@
 #include "sniffer.h"
 
 bool parse_udp_packet(const unsigned char *buffer, int packet_size, ParsedPacket *pkt) {
-    int ip_offset = 0;
-    const struct ethhdr *eth = (const struct ethhdr *)buffer;
+    if (packet_size < 14) return false;
 
-    // АДАПТИВНЫЙ ПАРСИНГ L2 (Уровень канала данных)
-    // Если есть корректный заголовок Ethernet (обычная сеть, например ens18)
-    if (packet_size >= (int)sizeof(struct ethhdr) && ntohs(eth->h_proto) == ETH_P_IP) {
-        memcpy(pkt->src_mac, eth->h_source, 6);
-        memcpy(pkt->dest_mac, eth->h_dest, 6);
-        ip_offset = sizeof(struct ethhdr);
+    int ip_offset = 0;
+    // Извлекаем тип протокола из Ethernet-заголовка
+    uint16_t eth_proto = ntohs(*(uint16_t*)(buffer + 12));
+
+    // 1. Стандартный Ethernet (IPv4)
+    if (eth_proto == ETH_P_IP) {
+        ip_offset = 14;
+        memcpy(pkt->src_mac, buffer + 6, 6);
+        memcpy(pkt->dest_mac, buffer + 0, 6);
     } 
-    // Если пакет пришел из loopback (lo), заголовка Ethernet нет, сразу начинается IPv4 (0x4X)
+    // 2. Ethernet с тегом VLAN (802.1Q) - Частая ситуация в виртуальных машинах!
+    else if (eth_proto == 0x8100) {
+        if (packet_size < 18) return false;
+        // Проверяем, что внутри VLAN-тега лежит IPv4
+        if (ntohs(*(uint16_t*)(buffer + 16)) != ETH_P_IP) return false; 
+        ip_offset = 18; // Смещаемся на 4 байта дальше из-за VLAN
+        memcpy(pkt->src_mac, buffer + 6, 6);
+        memcpy(pkt->dest_mac, buffer + 0, 6);
+    } 
+    // 3. Интерфейс локальной петли (lo) - вообще нет Ethernet заголовка
     else if ((buffer[0] >> 4) == 4) {
-        memset(pkt->src_mac, 0, 6); // Заполняем нулями
-        memset(pkt->dest_mac, 0, 6);
         ip_offset = 0;
-    } else {
-        return false; // Неизвестный или не IPv4 пакет
+        memset(pkt->src_mac, 0, 6);
+        memset(pkt->dest_mac, 0, 6);
+    } 
+    else {
+        return false; // Игнорируем ARP, IPv6 и прочее
     }
 
     // ПАРСИНГ L3 (Сетевой уровень - IP)
@@ -44,7 +56,7 @@ bool parse_udp_packet(const unsigned char *buffer, int packet_size, ParsedPacket
     pkt->src_port = ntohs(udp->source);
     pkt->dest_port = ntohs(udp->dest);
 
-    // Извлечение полезной нагрузки (данные чата/DNS)
+    // Извлечение полезной нагрузки
     int payload_offset = udp_offset + sizeof(struct udphdr);
     pkt->payload_len = ntohs(udp->len) - sizeof(struct udphdr);
 
@@ -62,7 +74,6 @@ void print_payload(const unsigned char *payload, int len, FILE *log_file) {
     fprintf(stdout, "Payload (%d bytes):\n  ASCII: ", len);
     if (log_file) fprintf(log_file, "Payload (%d bytes):\n  ASCII: ", len);
     
-    // Печать печатных символов
     for (int i = 0; i < len; i++) {
         char c = payload[i];
         bool is_printable = (c >= 32 && c <= 126);
@@ -76,7 +87,6 @@ void print_payload(const unsigned char *payload, int len, FILE *log_file) {
     fprintf(stdout, "\n  HEX:   ");
     if (log_file) fprintf(log_file, "\n  HEX:   ");
     
-    // Печать шестнадцатеричного дампа
     for (int i = 0; i < len; i++) {
         fprintf(stdout, "%02x ", payload[i]);
         if (log_file) fprintf(log_file, "%02x ", payload[i]);
@@ -110,7 +120,6 @@ void process_and_log_packet(const ParsedPacket *pkt, double elapsed, int choice,
     PRINT_BOTH("  IP:   %s -> %s\n", src_ip_str, dest_ip_str);
     PRINT_BOTH("  UDP:  Порт %d -> Порт %d\n", pkt->src_port, pkt->dest_port);
     
-    // Если размер нагрузки идеально совпадает со структурой чата - декодируем его
     if (choice == 1 && pkt->payload_len == (int)sizeof(ChatPacket)) {
         const ChatPacket *chat = (const ChatPacket *)pkt->payload;
         
@@ -128,7 +137,6 @@ void process_and_log_packet(const ParsedPacket *pkt, double elapsed, int choice,
             PRINT_BOTH("    Сообщение:    \"%s\"\n", chat->text);
         }
     } else {
-        // Обычный текстовый и HEX-дамп для DNS или неизвестных пакетов
         if (pkt->payload_len > 0 && pkt->payload != NULL) {
             print_payload(pkt->payload, pkt->payload_len, log_file);
         } else {

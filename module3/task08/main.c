@@ -69,9 +69,15 @@ static void run_sniffer_loop(int sock, int choice, int chat_port, FILE *log_file
 
         // Логирование совпавшего пакета
         if (match) {
-            double elapsed = get_elapsed_time(start_time);
-            process_and_log_packet(&pkt, elapsed, choice, log_file);
-        }
+    printf("[MATCH] UDP %d -> %d, payload = %d bytes\n",
+           pkt.src_port,
+           pkt.dest_port,
+           pkt.payload_len);
+    fflush(stdout);
+
+    double elapsed = get_elapsed_time(start_time);
+    process_and_log_packet(&pkt, elapsed, choice, log_file);
+}
     }
 }
 
