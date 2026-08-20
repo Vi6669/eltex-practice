@@ -4,10 +4,7 @@
 #include <stdint.h>
 #include "utils.h"
 
-/* 
- * Создает фиктивный стандартный сокет UDP и биндит его на локальный порт.
- * Это нужно, чтобы ядро ОС не отправляло серверу автоматический ICMP-ответ "Port Unreachable".
- */
+
 int reserve_local_port(uint32_t local_ip_bin, uint16_t client_port);
 
 // Ручная сборка и отправка UDP пакета через сырой сокет

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h> // Подключено для устранения предупреждения неявного объявления close()
+#include <unistd.h> 
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include "server_logic.h"
