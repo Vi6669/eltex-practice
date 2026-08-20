@@ -1,1 +1,0 @@
-template_task.sh
