@@ -1,0 +1,209 @@
+Script started on 2026-07-07 18:37:33+07:00 [COMMAND="bash" TERM="screen" TTY="/dev/pts/71" COLUMNS="80" LINES="24"]
+eltex-v37@eltex-2026-summer:~$ export TERM=dumb
+eltex-v37@eltex-2026-summer:~$ ls
+ls	     lsb_release  lsinitramfs  lslocks	    lsmod	 lspci
+lsattr	     lscpu	  lsipc	       lslogins	    lsns	 lsusb
+lsblk	     lsfd	  lsirq	       lsmem	    lsof
+eltex-v37@eltex-2026-summer:~$ ls^C
+eltex-v37@eltex-2026-summer:~$ $HIST$HIST
+$HISTCMD       $HISTCONTROL   $HISTFILE	     $HISTFILESIZE  $HISTSIZE
+eltex-v37@eltex-2026-summer:~$ $HIST^C
+eltex-v37@eltex-2026-summer:~$ echo $HISTFILESIZE
+2000
+eltex-v37@eltex-2026-summer:~$ unalias ls
+eltex-v37@eltex-2026-summer:~$ ls -d ~/.*
+/home/eltex-v37/.bash_history  /home/eltex-v37/.profile
+/home/eltex-v37/.bash_logout   /home/eltex-v37/.ssh
+/home/eltex-v37/.bashrc	       /home/eltex-v37/.viminfo
+/home/eltex-v37/.config	       /home/eltex-v37/.Xauthority
+eltex-v37@eltex-2026-summer:~$ export HISTTIMEFORMAT="%F %T "
+eltex-v37@eltex-2026-summer:~$ history | tail -n 5
+   42  2026-07-07 18:38:30 echo $HISTFILESIZE
+   43  2026-07-07 18:39:16 unalias ls
+   44  2026-07-07 18:39:24 ls -d ~/.*
+   45  2026-07-07 18:41:31 export HISTTIMEFORMAT="%F %T "
+   46  2026-07-07 18:41:48 history | tail -n 5
+eltex-v37@eltex-2026-summer:~$ date
+Tue Jul	 7 06:44:04 PM +07 2026
+eltex-v37@eltex-2026-summer:~$ history | tail -n 2
+   47  2026-07-07 18:44:04 date
+   48  2026-07-07 18:44:50 history | tail -n 2
+eltex-v37@eltex-2026-summer:~$ tail -n 5 ~/.bash_history
+export TERM=dumb
+echo $HISTFILESIZE
+ls -d ~/.*
+\ls -d ~/.*
+exit
+eltex-v37@eltex-2026-summer:~$ export PROMPT_COMMAND="history -a"
+eltex-v37@eltex-2026-summer:~$ whoami
+eltex-v37
+eltex-v37@eltex-2026-summer:~$ tail -n 5 ~/.bash_history
+tail -n 5 ~/.bash_history
+#1783424837
+export PROMPT_COMMAND="history -a"
+#1783424894
+whoami
+eltex-v37@eltex-2026-summer:~$ history | tail -n 5
+   49  2026-07-07 18:45:44 tail -n 5 ~/.bash_history
+   50  2026-07-07 18:47:17 export PROMPT_COMMAND="history -a"
+   51  2026-07-07 18:48:14 whoami
+   52  2026-07-07 18:48:30 tail -n 5 ~/.bash_history
+   53  2026-07-07 18:49:19 history | tail -n 5
+eltex-v37@eltex-2026-summer:~$ DATE=$(date +%d.%m.%Y)
+eltex-v37@eltex-2026-summer:~$ echo $DATE
+07.07.2026
+eltex-v37@eltex-2026-summer:~$ TIME=$(date +%T)
+eltex-v37@eltex-2026-summer:~$ echo $TIME
+18:53:35
+eltex-v37@eltex-2026-summer:~$ DATE_TIME="$DATE $TIME"
+eltex-v37@eltex-2026-summer:~$ echo $DATE_TIMEecho $DATE_TIME
+07.07.2026 18:53:35
+eltex-v37@eltex-2026-summer:~$ find /bin /sbin -type f -name "*[0-9]*"
+eltex-v37@eltex-2026-summer:~$ ls /bin /sbin | grep '[0-9]'
+addr2line
+b2sum
+base32
+base64
+bunzip2
+bzip2
+bzip2recover
+c89
+c89-gcc
+c99
+c99-gcc
+cpan5.36-x86_64-linux-gnu
+cpp-12
+diff3
+enc2xs
+gcc-12
+gcc-ar-12
+gcc-nm-12
+gcc-ranlib-12
+gcov-12
+gcov-dump-12
+gcov-tool-12
+grub-menulst2cfg
+grub-mkpasswd-pbkdf2
+grub-syslinux2cfg
+h2ph
+h2xs
+i386
+linux32
+linux64
+lto-dump-12
+md5sum
+md5sum.textutils
+pdb3
+pdb3.11
+perl5.36.0
+perl5.36-x86_64-linux-gnu
+ping4
+ping6
+pl2pm
+pod2html
+pod2man
+pod2text
+pod2usage
+py3clean
+py3compile
+py3versions
+pydoc3
+pydoc3.11
+pygettext3
+pygettext3.11
+python3
+python3.11
+sha1sum
+sha224sum
+sha256sum
+sha384sum
+sha512sum
+ssh-argv0
+systemd-id128
+traceroute6
+traceroute6.db
+x86_64
+x86_64-linux-gnu-addr2line
+x86_64-linux-gnu-ar
+x86_64-linux-gnu-as
+x86_64-linux-gnu-c++filt
+x86_64-linux-gnu-cpp
+x86_64-linux-gnu-cpp-12
+x86_64-linux-gnu-dwp
+x86_64-linux-gnu-elfedit
+x86_64-linux-gnu-gcc
+x86_64-linux-gnu-gcc-12
+x86_64-linux-gnu-gcc-ar
+x86_64-linux-gnu-gcc-ar-12
+x86_64-linux-gnu-gcc-nm
+x86_64-linux-gnu-gcc-nm-12
+x86_64-linux-gnu-gcc-ranlib
+x86_64-linux-gnu-gcc-ranlib-12
+x86_64-linux-gnu-gcov
+x86_64-linux-gnu-gcov-12
+x86_64-linux-gnu-gcov-dump
+x86_64-linux-gnu-gcov-dump-12
+x86_64-linux-gnu-gcov-tool
+x86_64-linux-gnu-gcov-tool-12
+x86_64-linux-gnu-gold
+x86_64-linux-gnu-gp-archive
+x86_64-linux-gnu-gp-collect-app
+x86_64-linux-gnu-gp-display-html
+x86_64-linux-gnu-gp-display-src
+x86_64-linux-gnu-gp-display-text
+x86_64-linux-gnu-gprof
+x86_64-linux-gnu-gprofng
+x86_64-linux-gnu-ld
+x86_64-linux-gnu-ld.bfd
+x86_64-linux-gnu-ld.gold
+x86_64-linux-gnu-lto-dump
+x86_64-linux-gnu-lto-dump-12
+x86_64-linux-gnu-nm
+x86_64-linux-gnu-objcopy
+x86_64-linux-gnu-objdump
+x86_64-linux-gnu-ranlib
+x86_64-linux-gnu-readelf
+x86_64-linux-gnu-size
+x86_64-linux-gnu-strings
+x86_64-linux-gnu-strip
+dumpe2fs
+e2freefrag
+e2fsck
+e2image
+e2label
+e2mmpstatus
+e2scrub
+e2scrub_all
+e2undo
+e4crypt
+e4defrag
+fsck.ext2
+fsck.ext3
+fsck.ext4
+killall5
+mke2fs
+mkfs.ext2
+mkfs.ext3
+mkfs.ext4
+resize2fs
+tune2fs
+update-grub2
+eltex-v37@eltex-2026-summer:~$ PS1='$USER@$HOSTNAME-$(date "+%H:%M")>'
+eltex-v37@eltex-2026-summer-19:05>export PS1
+eltex-v37@eltex-2026-summer-19:07>bash
+eltex-v37@eltex-2026-summer:~$ exit
+exit
+echo "PS1='\u@\h-\$(date-\"+%H:%M\")> '" >> ~/.bashrc
+eltex-v37@eltex-2026-summer-19:11>bash
+eltex-v37@eltex-2026-summer-19:11> exit
+exit
+eltex-v37@eltex-2026-summer-19:11>mkdir -p ~/$(date +%Y)-{01..12}
+eltex-v37@eltex-2026-summer-19:15>ls -d ~/$(date +%Y)-*
+/home/eltex-v37/2026-01	 /home/eltex-v37/2026-05  /home/eltex-v37/2026-09
+/home/eltex-v37/2026-02	 /home/eltex-v37/2026-06  /home/eltex-v37/2026-10
+/home/eltex-v37/2026-03	 /home/eltex-v37/2026-07  /home/eltex-v37/2026-11
+/home/eltex-v37/2026-04	 /home/eltex-v37/2026-08  /home/eltex-v37/2026-12
+eltex-v37@eltex-2026-summer-19:15>exit
+exit
+
+Script done on 2026-07-07 19:19:03+07:00 [COMMAND_EXIT_CODE="0"]

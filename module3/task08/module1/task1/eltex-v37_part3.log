@@ -1,0 +1,17 @@
+cd ~
+touch $(whoami)_part3.log
+mkdir -p D1/D2/D3
+touch D1/D2/file.txt
+echo "Eltex Linux Lab Part 3" > D1/D2/file.txt
+ln D1/D2/file.txt D1/D2/D3/hardlink.txt
+ln -s ../file.txt D1/D2/D3/symlink.txt
+ls -li D1/D2/file.txt D1/D2/D3/
+mv D1/D2/file.txt D1/file.txt
+cat D1/D2/D3/hardlink.txt
+cat D1/D2/D3/symlink.txt
+rm -rf D1/D2
+find / -type f -size +20M -exec du -h {} + 2>/dev/null > ~/$(whoami)_part3_gt20M.log
+find ~ -type f -mtime -1
+which find
+file $(which find)
+file /boot/initrd.img*
