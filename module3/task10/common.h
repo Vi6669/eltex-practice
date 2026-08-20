@@ -4,20 +4,19 @@
 #include <stdint.h>
 #include <sys/types.h>
 
-// Типы сообщений между процессами
 typedef enum {
     MSG_TASK,           // Назначение новой задачи
     MSG_STATUS_REQ,     // Запрос текущего статуса
     MSG_STATUS_RSP,     // Ответ со статусом
     MSG_ACK,            // Подтверждение приема задачи
-    MSG_BUSY            // Отказ (водитель уже занят)
+    MSG_BUSY,           // Отказ (водитель уже занят)
+    MSG_COUNT           // Общее количество типов сообщений для размера таблиц
 } msg_type_t;
 
-// Структура IPC-сообщения
 typedef struct {
-    msg_type_t type;    // Тип сообщения
-    int payload;        // Время (длительность или остаток секунд)
-    pid_t driver_pid;   // PID отправителя (водителя)
+    msg_type_t type;
+    int payload;
+    pid_t driver_pid;
 } ipc_msg_t;
 
 #endif // COMMON_H

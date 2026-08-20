@@ -1,0 +1,8 @@
+
+*.o
+
+taxi_app
+
+
+/tmp/taxi_req_*
+/tmp/taxi_rsp_*

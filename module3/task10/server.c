@@ -11,11 +11,10 @@
 
 #define MAX_DRIVERS 100
 
-// Структура для учета водителей диспетчером
 typedef struct {
-    pid_t pid;          // PID процесса водителя
-    int req_fd;         // Дескриптор отправки запросов (запись)
-    int rsp_fd;         // Дескриптор приема ответов (чтение)
+    pid_t pid;
+    int req_fd;
+    int rsp_fd;
 } driver_info_t;
 
 static driver_info_t drivers[MAX_DRIVERS];
@@ -26,7 +25,6 @@ static void print_prompt() {
     fflush(stdout);
 }
 
-// Поиск водителя в локальном массиве по PID
 static driver_info_t* find_driver(pid_t pid) {
     for (int i = 0; i < num_drivers; i++) {
         if (drivers[i].pid == pid) return &drivers[i];
@@ -34,7 +32,33 @@ static driver_info_t* find_driver(pid_t pid) {
     return NULL;
 }
 
-// Создание нового процесса водителя и его FIFO
+// Определение типа указателя на функцию-обработчик ответов от водителя
+typedef void (*resp_handler_t)(pid_t pid, int payload);
+
+// Функции-обработчики конкретных типов ответов
+static void handle_ack(pid_t pid, int payload) {
+    (void)payload;
+    printf("[Driver %d] Accepted task.\n", pid);
+}
+
+static void handle_busy(pid_t pid, int payload) {
+    printf("[Driver %d] Busy %d\n", pid, payload);
+}
+
+static void handle_status_rsp(pid_t pid, int payload) {
+    if (payload > 0)
+        printf("[Driver %d] Busy %d\n", pid, payload);
+    else
+        printf("[Driver %d] Available\n", pid);
+}
+
+// Таблица диспетчеризации ответов от водителей
+static const resp_handler_t resp_handlers[MSG_COUNT] = {
+    [MSG_ACK]        = handle_ack,
+    [MSG_BUSY]       = handle_busy,
+    [MSG_STATUS_RSP] = handle_status_rsp
+};
+
 static void handle_create_driver(fd_set *master_set, int *max_fd) {
     if (num_drivers >= MAX_DRIVERS) return;
 
@@ -55,7 +79,6 @@ static void handle_create_driver(fd_set *master_set, int *max_fd) {
         driver_run(req_name, rsp_name);
         exit(0);
     } else {
-        // O_RDWR предотвращает блокировку при открытии неактивного FIFO
         int req_fd = open(req_name, O_RDWR | O_NONBLOCK);
         int rsp_fd = open(rsp_name, O_RDWR | O_NONBLOCK);
 
@@ -64,7 +87,6 @@ static void handle_create_driver(fd_set *master_set, int *max_fd) {
         drivers[num_drivers].rsp_fd = rsp_fd;
         num_drivers++;
 
-        // Добавляем новый дескриптор чтения в набор select
         FD_SET(rsp_fd, master_set);
         if (rsp_fd > *max_fd) {
             *max_fd = rsp_fd;
@@ -74,7 +96,6 @@ static void handle_create_driver(fd_set *master_set, int *max_fd) {
     }
 }
 
-// Отправка задачи водителю
 static void handle_send_task(pid_t pid, int timer) {
     driver_info_t* drv = find_driver(pid);
     if (!drv) {
@@ -85,7 +106,6 @@ static void handle_send_task(pid_t pid, int timer) {
     write(drv->req_fd, &msg, sizeof(msg));
 }
 
-// Запрос статуса водителя
 static void handle_get_status(pid_t pid) {
     driver_info_t* drv = find_driver(pid);
     if (!drv) {
@@ -96,7 +116,6 @@ static void handle_get_status(pid_t pid) {
     write(drv->req_fd, &msg, sizeof(msg));
 }
 
-// Запрос статуса у всех водителей
 static void handle_get_drivers() {
     if (num_drivers == 0) {
         printf("No drivers running.\n");
@@ -108,7 +127,6 @@ static void handle_get_drivers() {
     }
 }
 
-// Парсинг ввода CLI
 static void process_cli_input(fd_set *master_set, int *max_fd) {
     char buf[256];
     if (!fgets(buf, sizeof(buf), stdin)) return;
@@ -151,33 +169,22 @@ static void process_cli_input(fd_set *master_set, int *max_fd) {
     print_prompt();
 }
 
-// Обработка входящего ответа от водителя
 static void process_driver_message(int fd) {
     ipc_msg_t msg;
     int r = read(fd, &msg, sizeof(msg));
     if (r <= 0) return;
 
-    printf("\n");
-    switch (msg.type) {
-        case MSG_ACK:
-            printf("[Driver %d] Accepted task.\n", msg.driver_pid);
-            break;
-        case MSG_BUSY:
-            printf("[Driver %d] Busy %d\n", msg.driver_pid, msg.payload);
-            break;
-        case MSG_STATUS_RSP:
-            if (msg.payload > 0)
-                printf("[Driver %d] Busy %d\n", msg.driver_pid, msg.payload);
-            else
-                printf("[Driver %d] Available\n", msg.driver_pid);
-            break;
-        default:
-            break;
+    pid_t pid = -1;
+    for (int i = 0; i < num_drivers; i++) {
+        if (drivers[i].rsp_fd == fd) pid = drivers[i].pid;
     }
-    print_prompt();
+
+    // Вызов обработчика из таблицы диспетчеризации по индексу типа сообщения
+    if (msg.type < MSG_COUNT && resp_handlers[msg.type]) {
+        resp_handlers[msg.type](pid, msg.payload);
+    }
 }
 
-// Диспетчерский цикл на основе select()
 void server_run(void) {
     fd_set master_set, read_fds;
     int max_fd = STDIN_FILENO;
@@ -195,12 +202,10 @@ void server_run(void) {
             break;
         }
 
-        // Проверяем ввод пользователя
         if (FD_ISSET(STDIN_FILENO, &read_fds)) {
             process_cli_input(&master_set, &max_fd);
         }
 
-        // Проверяем ответы от водителей
         for (int i = 0; i < num_drivers; i++) {
             if (FD_ISSET(drivers[i].rsp_fd, &read_fds)) {
                 process_driver_message(drivers[i].rsp_fd);
