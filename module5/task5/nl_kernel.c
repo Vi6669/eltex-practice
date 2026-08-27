@@ -6,7 +6,7 @@
 
 #define NETLINK_USER 31
 
-/* СООБЩЕНИЕ ЯДРА: Меняйте этот текст здесь при необходимости */
+
 #define KERNEL_RESPONSE_MSG "Hello from kernel"
 
 static struct sock *nl_sk = NULL;
@@ -17,7 +17,7 @@ static void hello_nl_recv_msg(struct sk_buff *skb)
     int pid;
     struct sk_buff *skb_out;
     int msg_size;
-    /* Переменная msg теперь использует вынесенный макрос */
+   
     const char *msg = KERNEL_RESPONSE_MSG;
     int res;
 

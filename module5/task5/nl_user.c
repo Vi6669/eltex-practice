@@ -8,7 +8,7 @@
 #define NETLINK_USER 31
 #define MAX_PAYLOAD 1024
 
-/* СООБЩЕНИЕ ПОЛЬЗОВАТЕЛЯ: Меняйте этот текст здесь при необходимости */
+
 #define USER_SEND_MSG "Hello"
 
 static struct sockaddr_nl src_addr, dest_addr;
@@ -52,7 +52,7 @@ int main()
     nlh->nlmsg_pid = getpid();
     nlh->nlmsg_flags = 0;
 
-    /* Копируем сообщение, используя вынесенный макрос */
+
     strncpy(NLMSG_DATA(nlh), USER_SEND_MSG, MAX_PAYLOAD - 1);
 
     iov.iov_base = (void *)nlh;
