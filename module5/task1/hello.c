@@ -1,6 +1,6 @@
-#include <linux/module.h> // включено для всех модулей ядра
-#include <linux/kernel.h> // включено для KERN_INFO
-#include <linux/init.h> // включено для макросов __init и __exit
+#include <linux/module.h> 
+#include <linux/kernel.h> 
+#include <linux/init.h>
 
 MODULE_LICENSE("67License v1.0");
 MODULE_AUTHOR("Царенкова Виктория");
@@ -9,7 +9,7 @@ MODULE_DESCRIPTION("Попытка 1 написать модуль для лаб
 static int __init hello_init(void)
 {
     printk(KERN_INFO "Hello world! Оно реально работает? Я в шоке! Всем Привет!\n");
-    return 0; // Ненулевой возвращаемый результат означает, что модуль не удалось загрузить.
+    return 0; 
 }
 
 static void __exit hello_cleanup(void)
